@@ -1,37 +1,56 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, Route } from 'wouter';
 import Profile_Pic from "../assets/profile-picture.jpg";
 
 const Navbar = () => {
-  return (
-    <nav className="p-4 border-solid border-white border-2 w-full h-[80px] backdrop-blur-2xl">
-      <div className="w-full h-full flex justify-between items-center">
+  const [currPage, setCurrPage] = useState(1);
 
-        <div>
-          <img className="h-[60px] rounded-full" src={Profile_Pic} alt="profile_img" />
+  return (
+    <nav className="w-full h-[80px] bg-transparent backdrop-blur-2xl border-none absolute z-50">
+      <div className="w-full h-full flex justify-between items-center border-none">
+
+        <div className="ml-8 flex justify-between items-center w-[250px]">
+          <div className="w-[68px] h-[68px] flex justify-center items-center rounded-full bg-gradient-to-br from-gradient-blue to-gradient-purple transition duration-200 hover:rotate-180 hover:cursor-pointer relative">
+            <div className="w-[60px] h-[60px] rounded-full overflow-hidden">
+              <img className="w-full h-full transition duration-200 transform hover:-rotate-180" src={Profile_Pic} alt="profile_img" />
+            </div>
+          </div>
+
+          <Link to="/">
+            <div>
+              <span className="text-white font-semibold text-xl hover:cursor-pointer">bryanli.vercel.app</span>
+            </div>
+          </Link>
+
         </div>
 
-        <div className="space-x-4">
-          <Link to="/" className="text-white">
+        {/*         
+        <div className="ml-8 w-[66px] h-[66px] flex justify-center items-center rounded-full bg-gradient-to-br from-gradient-blue to-gradient-purple transition duration-200 hover:rotate-180 hover:cursor-pointer">
+          <img className="w-[60px] h-[60px] rounded-full transition duration-0 hover:-rotate-180" src={Profile_Pic} alt="profile_img" />
+        </div>
+        */}
+
+        <div className="w-[500px] h-[50px] mr-8 px-1 flex justify-around items-center bg-translucent-white backdrop-blur-lg rounded-full">
+          <Link to="/" className="text-white py-2 px-5 hover:rounded-full hover:backdrop-blur-3xl  hover:bg-gradient-to-tr from-nav-gradient-1 to-nav-gradient-2">
             Home
           </Link>
-          <Link to="/about" className="text-white">
+          <Link to="/about" className="text-white py-2 px-5 hover:rounded-full hover:backdrop-blur-3xl  hover:bg-gradient-to-tr from-nav-gradient-1 to-nav-gradient-2">
             About
           </Link>
-          <Link to="/portfolio" className="text-white">
+          <Link to="/portfolio" className="text-white py-2 px-5 hover:rounded-full hover:backdrop-blur-3xl hover:bg-gradient-to-tr from-nav-gradient-1 to-nav-gradient-2">
             Portfolio
           </Link>
-          <Link to="/experience" className="text-white">
+          <Link to="/experience" className="text-white py-2 px-5 hover:rounded-full hover:backdrop-blur-3xl hover:bg-gradient-to-tr from-nav-gradient-1 to-nav-gradient-2">
             Experience
           </Link>
-          <Link to="/contact" className="text-white">
+          <Link to="/contact" className="text-white py-2 px-5 hover:rounded-full hover:backdrop-blur-3xl hover:bg-gradient-to-tr from-nav-gradient-1 to-nav-gradient-2">
             Contact
           </Link>
         </div>
 
       </div>
 
-    </nav>
+    </nav >
   );
 };
 
