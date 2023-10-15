@@ -15,6 +15,21 @@ export default {
         'nav-gradient-1': '#DDBDFC',
         'nav-gradient-2': '#96C8FB',
       },
+      fontFamily: {
+        'theme-rubik': ['Rubik', 'sans-serif'], 
+      },
+      scale: {
+        '108': '1.08',
+      },
+      width: {
+        'icon-2': '80px',
+        'icon-3': '120px',
+        'icon-4': '160px',
+        'icon-5': '200px',
+        'icon-6': '240px',
+
+        'lang-width': '30px',
+      },
     },
   },
   plugins: [],

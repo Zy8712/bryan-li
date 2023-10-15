@@ -30,7 +30,7 @@ const Navbar = () => {
         </div>
         */}
 
-        <div className="w-[500px] h-[50px] mr-8 px-1 flex justify-around items-center bg-translucent-white backdrop-blur-lg rounded-full">
+        <div className="w-[525px] h-[50px] mr-8 px-1 flex justify-around items-center bg-translucent-white backdrop-blur-lg rounded-full">
           <Link to="/" className="text-white py-2 px-5 hover:rounded-full hover:backdrop-blur-3xl  hover:bg-gradient-to-tr from-nav-gradient-1 to-nav-gradient-2">
             Home
           </Link>
