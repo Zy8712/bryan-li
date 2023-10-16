@@ -14,6 +14,19 @@ import FrontendMentor from '../../assets/frontend-mentor-logo-transparent.png';
 import '../../App.css';
 
 function UltimateProjectCard(props) {
+
+  function getClassNames() {
+    const classNamesArray = ['flex', 'justify-between', 'items-center']; // Start with default classes
+  
+    // Add class based on props.iconCount
+    if (props.iconCount >= 2 && props.iconCount <= 6) {
+      classNamesArray.push(`w-icon-${props.iconCount}`);
+    }
+  
+    // Join the class names into a single string
+    return classNamesArray.join(' ');
+  }
+
   return (
     <>
       <div className="group box w-[400px] h-[505px] overflow-hidden bg-white rounded-2xl border-none mb-8 cursor-pointer relative hover:shadow-2xl hover:shadow-white	">
@@ -29,7 +42,7 @@ function UltimateProjectCard(props) {
           <div className="mx-10 flex flex-col justify-between items-center text-center relative">
             <span className="block mt-4 mb-3 text-2xl font-medium">{props.name}</span>
             <p className="mb-3">{props.date}</p>
-            <div className={`w-icon-${props.iconCount} flex justify-between items-center`}>
+            <div className={getClassNames()}>
               <img src={HTML_Icon} alt="html5_icon" title="HTML5" className={`w-lang-width ${props.htmlTF ? 'inline' : 'hidden'}`} />
               <img src={CSS_Icon} alt="css3_icon" title="CSS3" className={`w-lang-width ${props.cssTF ? 'inline' : 'hidden'}`} />
               <img src={Javascript_Icon} alt="css3_icon" title="CSS3" className={`w-lang-width ${props.javascriptTF ? 'inline' : 'hidden'}`} />

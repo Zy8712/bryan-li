@@ -37,7 +37,6 @@ function Portfolio() {
 
           <ProjectFilters />
 
-          <CardQrCodeCompTrial1 />
           <UltimateProjectCard
             name="Interactive Rating Component"
             date="Completed: June 8th, 2023 [Trial #1]"
@@ -46,7 +45,7 @@ function Portfolio() {
             websitepreview="https://www.google.ca/"
             frontendmentorTF={true}
             challengeInfo="https://www.youtube.com/"
-            iconCount={6}
+            iconCount="6"
             htmlTF={true}
             cssTF={true}
             javascriptTF={true}
@@ -59,12 +58,7 @@ function Portfolio() {
             gradientOne="interactive-rating-light-gray"
             gradientTwo="interactive-rating-very-dark-blue"
           />
-          <CardInteractiveRatingCompTrial1 />
 
-          <CardQrCodeCompTrial1 />
-          <CardQrCodeCompTrial1 />
-          <CardQrCodeCompTrial1 />
-          <CardQrCodeCompTrial1 />
 
 
         </div>
