@@ -37,10 +37,10 @@ function CardQrCodeCompTrial1() {
 
           <div className="w-full h-[50px] flex absolute bottom-0">
             <div className="w-1/2 h-full flex justify-center items-center">
-              <a className="link-custom" href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/qr-code-component/my-work" target="_blank"><i class="lab la-github mr-1"></i>GitHub Repo</a>
+              <a className="link-custom" href="https://github.com/Zy8712/frontend-mentor-challenges/tree/main/qr-code-component/my-work" target="_blank"><i className="lab la-github mr-1"></i>GitHub Repo</a>
             </div>
             <div className="w-1/2 h-full flex justify-center items-center">
-              <a className="link-custom2" href="https://frontend-mentor-challenges-pi-sage.vercel.app/qr-code-component/my-work/index.html" target="_blank"><i class="las la-external-link-alt mr-1"></i>Preview</a>
+              <a className="link-custom2" href="https://frontend-mentor-challenges-pi-sage.vercel.app/qr-code-component/my-work/index.html" target="_blank"><i className="las la-external-link-alt mr-1"></i>Preview</a>
             </div>
           </div>
         </div>

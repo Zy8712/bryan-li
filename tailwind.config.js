@@ -34,13 +34,13 @@ export default {
         '108': '1.08',
       },
       width: {
+        'lang-width': '30px',
+
         'icon-2': '80px',
         'icon-3': '120px',
         'icon-4': '160px',
         'icon-5': '200px',
         'icon-6': '240px',
-
-        'lang-width': '30px',
       },
     },
   },

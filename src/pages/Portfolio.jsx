@@ -38,32 +38,34 @@ function Portfolio() {
           <ProjectFilters />
 
           <CardQrCodeCompTrial1 />
-          <CardInteractiveRatingCompTrial1 />
-          <CardQrCodeCompTrial1 />
-          <CardQrCodeCompTrial1 />
-          <CardQrCodeCompTrial1 />
-          <CardQrCodeCompTrial1 />
           <UltimateProjectCard
-            name="Testing"
-            date="Test Date"
+            name="Interactive Rating Component"
+            date="Completed: June 8th, 2023 [Trial #1]"
             previewImage={PreviewImage}
             githubrepo="https://github.com/Zy8712/frontend-mentor-challenges/blob/main/interactive-rating-component/my-work/style.css"
             websitepreview="https://www.google.ca/"
-            frontendmentorTF={false}
+            frontendmentorTF={true}
             challengeInfo="https://www.youtube.com/"
-            iconCount={6}
+            iconCount={3}
             htmlTF={true}
             cssTF={true}
             javascriptTF={true}
-            sassTF={true}
-            reactTF={true}
-            tailwindTF={true}
+            sassTF={false}
+            reactTF={false}
+            tailwindTF={false}
             bootstrapTF={false}
             jsonTF={false}
             apiTF={false}
             gradientOne="interactive-rating-light-gray"
             gradientTwo="interactive-rating-very-dark-blue"
           />
+          <CardInteractiveRatingCompTrial1 />
+
+          <CardQrCodeCompTrial1 />
+          <CardQrCodeCompTrial1 />
+          <CardQrCodeCompTrial1 />
+          <CardQrCodeCompTrial1 />
+
 
         </div>
       </div>
