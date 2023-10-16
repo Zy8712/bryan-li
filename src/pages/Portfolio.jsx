@@ -46,13 +46,13 @@ function Portfolio() {
             websitepreview="https://www.google.ca/"
             frontendmentorTF={true}
             challengeInfo="https://www.youtube.com/"
-            iconCount={3}
+            iconCount={6}
             htmlTF={true}
             cssTF={true}
             javascriptTF={true}
-            sassTF={false}
-            reactTF={false}
-            tailwindTF={false}
+            sassTF={true}
+            reactTF={true}
+            tailwindTF={true}
             bootstrapTF={false}
             jsonTF={false}
             apiTF={false}
