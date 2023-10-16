@@ -1,5 +1,3 @@
-import InteractiveRatingPreview from '../../assets/project-previews/interactiveratingcomp-desktop-preview.jpg';
-
 import HTML_Icon from '../../assets/language-icons/html5-svgrepo-com.svg';
 import CSS_Icon from '../../assets/language-icons/css3-svgrepo-com.svg';
 import Javascript_Icon from '../../assets/language-icons/javascript-svgrepo-com.svg';
@@ -21,7 +19,7 @@ function UltimateProjectCard(props) {
       <div className="group box w-[400px] h-[505px] overflow-hidden bg-white rounded-2xl border-none mb-8 cursor-pointer relative hover:shadow-2xl hover:shadow-white	">
         <div className="w-full rounded-2xl overflow-hidden">
           <img
-            src={InteractiveRatingPreview}
+            src={`${props.previewImage}`}
             alt="qr_code_preview"
             className="w-full rounded-2xl duration-300 transform scale-100 group-hover:scale-108 transition-transform"
           />
@@ -40,12 +38,14 @@ function UltimateProjectCard(props) {
               <img src={Tailwind_Icon} alt="html5_icon" title="HTML5" className={`w-lang-width ${props.tailwindTF ? 'inline' : 'hidden'}`} />
               <img src={Bootstrap_Icon} alt="html5_icon" title="HTML5" className={`w-lang-width ${props.bootstrapTF ? 'inline' : 'hidden'}`} />
               <img src={JSON_Icon} alt="html5_icon" title="HTML5" className={`w-lang-width ${props.jsonTF ? 'inline' : 'hidden'}`} />
-              <img src={API_Icon} alt="html5_icon" title="HTML5" className={`w-lang-width ${props.apiTF ? 'inline' : 'hidden'}`} />            
+              <img src={API_Icon} alt="html5_icon" title="HTML5" className={`w-lang-width ${props.apiTF ? 'inline' : 'hidden'}`} />
             </div>
 
-            <div className="w-[30px] flex flex-col absolute top-4 -right-8 bg-white border-2 border-solid border-transparent rounded-full">
-              <img src={Info_Icon} alt="info_icon" className="mb-1" />
-              <img src={FrontendMentor} alt="frontendmentor_icon" />
+            <div className={`w-[30px] ${props.frontendmentorTF ? 'flex' : 'hidden'} flex-col absolute top-4 -right-8 bg-white border-2 border-solid border-transparent rounded-full hover:bg-nav-gradient-1`}>
+              <a href={props.challengeInfo} target="_blank">
+                <img src={Info_Icon} alt="info_icon" className="mb-1" />
+                <img src={FrontendMentor} alt="frontendmentor_icon" />
+              </a>
             </div>
           </div>
 
@@ -63,7 +63,6 @@ function UltimateProjectCard(props) {
     </>
   );
 };
-
 
 
 export default UltimateProjectCard;

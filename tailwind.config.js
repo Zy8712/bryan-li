@@ -15,6 +15,9 @@ export default {
         'nav-gradient-1': '#DDBDFC',
         'nav-gradient-2': '#96C8FB',
 
+        'filter-gradient-1': '#36D1DC',
+        'filter-gradient-2': '#5B86E5',
+
         'qr-code-light-gray': 'hsl(212, 45%, 89%)',
         'qr-code-grayish-blue': 'hsl(220, 15%, 55%)',
         'qr-code-dark-blue': 'hsl(218, 44%, 22%)',
