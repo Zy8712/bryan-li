@@ -14,6 +14,15 @@ export default {
 
         'nav-gradient-1': '#DDBDFC',
         'nav-gradient-2': '#96C8FB',
+
+        'qr-code-light-gray': 'hsl(212, 45%, 89%)',
+        'qr-code-grayish-blue': 'hsl(220, 15%, 55%)',
+        'qr-code-dark-blue': 'hsl(218, 44%, 22%)',
+
+        'interactive-rating-light-gray': 'hsl(217, 12%, 63%)',
+        'interactive-rating-dark-blue': 'hsl(213, 19%, 18%)',
+        'interactive-rating-custom-dark-blue': 'hsl(215, 21%, 16%)',
+        'interactive-rating-very-dark-blue': 'hsl(216, 12%, 8%)',
       },
       fontFamily: {
         'theme-rubik': ['Rubik', 'sans-serif'], 
