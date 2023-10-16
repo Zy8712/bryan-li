@@ -3,7 +3,7 @@ import Lottie from 'react-lottie-player';
 
 import CardQrCodeCompTrial1 from '../components/project-cards/CardQrCodeCompTrial1';
 import CardInteractiveRatingCompTrial1 from '../components/project-cards/CardInteractiveRatingCompTrial1';
-import UltimateProjectCard from '../components/project-cards/UltimateProjectCard';
+import UltimateProjectCard from '../components/UltimateProjectCard';
 import ProjectFilters from '../components/ProjectFilters';
 
 import PreviewImage from '../assets/project-previews/interactiveratingcomp-desktop-preview.jpg';
@@ -45,19 +45,18 @@ function Portfolio() {
             websitepreview="https://www.google.ca/"
             frontendmentorTF={true}
             challengeInfo="https://www.youtube.com/"
-            iconCount="6"
             htmlTF={true}
             cssTF={true}
             javascriptTF={true}
-            sassTF={true}
-            reactTF={true}
-            tailwindTF={true}
+            sassTF={false}
+            reactTF={false}
+            tailwindTF={false}
             bootstrapTF={false}
             jsonTF={false}
             apiTF={false}
-            gradientOne="interactive-rating-light-gray"
-            gradientTwo="interactive-rating-very-dark-blue"
           />
+
+          <CardQrCodeCompTrial1 />
 
 
 
