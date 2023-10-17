@@ -7,7 +7,11 @@ import CardOrderSummaryCompTrial1 from '../components/project-cards/CardOrderSum
 import CardProfileCardCompTrial1 from '../components/project-cards/CardProfileCardCompTrial1';
 import CardResultsSummaryCompTrial1 from '../components/project-cards/CardResultsSummaryCompTrial1';
 import Card3ColumnPreviewCardCompTrial1 from '../components/project-cards/Card3ColumnPreviewCardCompTrial1';
-
+import CardProductPreviewCardCompTrial1 from '../components/project-cards/CardProductPreviewCardCompTrial1';
+import CardNFTPreviewCardCompTrial1 from '../components/project-cards/CardNFTPreviewCardCompTrial1';
+import CardStatsPreviewCardCompTrial1 from '../components/project-cards/CardStatsPreviewCardCompTrial1';
+import CardFaqAccordionCardTrial1 from '../components/project-cards/CardFaqAccordionCardTrial1';
+import CardArticlePreviewCompTrial1 from '../components/project-cards/CardArticlePreviewCompTrial1';
 
 import ProjectFilters from '../components/ProjectFilters';
 
@@ -40,6 +44,11 @@ function Portfolio() {
 
           <ProjectFilters />
 
+          <CardArticlePreviewCompTrial1 />
+          <CardFaqAccordionCardTrial1 />
+          <CardStatsPreviewCardCompTrial1 />
+          <CardNFTPreviewCardCompTrial1 />
+          <CardProductPreviewCardCompTrial1 />
           <Card3ColumnPreviewCardCompTrial1 />
           <CardResultsSummaryCompTrial1 />
           <CardProfileCardCompTrial1 />
