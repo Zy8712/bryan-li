@@ -27,7 +27,7 @@ function UltimateProjectCard(props) {
         </div>
 
         <div className={`h-[211.67px] text-white flex flex-col relative bg-gradient-to-b from-light-gray to-very-dark-blue`}>
-          <div className="mx-10 flex flex-col justify-between items-center text-center relative">
+          <div className="mx-11 flex flex-col justify-between items-center text-center relative">
             <span className="block mt-4 mb-3 text-2xl font-medium">{props.name}</span>
             <p className="mb-3">{props.date}</p>
             <div className="flex justify-center items-center">

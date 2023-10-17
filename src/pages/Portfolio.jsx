@@ -12,6 +12,14 @@ import CardNFTPreviewCardCompTrial1 from '../components/project-cards/CardNFTPre
 import CardStatsPreviewCardCompTrial1 from '../components/project-cards/CardStatsPreviewCardCompTrial1';
 import CardFaqAccordionCardTrial1 from '../components/project-cards/CardFaqAccordionCardTrial1';
 import CardArticlePreviewCompTrial1 from '../components/project-cards/CardArticlePreviewCompTrial1';
+import CardSocialProofSectionTrial1 from '../components/project-cards/CardSocialProofSectionTrial1';
+import CardFourCardFeatureSectionTrial1 from '../components/project-cards/CardFourCardFeatureSectionTrial1';
+import CardSinglePriceGridComponentTrial1 from '../components/project-cards/CardSinglePriceGridComponentTrial1';
+import CardQrCodeCompTrial2 from '../components/project-cards/CardQrCodeCompTrial2';
+import CardInteractiveRatingCompTrial2 from '../components/project-cards/CardInteractiveRatingCompTrial2';
+import Card3ColumnPreviewCardCompTrial2 from '../components/project-cards/Card3ColumnPreviewCardCompTrial2';
+import CardProfileCardCompTrial2 from '../components/project-cards/CardProfileCardCompTrial2';
+import CardQrCodeCompTrial3 from '../components/project-cards/CardQrCodeCompTrial3';
 
 import ProjectFilters from '../components/ProjectFilters';
 
@@ -44,6 +52,14 @@ function Portfolio() {
 
           <ProjectFilters />
 
+          <CardQrCodeCompTrial3 />
+          <CardProfileCardCompTrial2 />
+          <Card3ColumnPreviewCardCompTrial2 />
+          <CardInteractiveRatingCompTrial2 />
+          <CardQrCodeCompTrial2 />
+          <CardSinglePriceGridComponentTrial1 />
+          <CardFourCardFeatureSectionTrial1 />
+          <CardSocialProofSectionTrial1 />
           <CardArticlePreviewCompTrial1 />
           <CardFaqAccordionCardTrial1 />
           <CardStatsPreviewCardCompTrial1 />
