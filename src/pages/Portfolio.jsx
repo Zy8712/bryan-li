@@ -3,10 +3,13 @@ import Lottie from 'react-lottie-player';
 
 import CardQrCodeCompTrial1 from '../components/project-cards/CardQrCodeCompTrial1';
 import CardInteractiveRatingCompTrial1 from '../components/project-cards/CardInteractiveRatingCompTrial1';
-import UltimateProjectCard from '../components/UltimateProjectCard';
-import ProjectFilters from '../components/ProjectFilters';
+import CardOrderSummaryCompTrial1 from '../components/project-cards/CardOrderSummaryCompTrial1';
+import CardProfileCardCompTrial1 from '../components/project-cards/CardProfileCardCompTrial1';
+import CardResultsSummaryCompTrial1 from '../components/project-cards/CardResultsSummaryCompTrial1';
+import Card3ColumnPreviewCardCompTrial1 from '../components/project-cards/Card3ColumnPreviewCardCompTrial1';
 
-import PreviewImage from '../assets/project-previews/interactiveratingcomp-desktop-preview.jpg';
+
+import ProjectFilters from '../components/ProjectFilters';
 
 import ComputerLottie from '../assets/wired-gradient-478-computer-display.json';
 import CodeLottie from '../assets/wired-gradient-742-multimedia-code-1.json';
@@ -37,27 +40,12 @@ function Portfolio() {
 
           <ProjectFilters />
 
-          <UltimateProjectCard
-            name="Interactive Rating Component"
-            date="Completed: June 8th, 2023 [Trial #1]"
-            previewImage={PreviewImage}
-            githubrepo="https://github.com/Zy8712/frontend-mentor-challenges/blob/main/interactive-rating-component/my-work/style.css"
-            websitepreview="https://www.google.ca/"
-            frontendmentorTF={true}
-            challengeInfo="https://www.youtube.com/"
-            htmlTF={true}
-            cssTF={true}
-            javascriptTF={true}
-            sassTF={false}
-            reactTF={false}
-            tailwindTF={false}
-            bootstrapTF={false}
-            jsonTF={false}
-            apiTF={false}
-          />
-
+          <Card3ColumnPreviewCardCompTrial1 />
+          <CardResultsSummaryCompTrial1 />
+          <CardProfileCardCompTrial1 />
+          <CardOrderSummaryCompTrial1 />
+          <CardInteractiveRatingCompTrial1 />
           <CardQrCodeCompTrial1 />
-
 
 
         </div>
