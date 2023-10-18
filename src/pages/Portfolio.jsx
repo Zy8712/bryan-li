@@ -4,6 +4,8 @@ import PortfolioHeader from '../components/portfolio-page-main-assets/PortfolioH
 import ProjectFilters from '../components/portfolio-page-main-assets/ProjectFilters';
 
 import FemNewbie from '../components/frontend-mentor-filter-boxes/FemNewbie';
+import FemJunior from '../components/frontend-mentor-filter-boxes/FemJunior';
+import FemIntermediate from '../components/frontend-mentor-filter-boxes/FemIntermediate';
 import FemAdvanced from '../components/frontend-mentor-filter-boxes/FemAdvanced';
 
 function Portfolio() {
@@ -16,7 +18,9 @@ function Portfolio() {
 
           <ProjectFilters />
           {/* <FemNewbie /> */}
-          <FemAdvanced />
+          <FemJunior />
+          {/*<FemIntermediate /> */}
+          {/*<FemAdvanced /> */}
 
         </div>
       </div>
