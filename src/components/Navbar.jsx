@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className="w-full h-full flex justify-between items-center border-none">
 
         <div className="ml-8 flex justify-between items-center w-[250px]">
-          <div className="w-[68px] h-[68px] flex justify-center items-center rounded-full bg-gradient-to-br from-gradient-blue to-gradient-purple transition duration-200 hover:rotate-180 hover:cursor-pointer relative">
+          <div className="w-[68px] h-[68px] animate-pulse flex justify-center items-center rounded-full bg-gradient-to-br from-gradient-blue to-gradient-purple transition duration-200 hover:rotate-180 hover:cursor-pointer relative">
             <div className="w-[60px] h-[60px] rounded-full overflow-hidden">
               <img className="w-full h-full transition duration-200 transform hover:-rotate-180" src={Profile_Pic} alt="profile_img" />
             </div>

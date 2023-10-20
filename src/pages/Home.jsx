@@ -1,5 +1,6 @@
 import React from 'react';
 import Lottie from 'react-lottie-player';
+import { Link, Route } from 'wouter';
 
 import AstronautLottie from '../assets/Animation-1697251945018.json';
 
@@ -22,6 +23,8 @@ import LeetCode from '../assets/social-icons/leetcode-svgrepo-com.svg';
 import FreeCodeCamp from '../assets/social-icons/freecodecamp-svgrepo-com.svg';
 import Medium from '../assets/social-icons/medium-svgrepo-com.svg';
 
+import "../App.css";
+
 const Home = () => {
   return (
     <>
@@ -36,14 +39,43 @@ const Home = () => {
                 <p className="text-white text-lg mt-5 mr-10">Hi there, I'm Bryan Li. A dedicated Frontend Developer and a recent graduate with a Specialized Honours degree from York University. </p>
               </div>
 
-              <div className="w-[360px] h-[50px] ml-8 mt-4 flex justify-between items-center">
-                <img src={GitHub} alt="github_icon" title="GitHub" className="w-[32px] hover:cursor-pointer hover:scale-125" />
-                <img src={LinkedIn} alt="linkedin_icon" title="LinkedIn" className="w-[40px] hover:cursor-pointer hover:scale-125" />
-                <img src={Credly} alt="credly_icon" title="Credly" className="w-[32px] hover:cursor-pointer hover:scale-125" />
-                <img src={FrontendMentor} alt="credly_icon" title="Frontend Mentor" className="w-[32px] hover:cursor-pointer hover:scale-125" />
-                <img src={LeetCode} alt="credly_icon" title="LeetCode" className="w-[32px] hover:cursor-pointer hover:scale-125" />
-                <img src={FreeCodeCamp} alt="freecodecamp_icon" title="freeCodeCamp" className="w-[32px] hover:cursor-pointer hover:scale-125" />
-                <img src={Medium} alt="medium_icon" title="Medium" className="w-[32px] hover:cursor-pointer hover:scale-125" />
+              <div className="w-[360px] h-[50px] ml-8 mt-6 flex justify-between items-center">
+                <a href="https://github.com/Zy8712" target="_blank">
+                  <img src={GitHub} alt="github_icon" title="GitHub" className="w-[32px] hover:cursor-pointer hover:scale-125" />
+                </a>
+                <a href="https://www.linkedin.com/in/bryan-li712/" target="_blank">
+                  <img src={LinkedIn} alt="linkedin_icon" title="LinkedIn" className="w-[40px] hover:cursor-pointer hover:scale-125" />
+                </a>
+                <a href="https://www.credly.com/users/bryan-li712" target="_blank">
+                  <img src={Credly} alt="credly_icon" title="Credly" className="w-[32px] hover:cursor-pointer hover:scale-125" />
+                </a>
+                <a href="https://www.frontendmentor.io/profile/Zy8712" target="_blank">
+                  <img src={FrontendMentor} alt="credly_icon" title="Frontend Mentor" className="w-[32px] hover:cursor-pointer hover:scale-125" />
+                </a>
+                <a href="https://leetcode.com/Zy8712/" target="_blank">
+                  <img src={LeetCode} alt="credly_icon" title="LeetCode" className="w-[32px] hover:cursor-pointer hover:scale-125" />
+                </a>
+                <a href="https://www.freecodecamp.org/bryan-li712" target="_blank">
+                  <img src={FreeCodeCamp} alt="freecodecamp_icon" title="freeCodeCamp" className="w-[32px] hover:cursor-pointer hover:scale-125" />
+                </a>
+                <a href="https://medium.com/@bryan-li712" target="_blank">
+                  <img src={Medium} alt="medium_icon" title="Medium" className="w-[32px] hover:cursor-pointer hover:scale-125" />
+                </a>
+              </div>
+
+              <div className="w-[450px] ml-8 mt-12 flex justify-between">
+                <Link to="/portfolio">
+                  <button className="border-4 border-solid border-white rounded-xl py-4 px-7 text-white font-medium flex justify-between items-center hover:bg-gradient-to-tr from-gradient-purple to-gradient-blue">
+                    View My Projects
+                    <i className="las la-angle-double-right ml-1 text-xl arrow-animation"></i>
+                  </button>
+                </Link>
+                <Link to="/about">
+                  <button className="border-4 border-solid border-white rounded-xl py-4 px-7 text-white font-medium flex justify-between items-center hover:bg-gradient-to-tr from-gradient-purple to-gradient-blue">
+                    About Me
+                    <i className="las la-angle-double-right ml-1 text-xl arrow-animation"></i>
+                  </button>
+                </Link>
               </div>
 
             </div>
