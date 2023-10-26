@@ -11,17 +11,9 @@ import SASS_Icon from '../assets/language-icons/scss2-svgrepo-com.svg';
 import React_Icon from '../assets/language-icons/react-1-logo-svgrepo-com.svg';
 import Tailwind_Icon from '../assets/language-icons/tailwind-svgrepo-com.svg';
 import Bootstrap_Icon from '../assets/language-icons/bootstrap-fill-svgrepo-com.svg';
-import JSON_Icon from '../assets/language-icons/json-official-svgrepo-com.svg';
-import API_Icon from '../assets/language-icons/api-svgrepo-com.svg';
 
+import SocialIcons from '../components/SocialIcons';
 
-import GitHub from '../assets/social-icons/github-142-svgrepo-com.svg';
-import LinkedIn from '../assets/social-icons/linkedin-svgrepo-com.svg';
-import Credly from '../assets/social-icons/credly-svgrepo-com.svg';
-import FrontendMentor from '../assets/social-icons/frontendmentor-svgrepo-com.svg';
-import LeetCode from '../assets/social-icons/leetcode-svgrepo-com.svg';
-import FreeCodeCamp from '../assets/social-icons/freecodecamp-svgrepo-com.svg';
-import Medium from '../assets/social-icons/medium-svgrepo-com.svg';
 
 import "../App.css";
 
@@ -40,27 +32,7 @@ const Home = () => {
               </div>
 
               <div className="w-[360px] h-[50px] ml-8 mt-6 flex justify-between items-center">
-                <a href="https://github.com/Zy8712" target="_blank">
-                  <img src={GitHub} alt="github_icon" title="GitHub" className="w-[32px] hover:cursor-pointer hover:scale-125" />
-                </a>
-                <a href="https://www.linkedin.com/in/bryan-li712/" target="_blank">
-                  <img src={LinkedIn} alt="linkedin_icon" title="LinkedIn" className="w-[40px] hover:cursor-pointer hover:scale-125" />
-                </a>
-                <a href="https://www.credly.com/users/bryan-li712" target="_blank">
-                  <img src={Credly} alt="credly_icon" title="Credly" className="w-[32px] hover:cursor-pointer hover:scale-125" />
-                </a>
-                <a href="https://www.frontendmentor.io/profile/Zy8712" target="_blank">
-                  <img src={FrontendMentor} alt="credly_icon" title="Frontend Mentor" className="w-[32px] hover:cursor-pointer hover:scale-125" />
-                </a>
-                <a href="https://leetcode.com/Zy8712/" target="_blank">
-                  <img src={LeetCode} alt="credly_icon" title="LeetCode" className="w-[32px] hover:cursor-pointer hover:scale-125" />
-                </a>
-                <a href="https://www.freecodecamp.org/bryan-li712" target="_blank">
-                  <img src={FreeCodeCamp} alt="freecodecamp_icon" title="freeCodeCamp" className="w-[32px] hover:cursor-pointer hover:scale-125" />
-                </a>
-                <a href="https://medium.com/@bryan-li712" target="_blank">
-                  <img src={Medium} alt="medium_icon" title="Medium" className="w-[32px] hover:cursor-pointer hover:scale-125" />
-                </a>
+                <SocialIcons />
               </div>
 
               <div className="w-[450px] ml-8 mt-12 flex justify-between">
