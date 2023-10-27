@@ -4,6 +4,8 @@ import AboutHeader from '../components/about-page-main-assets/AboutHeader';
 import EducationCerticationButtonSwitcher from '../components/about-page-main-assets/EducationCertificationButtonSwitcher'
 import AboutIntroduction from '../components/about-page-main-assets/AboutIntroduction';
 
+import EducationBox from '../components/about-page-main-assets/EducationBox'
+
 function About() {
   return (
     <>
@@ -12,6 +14,8 @@ function About() {
           <AboutHeader />
           <AboutIntroduction />
           <EducationCerticationButtonSwitcher />
+
+          <EducationBox />
           
         </div>
       </div>

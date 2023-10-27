@@ -8,6 +8,7 @@ export default {
     extend: {
       colors:{
         'translucent-white': 'rgba(255,255,255,0.55)',
+        'translucent-white-2': 'rgba(255,255,255,0.15)',
 
         'gradient-blue': 'hsl(192, 100%, 67%)',
         'gradient-purple': 'hsl(280, 87%, 65%)',

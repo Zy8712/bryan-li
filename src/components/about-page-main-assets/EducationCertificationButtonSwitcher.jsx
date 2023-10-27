@@ -8,8 +8,8 @@ import CertificationLottie from '../../assets/wired-gradient-120-folder.json';
 function PortfolioHeader() {
     return (
         <>
-            <div className="w-[600px] h-[60px] flex items-center">
-                <div className="w-1/2 h-full flex  border-white border-2 border-solid items-center">
+            <div className="w-[660px] h-[65px]  border-white border-2 border-solid rounded-t-xl  flex items-center">
+                <div className="w-1/3 h-full flex justify-center items-center hover:bg-translucent-white-2 hover:cursor-pointer hover:rounded-xl">
                     <div>
                         <Lottie
                             loop
@@ -21,7 +21,8 @@ function PortfolioHeader() {
                     </div>
                     <span className="text-white text-xl ml-3">Education</span>
                 </div>
-                <div className="w-1/2 h-full flex border-white border-2 border-solid items-center">
+
+                <div className="w-1/3 h-full flex justify-center items-center hover:bg-translucent-white-2 hover:cursor-pointer hover:rounded-xl">
                     <div>
                         <Lottie
                             loop
@@ -31,7 +32,20 @@ function PortfolioHeader() {
                             style={{ width: 40, height: 40 }}
                         />
                     </div>
-                    <span className="text-white text-xl ml-3">Certificates/Credentials</span>
+                    <span className="text-white text-xl ml-3">Work Experience</span>
+                </div>
+
+                <div className="w-1/3 h-full flex justify-center items-center hover:bg-translucent-white-2 hover:cursor-pointer hover:rounded-xl">
+                    <div>
+                        <Lottie
+                            loop
+                            animationData={CertificationLottie}
+                            play
+                            speed={0.3}
+                            style={{ width: 40, height: 40 }}
+                        />
+                    </div>
+                    <span className="text-white text-xl ml-3">Certificates</span>
                 </div>
             </div>
         </>
