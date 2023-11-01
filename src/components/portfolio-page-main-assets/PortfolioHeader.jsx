@@ -15,7 +15,10 @@ function PortfolioHeader() {
                     speed={0.3}
                     style={{ width: 80, height: 80 }}
                 />
-                <h1 className="text-white text-7xl mx-6 text-center">My Projects</h1>
+                <div className="flex flex-col items-center">
+                    <h2 className="text-gradient-blue font-semibold uppercase">Portfolio</h2>
+                    <h1 className="text-white text-7xl mx-6 text-center uppercase">My Projects</h1>
+                </div>
                 <Lottie
                     loop
                     animationData={CodeLottie}

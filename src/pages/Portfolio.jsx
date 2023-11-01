@@ -12,7 +12,7 @@ function Portfolio() {
   return (
     <>
       <div className="w-full h-auto pt-[100px] flex justify-center items-center bg-transparent border-none">
-        <div className="w-11/12 h-full flex flex-wrap justify-around border-2 border-solid border-white">
+        <div className="w-11/12 h-full flex flex-wrap justify-around">
 
           <PortfolioHeader />
 
