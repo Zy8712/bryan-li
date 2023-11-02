@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { Link, Route } from 'wouter';
+import { Link, Route, useLocation } from 'wouter';
 import Profile_Pic from "../assets/profile-picture.jpg";
 
 const Navbar = () => {
   const [currPage, setCurrPage] = useState(1);
+  const [location] = useLocation();
 
   return (
     <nav className="w-full h-20 bg-transparent border-none absolute z-50">
@@ -25,16 +26,16 @@ const Navbar = () => {
         </div>
 
         <div className="w-[400px] h-[50px] mr-8 px-1 flex justify-around items-center bg-translucent-white backdrop-blur-lg rounded-full">
-          <Link to="/" className="text-white py-2 px-5 hover:rounded-full hover:backdrop-blur-3xl  hover:bg-gradient-to-tr from-nav-gradient-1 to-nav-gradient-2">
+          <Link to="/" className={`text-white py-2 px-5 rounded-full ${location === '/' ? 'backdrop-blur-3xl bg-gradient-to-tr from-nav-gradient-1 to-nav-gradient-2' : 'hover:bg-light-gray hover:opacity-95' }`}>
             Home
           </Link>
-          <Link to="/about" className="text-white py-2 px-5 hover:rounded-full hover:backdrop-blur-3xl  hover:bg-gradient-to-tr from-nav-gradient-1 to-nav-gradient-2">
+          <Link to="/about" className={`text-white py-2 px-5 rounded-full ${location === '/about' ? 'backdrop-blur-3xl bg-gradient-to-tr from-nav-gradient-1 to-nav-gradient-2' : 'hover:bg-light-gray hover:opacity-95' }`}>
             About
           </Link>
-          <Link to="/portfolio" className="text-white py-2 px-5 hover:rounded-full hover:backdrop-blur-3xl hover:bg-gradient-to-tr from-nav-gradient-1 to-nav-gradient-2">
+          <Link to="/portfolio" className={`text-white py-2 px-5 rounded-full ${location === '/portfolio' ? 'backdrop-blur-3xl bg-gradient-to-tr from-nav-gradient-1 to-nav-gradient-2' : 'hover:bg-light-gray hover:opacity-95' }`}>
             Portfolio
           </Link>
-          <Link to="/contact" className="text-white py-2 px-5 hover:rounded-full hover:backdrop-blur-3xl hover:bg-gradient-to-tr from-nav-gradient-1 to-nav-gradient-2">
+          <Link to="/contact" className={`text-white py-2 px-5 rounded-full ${location === '/contact' ? 'backdrop-blur-3xl bg-gradient-to-tr from-nav-gradient-1 to-nav-gradient-2' : 'hover:bg-light-gray hover:opacity-95' }`}>
             Contact
           </Link>
         </div>

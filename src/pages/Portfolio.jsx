@@ -8,6 +8,10 @@ import FemJunior from '../components/frontend-mentor-filter-boxes/FemJunior';
 import FemIntermediate from '../components/frontend-mentor-filter-boxes/FemIntermediate';
 import FemAdvanced from '../components/frontend-mentor-filter-boxes/FemAdvanced';
 
+import FeaturedProjectsBox from "../components/portfolio-page-main-assets/project-boxes/FeaturedProjectsBox";
+import FemProjectsBox from "../components/portfolio-page-main-assets/project-boxes/FemProjectsBox";
+import PersonalProjectsBox from "../components/portfolio-page-main-assets/project-boxes/PersonalProjectsBox";
+
 function Portfolio() {
   return (
     <>

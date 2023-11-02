@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import ExperienceButtonSwitcher from './ExperienceButtonSwitcher';
+import WorkExperienceBox from './WorkExperienceBox';
+import VolExperienceBox from './VolunteerExperienceBox';
+import HackExperienceBox from './HackathonExperienceBox';
 
 function ExperienceBox() {
     const [showWorkExp, setShowWorkExp] = useState(true);
@@ -41,6 +44,21 @@ function ExperienceBox() {
                     toggleVolExp={toggleVolExp}
                     toggleHackExp={toggleHackExp}
                 />
+
+                {showWorkExp ? (
+                    <WorkExperienceBox />
+                ) : ''
+                }
+
+                {showVolExp ? (
+                    <VolExperienceBox />
+                ) : ''
+                }
+
+                {showHackExp ? (
+                    <HackExperienceBox />
+                ) : ''
+                }
             </div>
         </>
     );
