@@ -1,30 +1,196 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import PortfolioHeader from '../components/portfolio-page-main-assets/PortfolioHeader';
 import ProjectFilters from '../components/portfolio-page-main-assets/ProjectFilters';
 
-import FemNewbie from '../components/frontend-mentor-filter-boxes/FemNewbie';
-import FemJunior from '../components/frontend-mentor-filter-boxes/FemJunior';
-import FemIntermediate from '../components/frontend-mentor-filter-boxes/FemIntermediate';
-import FemAdvanced from '../components/frontend-mentor-filter-boxes/FemAdvanced';
-
 import FeaturedProjectsBox from "../components/portfolio-page-main-assets/project-boxes/FeaturedProjectsBox";
 import FemProjectsBox from "../components/portfolio-page-main-assets/project-boxes/FemProjectsBox";
+{/*
 import PersonalProjectsBox from "../components/portfolio-page-main-assets/project-boxes/PersonalProjectsBox";
 
+import HTML_CSS_ProjectsBox from "../components/portfolio-page-main-assets/project-boxes/HTML_CSS_ProjectsBox";
+import VanillaJSProjectsBox from "../components/portfolio-page-main-assets/project-boxes/VanillaJSProjectsBox";
+import ReactProjectsBox from "../components/portfolio-page-main-assets/project-boxes/ReactProjectsBox";
+import TailwindCSSProjects from "../components/portfolio-page-main-assets/project-boxes/TailwindCSSProjects";
+import JSONProjectsBox from "../components/portfolio-page-main-assets/project-boxes/JSONProjectsBox";
+import APIProjectsBox from "../components/portfolio-page-main-assets/project-boxes/APIProjectsBox"; */}
+
 function Portfolio() {
+  const [showFeaturedProjects, setShowFeaturedProjects] = useState(false);
+  const [showFemProjects, setShowFemProjects] = useState(true);
+  const [showPersonalProjects, setShowPersonalProjects] = useState(false);
+
+  const [showHTMLCSSProjects, setShowHTMLCSSProjects] = useState(false);
+  const [showVanillaJSProjects, setShowVanillaJSProjects] = useState(false);
+  const [showReactProjects, setShowReactProjects] = useState(false);
+  const [showTailwindCSSProjects, setShowTailwindCSSProjects] = useState(false);
+  const [showJSONProjects, setShowJSONProjects] = useState(false);
+  const [showAPIProjects, setShowAPIProjects] = useState(false);
+
+  const toggleFeaturedProjects = () => {
+    if (showFeaturedProjects == false){
+      setShowFeaturedProjects(true);
+      setShowFemProjects(false);
+      setShowPersonalProjects(false);
+      setShowHTMLCSSProjects(false);
+      setShowVanillaJSProjects(false);
+      setShowReactProjects(false);
+      setShowTailwindCSSProjects(false);
+      setShowJSONProjects(false);
+      setShowAPIProjects(false);
+    }
+  } 
+
+  const toggleFemProjects = () => {
+    if (showFemProjects == false){
+      setShowFeaturedProjects(false);
+      setShowFemProjects(true);
+      setShowPersonalProjects(false);
+      setShowHTMLCSSProjects(false);
+      setShowVanillaJSProjects(false);
+      setShowReactProjects(false);
+      setShowTailwindCSSProjects(false);
+      setShowJSONProjects(false);
+      setShowAPIProjects(false);
+    }
+  } 
+
+  const togglePersonalProjects = () => {
+    if (showPersonalProjects == false){
+      setShowFeaturedProjects(false);
+      setShowFemProjects(false);
+      setShowPersonalProjects(true);
+      setShowHTMLCSSProjects(false);
+      setShowVanillaJSProjects(false);
+      setShowReactProjects(false);
+      setShowTailwindCSSProjects(false);
+      setShowJSONProjects(false);
+      setShowAPIProjects(false);
+    }
+  } 
+
+  const toggleHTMLCSSProjects = () => {
+    if (showHTMLCSSProjects == false){
+      setShowFeaturedProjects(false);
+      setShowFemProjects(false);
+      setShowPersonalProjects(false);
+      setShowHTMLCSSProjects(true);
+      setShowVanillaJSProjects(false);
+      setShowReactProjects(false);
+      setShowTailwindCSSProjects(false);
+      setShowJSONProjects(false);
+      setShowAPIProjects(false);
+    }
+  } 
+
+  const toggleVanillaJSProjects = () => {
+    if (showVanillaJSProjects == false){
+      setShowFeaturedProjects(false);
+      setShowFemProjects(false);
+      setShowPersonalProjects(false);
+      setShowHTMLCSSProjects(false);
+      setShowVanillaJSProjects(true);
+      setShowReactProjects(false);
+      setShowTailwindCSSProjects(false);
+      setShowJSONProjects(false);
+      setShowAPIProjects(false);
+    }
+  } 
+
+  const toggleReactProjects = () => {
+    if (showReactProjects == false){
+      setShowFeaturedProjects(false);
+      setShowFemProjects(false);
+      setShowPersonalProjects(false);
+      setShowHTMLCSSProjects(false);
+      setShowVanillaJSProjects(false);
+      setShowReactProjects(true);
+      setShowTailwindCSSProjects(false);
+      setShowJSONProjects(false);
+      setShowAPIProjects(false);
+    }
+  } 
+
+  const toggleTailwindCSSProjects = () => {
+    if (showTailwindCSSProjects == false){
+      setShowFeaturedProjects(false);
+      setShowFemProjects(false);
+      setShowPersonalProjects(false);
+      setShowHTMLCSSProjects(false);
+      setShowVanillaJSProjects(false);
+      setShowReactProjects(false);
+      setShowTailwindCSSProjects(true);
+      setShowJSONProjects(false);
+      setShowAPIProjects(false);
+    }
+  } 
+
+  const toggleJSONProjects = () => {
+    if (showJSONProjects == false){
+      setShowFeaturedProjects(false);
+      setShowFemProjects(false);
+      setShowPersonalProjects(false);
+      setShowHTMLCSSProjects(false);
+      setShowVanillaJSProjects(false);
+      setShowReactProjects(false);
+      setShowTailwindCSSProjects(false);
+      setShowJSONProjects(true);
+      setShowAPIProjects(false);
+    }
+  } 
+
+  const toggleAPIProjects = () => {
+    if (showAPIProjects == false){
+      setShowFeaturedProjects(false);
+      setShowFemProjects(false);
+      setShowPersonalProjects(false);
+      setShowHTMLCSSProjects(false);
+      setShowVanillaJSProjects(false);
+      setShowReactProjects(false);
+      setShowTailwindCSSProjects(false);
+      setShowJSONProjects(false);
+      setShowAPIProjects(true);
+    }
+  } 
+
   return (
     <>
       <div className="w-full h-auto pt-[100px] flex justify-center items-center bg-transparent border-none">
-        <div className="w-11/12 h-full flex flex-wrap justify-around">
+        <div className="w-11/12 h-full flex flex-col flex-wrap items-center">
 
           <PortfolioHeader />
 
-          <ProjectFilters />
-          {/* <FemNewbie /> */}
-          <FemJunior />
-          {/*<FemIntermediate /> */}
-          {/*<FemAdvanced /> */}
+          <ProjectFilters
+            showFeaturedProjects={showFeaturedProjects}
+            showFemProjects={showFemProjects}
+            showPersonalProjects={showPersonalProjects}
+            showHTMLCSSProjects={showHTMLCSSProjects}
+            showVanillaJSProjects={showVanillaJSProjects}
+            showReactProjects={showReactProjects}
+            showTailwindCSSProjects={showTailwindCSSProjects}
+            showJSONProjects={showJSONProjects}
+            showAPIProjects={showAPIProjects}
+
+            toggleFeaturedProjects={toggleFeaturedProjects}
+            toggleFemProjects={toggleFemProjects}
+            togglePersonalProjects={togglePersonalProjects}
+            toggleHTMLCSSProjects={toggleHTMLCSSProjects}
+            toggleVanillaJSProjects={toggleVanillaJSProjects}
+            toggleReactProjects={toggleReactProjects}
+            toggleTailwindCSSProjects={toggleTailwindCSSProjects}
+            toggleJSONProjects={toggleJSONProjects}
+            toggleAPIProjects={toggleAPIProjects}
+          />
+
+          {showFeaturedProjects ? (
+            <FeaturedProjectsBox />
+          ) : ''
+          }
+
+          {showFemProjects ? (
+            <FemProjectsBox />
+          ): ''
+          }
 
         </div>
       </div>
