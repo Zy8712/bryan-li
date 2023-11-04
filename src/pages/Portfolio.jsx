@@ -5,15 +5,14 @@ import ProjectFilters from '../components/portfolio-page-main-assets/ProjectFilt
 
 import FeaturedProjectsBox from "../components/portfolio-page-main-assets/project-boxes/FeaturedProjectsBox";
 import FemProjectsBox from "../components/portfolio-page-main-assets/project-boxes/FemProjectsBox";
-{/*
 import PersonalProjectsBox from "../components/portfolio-page-main-assets/project-boxes/PersonalProjectsBox";
 
 import HTML_CSS_ProjectsBox from "../components/portfolio-page-main-assets/project-boxes/HTML_CSS_ProjectsBox";
 import VanillaJSProjectsBox from "../components/portfolio-page-main-assets/project-boxes/VanillaJSProjectsBox";
 import ReactProjectsBox from "../components/portfolio-page-main-assets/project-boxes/ReactProjectsBox";
-import TailwindCSSProjects from "../components/portfolio-page-main-assets/project-boxes/TailwindCSSProjects";
+import TailwindCSSProjectsBox from "../components/portfolio-page-main-assets/project-boxes/TailwindCSSProjects";
 import JSONProjectsBox from "../components/portfolio-page-main-assets/project-boxes/JSONProjectsBox";
-import APIProjectsBox from "../components/portfolio-page-main-assets/project-boxes/APIProjectsBox"; */}
+import APIProjectsBox from "../components/portfolio-page-main-assets/project-boxes/APIProjectsBox";
 
 function Portfolio() {
   const [showFeaturedProjects, setShowFeaturedProjects] = useState(false);
@@ -28,7 +27,7 @@ function Portfolio() {
   const [showAPIProjects, setShowAPIProjects] = useState(false);
 
   const toggleFeaturedProjects = () => {
-    if (showFeaturedProjects == false){
+    if (showFeaturedProjects == false) {
       setShowFeaturedProjects(true);
       setShowFemProjects(false);
       setShowPersonalProjects(false);
@@ -39,10 +38,10 @@ function Portfolio() {
       setShowJSONProjects(false);
       setShowAPIProjects(false);
     }
-  } 
+  }
 
   const toggleFemProjects = () => {
-    if (showFemProjects == false){
+    if (showFemProjects == false) {
       setShowFeaturedProjects(false);
       setShowFemProjects(true);
       setShowPersonalProjects(false);
@@ -53,10 +52,10 @@ function Portfolio() {
       setShowJSONProjects(false);
       setShowAPIProjects(false);
     }
-  } 
+  }
 
   const togglePersonalProjects = () => {
-    if (showPersonalProjects == false){
+    if (showPersonalProjects == false) {
       setShowFeaturedProjects(false);
       setShowFemProjects(false);
       setShowPersonalProjects(true);
@@ -67,10 +66,10 @@ function Portfolio() {
       setShowJSONProjects(false);
       setShowAPIProjects(false);
     }
-  } 
+  }
 
   const toggleHTMLCSSProjects = () => {
-    if (showHTMLCSSProjects == false){
+    if (showHTMLCSSProjects == false) {
       setShowFeaturedProjects(false);
       setShowFemProjects(false);
       setShowPersonalProjects(false);
@@ -81,10 +80,10 @@ function Portfolio() {
       setShowJSONProjects(false);
       setShowAPIProjects(false);
     }
-  } 
+  }
 
   const toggleVanillaJSProjects = () => {
-    if (showVanillaJSProjects == false){
+    if (showVanillaJSProjects == false) {
       setShowFeaturedProjects(false);
       setShowFemProjects(false);
       setShowPersonalProjects(false);
@@ -95,10 +94,10 @@ function Portfolio() {
       setShowJSONProjects(false);
       setShowAPIProjects(false);
     }
-  } 
+  }
 
   const toggleReactProjects = () => {
-    if (showReactProjects == false){
+    if (showReactProjects == false) {
       setShowFeaturedProjects(false);
       setShowFemProjects(false);
       setShowPersonalProjects(false);
@@ -109,10 +108,10 @@ function Portfolio() {
       setShowJSONProjects(false);
       setShowAPIProjects(false);
     }
-  } 
+  }
 
   const toggleTailwindCSSProjects = () => {
-    if (showTailwindCSSProjects == false){
+    if (showTailwindCSSProjects == false) {
       setShowFeaturedProjects(false);
       setShowFemProjects(false);
       setShowPersonalProjects(false);
@@ -123,10 +122,10 @@ function Portfolio() {
       setShowJSONProjects(false);
       setShowAPIProjects(false);
     }
-  } 
+  }
 
   const toggleJSONProjects = () => {
-    if (showJSONProjects == false){
+    if (showJSONProjects == false) {
       setShowFeaturedProjects(false);
       setShowFemProjects(false);
       setShowPersonalProjects(false);
@@ -137,10 +136,10 @@ function Portfolio() {
       setShowJSONProjects(true);
       setShowAPIProjects(false);
     }
-  } 
+  }
 
   const toggleAPIProjects = () => {
-    if (showAPIProjects == false){
+    if (showAPIProjects == false) {
       setShowFeaturedProjects(false);
       setShowFemProjects(false);
       setShowPersonalProjects(false);
@@ -151,7 +150,7 @@ function Portfolio() {
       setShowJSONProjects(false);
       setShowAPIProjects(true);
     }
-  } 
+  }
 
   return (
     <>
@@ -189,7 +188,43 @@ function Portfolio() {
 
           {showFemProjects ? (
             <FemProjectsBox />
-          ): ''
+          ) : ''
+          }
+
+          {showPersonalProjects ? (
+            <PersonalProjectsBox />
+          ) : ''
+          }
+
+          {showHTMLCSSProjects ? (
+            <HTML_CSS_ProjectsBox />
+          ) : ''
+          }
+
+
+          {showVanillaJSProjects ? (
+            <VanillaJSProjectsBox />
+          ) : ''
+          }
+
+          {showReactProjects ? (
+            <ReactProjectsBox />
+          ) : ''
+          }
+
+          {showTailwindCSSProjects ? (
+            <TailwindCSSProjectsBox />
+          ) : ''
+          }
+
+          {showJSONProjects ? (
+            <JSONProjectsBox />
+          ) : ''
+          }
+
+          {showAPIProjects ? (
+            <APIProjectsBox />
+          ) : ''
           }
 
         </div>

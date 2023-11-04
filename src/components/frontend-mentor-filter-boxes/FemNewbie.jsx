@@ -17,10 +17,12 @@ import CardInteractiveRatingCompTrial2 from '../project-cards/CardInteractiveRat
 import Card3ColumnPreviewCardCompTrial2 from '../project-cards/Card3ColumnPreviewCardCompTrial2';
 import CardProfileCardCompTrial2 from '../project-cards/CardProfileCardCompTrial2';
 import CardQrCodeCompTrial3 from '../project-cards/CardQrCodeCompTrial3';
+import CardPingSingleColumnComingSoonPageTrial1 from '../project-cards/CardPingSingleColumnComingSoonPageTrial1';
 
 function FemNewbie() {
     return (
         <>
+            <CardPingSingleColumnComingSoonPageTrial1 />
             <CardQrCodeCompTrial3 />
             <CardProfileCardCompTrial2 />
             <Card3ColumnPreviewCardCompTrial2 />

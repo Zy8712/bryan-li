@@ -10,11 +10,12 @@ import CardFyloDarkThemeLandingPageTrial1 from '../project-cards/CardFyloDarkThe
 import CardExpensesChartCompTrial1 from '../project-cards/CardExpensesChartCompTrial1';
 import CardAdviceGeneratorAppTrial2 from '../project-cards/CardAdviceGeneratorAppTrial2';
 import CardHuddleLandingPageWithAlternatingFeatureBlocksTrial1 from '../project-cards/CardHuddleLandingPageWithAlternatingFeatureBlocksTrial1';
-
+import CardClipboardLandingPageTrial1 from '../project-cards/CardClipboardLandingPageTrial1';
 
 function FemJunior() {
     return (
         <>
+            <CardClipboardLandingPageTrial1 />
             <CardHuddleLandingPageWithAlternatingFeatureBlocksTrial1 />
             <CardAdviceGeneratorAppTrial2 />
             <CardExpensesChartCompTrial1 />

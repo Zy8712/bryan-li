@@ -8,7 +8,7 @@ function ReactTodoList() {
     <>
       <UltimateProjectCard
         name="React - To Do List"
-        date="Last Updated: March 23rd, 2023 [Active]"
+        date="Completed: March 23rd, 2023"
         previewImage={PreviewImage}
         githubrepo="https://github.com/Zy8712/react-app-to-do-list"
         websitepreview="https://react-app-to-do-list-xi.vercel.app/"

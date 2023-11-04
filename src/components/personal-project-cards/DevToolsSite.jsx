@@ -7,7 +7,7 @@ function DevToolsSite() {
   return (
     <>
       <UltimateProjectCard
-        name="Frontend Mentor Work Directory"
+        name="Dev Tools Site"
         date="Last Updated: July 18th, 2023 [Active]"
         previewImage={PreviewImage}
         githubrepo="https://github.com/Zy8712/dev-tools-site"
