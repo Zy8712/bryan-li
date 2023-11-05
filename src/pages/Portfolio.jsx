@@ -6,6 +6,7 @@ import ProjectFilters from '../components/portfolio-page-main-assets/ProjectFilt
 import FeaturedProjectsBox from "../components/portfolio-page-main-assets/project-boxes/FeaturedProjectsBox";
 import FemProjectsBox from "../components/portfolio-page-main-assets/project-boxes/FemProjectsBox";
 import PersonalProjectsBox from "../components/portfolio-page-main-assets/project-boxes/PersonalProjectsBox";
+import UpcomingProjectsBox from "../components/portfolio-page-main-assets/project-boxes/UpcomingProjectsBox";
 
 import HTML_CSS_ProjectsBox from "../components/portfolio-page-main-assets/project-boxes/HTML_CSS_ProjectsBox";
 import VanillaJSProjectsBox from "../components/portfolio-page-main-assets/project-boxes/VanillaJSProjectsBox";
@@ -18,6 +19,7 @@ function Portfolio() {
   const [showFeaturedProjects, setShowFeaturedProjects] = useState(false);
   const [showFemProjects, setShowFemProjects] = useState(true);
   const [showPersonalProjects, setShowPersonalProjects] = useState(false);
+  const [showUpcomingProjects, setShowUpcomingProjects] = useState(false);
 
   const [showHTMLCSSProjects, setShowHTMLCSSProjects] = useState(false);
   const [showVanillaJSProjects, setShowVanillaJSProjects] = useState(false);
@@ -31,6 +33,7 @@ function Portfolio() {
       setShowFeaturedProjects(true);
       setShowFemProjects(false);
       setShowPersonalProjects(false);
+      setShowUpcomingProjects(false);
       setShowHTMLCSSProjects(false);
       setShowVanillaJSProjects(false);
       setShowReactProjects(false);
@@ -45,6 +48,7 @@ function Portfolio() {
       setShowFeaturedProjects(false);
       setShowFemProjects(true);
       setShowPersonalProjects(false);
+      setShowUpcomingProjects(false);
       setShowHTMLCSSProjects(false);
       setShowVanillaJSProjects(false);
       setShowReactProjects(false);
@@ -59,6 +63,23 @@ function Portfolio() {
       setShowFeaturedProjects(false);
       setShowFemProjects(false);
       setShowPersonalProjects(true);
+      setShowUpcomingProjects(false);
+      setShowHTMLCSSProjects(false);
+      setShowVanillaJSProjects(false);
+      setShowReactProjects(false);
+      setShowTailwindCSSProjects(false);
+      setShowJSONProjects(false);
+      setShowAPIProjects(false);
+    }
+  }
+
+
+  const toggleUpcomingProjects = () => {
+    if (showUpcomingProjects == false) {
+      setShowFeaturedProjects(false);
+      setShowFemProjects(false);
+      setShowPersonalProjects(false);
+      setShowUpcomingProjects(true);
       setShowHTMLCSSProjects(false);
       setShowVanillaJSProjects(false);
       setShowReactProjects(false);
@@ -73,6 +94,7 @@ function Portfolio() {
       setShowFeaturedProjects(false);
       setShowFemProjects(false);
       setShowPersonalProjects(false);
+      setShowUpcomingProjects(false);
       setShowHTMLCSSProjects(true);
       setShowVanillaJSProjects(false);
       setShowReactProjects(false);
@@ -87,6 +109,7 @@ function Portfolio() {
       setShowFeaturedProjects(false);
       setShowFemProjects(false);
       setShowPersonalProjects(false);
+      setShowUpcomingProjects(false);
       setShowHTMLCSSProjects(false);
       setShowVanillaJSProjects(true);
       setShowReactProjects(false);
@@ -101,6 +124,7 @@ function Portfolio() {
       setShowFeaturedProjects(false);
       setShowFemProjects(false);
       setShowPersonalProjects(false);
+      setShowUpcomingProjects(false);
       setShowHTMLCSSProjects(false);
       setShowVanillaJSProjects(false);
       setShowReactProjects(true);
@@ -115,6 +139,7 @@ function Portfolio() {
       setShowFeaturedProjects(false);
       setShowFemProjects(false);
       setShowPersonalProjects(false);
+      setShowUpcomingProjects(false);
       setShowHTMLCSSProjects(false);
       setShowVanillaJSProjects(false);
       setShowReactProjects(false);
@@ -129,6 +154,7 @@ function Portfolio() {
       setShowFeaturedProjects(false);
       setShowFemProjects(false);
       setShowPersonalProjects(false);
+      setShowUpcomingProjects(false);
       setShowHTMLCSSProjects(false);
       setShowVanillaJSProjects(false);
       setShowReactProjects(false);
@@ -143,6 +169,7 @@ function Portfolio() {
       setShowFeaturedProjects(false);
       setShowFemProjects(false);
       setShowPersonalProjects(false);
+      setShowUpcomingProjects(false);
       setShowHTMLCSSProjects(false);
       setShowVanillaJSProjects(false);
       setShowReactProjects(false);
@@ -169,6 +196,7 @@ function Portfolio() {
             showTailwindCSSProjects={showTailwindCSSProjects}
             showJSONProjects={showJSONProjects}
             showAPIProjects={showAPIProjects}
+            showUpcomingProjects={showUpcomingProjects}
 
             toggleFeaturedProjects={toggleFeaturedProjects}
             toggleFemProjects={toggleFemProjects}
@@ -179,6 +207,7 @@ function Portfolio() {
             toggleTailwindCSSProjects={toggleTailwindCSSProjects}
             toggleJSONProjects={toggleJSONProjects}
             toggleAPIProjects={toggleAPIProjects}
+            toggleUpcomingProjects={toggleUpcomingProjects}
           />
 
           {showFeaturedProjects ? (
@@ -196,11 +225,15 @@ function Portfolio() {
           ) : ''
           }
 
+          {showUpcomingProjects ? (
+            <UpcomingProjectsBox />
+          ) : ''
+          }
+
           {showHTMLCSSProjects ? (
             <HTML_CSS_ProjectsBox />
           ) : ''
           }
-
 
           {showVanillaJSProjects ? (
             <VanillaJSProjectsBox />
