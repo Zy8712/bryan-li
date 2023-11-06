@@ -7,6 +7,7 @@ import Tailwind_Icon from '../assets/language-icons/tailwind-svgrepo-com.svg';
 import Bootstrap_Icon from '../assets/language-icons/bootstrap-fill-svgrepo-com.svg';
 import JSON_Icon from '../assets/language-icons/json-official-svgrepo-com.svg';
 import API_Icon from '../assets/language-icons/api-svgrepo-com.svg';
+import Wouter_Icon from '../assets/other-icons/wouter-github-logo.svg';
 
 import Info_Icon from '../assets/info-svgrepo-com.svg';
 import FrontendMentor from '../assets/frontend-mentor-logo-transparent.png';
@@ -33,13 +34,14 @@ function UltimateProjectCard(props) {
             <div className="flex justify-center items-center">
               <img src={HTML_Icon} alt="html5_icon" title="HTML5" className={`w-[30px] mx-2 ${props.htmlTF ? 'inline' : 'hidden'}`} />
               <img src={CSS_Icon} alt="css3_icon" title="CSS3" className={`w-[30px] mx-2 ${props.cssTF ? 'inline' : 'hidden'}`} />
-              <img src={Javascript_Icon} alt="css3_icon" title="Javascript" className={`w-[30px] mx-2 ${props.javascriptTF ? 'inline' : 'hidden'}`} />
+              <img src={Javascript_Icon} alt="javascript_icon" title="Javascript" className={`w-[30px] mx-2 ${props.javascriptTF ? 'inline' : 'hidden'}`} />
               <img src={SASS_Icon} alt="sass_icon" title="SASS/SCSS" className={`w-[30px] mx-2 ${props.sassTF ? 'inline' : 'hidden'}`} />
-              <img src={React_Icon} alt="html5_icon" title="React" className={`w-[30px] mx-2 ${props.reactTF ? 'inline' : 'hidden'}`} />
-              <img src={Tailwind_Icon} alt="html5_icon" title="Tailwind CSS" className={`w-[30px] mx-2 ${props.tailwindTF ? 'inline' : 'hidden'}`} />
-              <img src={Bootstrap_Icon} alt="html5_icon" title="Bootstrap" className={`w-[30px] mx-2 ${props.bootstrapTF ? 'inline' : 'hidden'}`} />
-              <img src={JSON_Icon} alt="html5_icon" title="JSON" className={`w-[30px] mx-2 ${props.jsonTF ? 'inline' : 'hidden'}`} />
-              <img src={API_Icon} alt="html5_icon" title="API" className={`w-[30px] mx-2 ${props.apiTF ? 'inline' : 'hidden'}`} />
+              <img src={React_Icon} alt="react_icon" title="React" className={`w-[30px] mx-2 ${props.reactTF ? 'inline' : 'hidden'}`} />
+              <img src={Tailwind_Icon} alt="tailwind_icon" title="Tailwind CSS" className={`w-[30px] mx-2 ${props.tailwindTF ? 'inline' : 'hidden'}`} />
+              <img src={Bootstrap_Icon} alt="bootstrap_icon" title="Bootstrap" className={`w-[30px] mx-2 ${props.bootstrapTF ? 'inline' : 'hidden'}`} />
+              <img src={JSON_Icon} alt="json_icon" title="JSON" className={`w-[30px] mx-2 ${props.jsonTF ? 'inline' : 'hidden'}`} />
+              <img src={API_Icon} alt="api_icon" title="API" className={`w-[30px] mx-2 ${props.apiTF ? 'inline' : 'hidden'}`} />
+              <img src={Wouter_Icon} alt="wouter_icon" title="Wouter" className={`w-[30px] mx-2 ${props.wouterTF ? 'inline' : 'hidden'}`} />
             </div>
 
             <div className={`w-[30px] ${props.frontendmentorTF ? 'flex' : 'hidden'} flex-col absolute top-4 -right-8 bg-white border-2 border-solid border-transparent rounded-full hover:bg-nav-gradient-1`}>

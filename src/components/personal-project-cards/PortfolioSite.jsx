@@ -23,6 +23,7 @@ function PortfolioSite() {
         bootstrapTF={false}
         jsonTF={false}
         apiTF={false}
+        wouterTF={true}
       />
     </>
   );
