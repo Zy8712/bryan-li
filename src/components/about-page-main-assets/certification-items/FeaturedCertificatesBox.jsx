@@ -1,7 +1,9 @@
-
 import CareerEssentialsinDataAnalysis from "./certification-cards/CareerEssentialsinDataAnalysis";
-import LearningDataAnalyticsPart2ExtendingandApplyingCoreKnowledge from "./certification-cards/LearningDataAnalyticsPart2ExtendingandApplyingCoreKnowledge";
+import CareerEssentialsinSoftwareDevelopment from "./certification-cards/CareerEssentialsinSoftwareDevelopment";
+import CareerEssentialsinSystemAdministration from "./certification-cards/CareerEssentialsinSystemAdministration";
 import ProjectManagementFoundationsCommunication from "./certification-cards/ProjectManagementFoundationsCommunication";
+import ProjectManagementFoundationsRequirements from "./certification-cards/ProjectManagementFoundationsRequirements";
+import ProjectManagementFoundationsTeams from "./certification-cards/ProjectManagementFoundationsTeams";
 import ResponsiveWebDesign from "./certification-cards/ResponsiveWebDesign";
 
 function FeaturedCertificatesBox() {
@@ -9,8 +11,11 @@ function FeaturedCertificatesBox() {
         <>
             <div className="flex justify-around flex-wrap">
                 <CareerEssentialsinDataAnalysis />
-                <LearningDataAnalyticsPart2ExtendingandApplyingCoreKnowledge />
+                <CareerEssentialsinSystemAdministration />
+                <CareerEssentialsinSoftwareDevelopment />
+                <ProjectManagementFoundationsRequirements />
                 <ProjectManagementFoundationsCommunication />
+                <ProjectManagementFoundationsTeams />
                 <ResponsiveWebDesign />
             </div>
         </>

@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 
 import FeaturedCertificatesBox from './FeaturedCertificatesBox';
 import CertificationBoxButtonSwitcher from './CertificationBoxButtonSwitcher';
+import AllCertificatesBox from './AllCertificatesBox';
+import AllCredentialsBox from './AllCredentialsBox';
+import AllBadgesBox from './AllBadgesBox';
 
 function CertificationBox() {
     const [showFeatured, setShowFeatured] = useState(true);
@@ -75,9 +78,25 @@ function CertificationBox() {
                     toggleCredentials={toggleCredentials}
                     toggleBadges={toggleBadges}
                 />
-                
+
                 {showFeatured ? (
                     <FeaturedCertificatesBox />
+                ) : ''
+                }
+
+
+                {showAllCertificates ? (
+                    <AllCertificatesBox />
+                ) : ''
+                }
+
+                {showAllCredentials ? (
+                    <AllCredentialsBox />
+                ) : ''
+                }
+
+                {showAllBadges ? (
+                    <AllBadgesBox />
                 ) : ''
                 }
 
