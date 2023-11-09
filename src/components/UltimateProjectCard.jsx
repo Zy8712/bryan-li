@@ -18,10 +18,10 @@ function UltimateProjectCard(props) {
 
   return (
     <>
-      <div className="group box w-[400px] h-[505px] overflow-hidden bg-white rounded-2xl border-none mb-8 cursor-pointer relative hover:shadow-2xl hover:shadow-white	">
+      <div className="group box w-[400px] h-[505px] overflow-hidden bg-white rounded-2xl 
+        border-none mb-8 cursor-pointer relative hover:shadow-2xl hover:shadow-white	">
         <div className="w-full rounded-2xl overflow-hidden">
-          <img
-            src={`${props.previewImage}`}
+          <img src={`${props.previewImage}`}
             alt="qr_code_preview"
             className="w-full rounded-2xl duration-300 transform scale-100 group-hover:scale-108 transition-transform"
           />
@@ -32,19 +32,30 @@ function UltimateProjectCard(props) {
             <span className="block mt-4 mb-3 text-2xl font-medium">{props.name}</span>
             <p className="mb-3">{props.date}</p>
             <div className="flex justify-center items-center">
-              <img src={HTML_Icon} alt="html5_icon" title="HTML5" className={`w-[30px] mx-2 ${props.htmlTF ? 'inline' : 'hidden'}`} />
-              <img src={CSS_Icon} alt="css3_icon" title="CSS3" className={`w-[30px] mx-2 ${props.cssTF ? 'inline' : 'hidden'}`} />
-              <img src={Javascript_Icon} alt="javascript_icon" title="Javascript" className={`w-[30px] mx-2 ${props.javascriptTF ? 'inline' : 'hidden'}`} />
-              <img src={SASS_Icon} alt="sass_icon" title="SASS/SCSS" className={`w-[30px] mx-2 ${props.sassTF ? 'inline' : 'hidden'}`} />
-              <img src={React_Icon} alt="react_icon" title="React" className={`w-[30px] mx-2 ${props.reactTF ? 'inline' : 'hidden'}`} />
-              <img src={Tailwind_Icon} alt="tailwind_icon" title="Tailwind CSS" className={`w-[30px] mx-2 ${props.tailwindTF ? 'inline' : 'hidden'}`} />
-              <img src={Bootstrap_Icon} alt="bootstrap_icon" title="Bootstrap" className={`w-[30px] mx-2 ${props.bootstrapTF ? 'inline' : 'hidden'}`} />
-              <img src={JSON_Icon} alt="json_icon" title="JSON" className={`w-[30px] mx-2 ${props.jsonTF ? 'inline' : 'hidden'}`} />
-              <img src={API_Icon} alt="api_icon" title="API" className={`w-[30px] mx-2 ${props.apiTF ? 'inline' : 'hidden'}`} />
-              <img src={Wouter_Icon} alt="wouter_icon" title="Wouter" className={`w-[30px] mx-2 ${props.wouterTF ? 'inline' : 'hidden'}`} />
+              <img src={HTML_Icon} alt="html5_icon" title="HTML5"
+                className={`w-[30px] mx-2 ${props.htmlTF ? 'inline' : 'hidden'}`} />
+              <img src={CSS_Icon} alt="css3_icon" title="CSS3"
+                className={`w-[30px] mx-2 ${props.cssTF ? 'inline' : 'hidden'}`} />
+              <img src={Javascript_Icon} alt="javascript_icon" title="Javascript"
+                className={`w-[30px] mx-2 ${props.javascriptTF ? 'inline' : 'hidden'}`} />
+              <img src={SASS_Icon} alt="sass_icon" title="SASS/SCSS"
+                className={`w-[30px] mx-2 ${props.sassTF ? 'inline' : 'hidden'}`} />
+              <img src={React_Icon} alt="react_icon" title="React"
+                className={`w-[30px] mx-2 ${props.reactTF ? 'inline' : 'hidden'}`} />
+              <img src={Tailwind_Icon} alt="tailwind_icon" title="Tailwind CSS"
+                className={`w-[30px] mx-2 ${props.tailwindTF ? 'inline' : 'hidden'}`} />
+              <img src={Bootstrap_Icon} alt="bootstrap_icon" title="Bootstrap"
+                className={`w-[30px] mx-2 ${props.bootstrapTF ? 'inline' : 'hidden'}`} />
+              <img src={JSON_Icon} alt="json_icon" title="JSON"
+                className={`w-[30px] mx-2 ${props.jsonTF ? 'inline' : 'hidden'}`} />
+              <img src={API_Icon} alt="api_icon" title="API"
+                className={`w-[30px] mx-2 ${props.apiTF ? 'inline' : 'hidden'}`} />
+              <img src={Wouter_Icon} alt="wouter_icon" title="Wouter"
+                className={`w-[30px] mx-2 ${props.wouterTF ? 'inline' : 'hidden'}`} />
             </div>
 
-            <div className={`w-[30px] ${props.frontendmentorTF ? 'flex' : 'hidden'} flex-col absolute top-4 -right-8 bg-white border-2 border-solid border-transparent rounded-full hover:bg-nav-gradient-1`}>
+            <div className={`w-[30px] ${props.frontendmentorTF ? 'flex' : 'hidden'} flex-col absolute top-4 -right-9 
+            bg-white border-2 border-solid border-transparent rounded-full hover:bg-nav-gradient-1`}>
               <a href={props.challengeInfo} target="_blank">
                 <img src={Info_Icon} alt="info_icon" className="mb-1" />
                 <img src={FrontendMentor} alt="frontendmentor_icon" />
@@ -54,10 +65,16 @@ function UltimateProjectCard(props) {
 
           <div className="w-full h-[50px] flex absolute bottom-0">
             <div className="w-1/2 h-full flex justify-start items-center ml-11">
-              <a className="link-custom" href={props.githubrepo} target="_blank"><i className="lab la-github mr-1"></i>GitHub Repo</a>
+              <a className="link-custom" href={props.githubrepo} target="_blank">
+                <i className="lab la-github mr-1"></i>
+                GitHub Repo
+              </a>
             </div>
             <div className="w-1/2 h-full flex justify-end items-center mr-11">
-              <a className="link-custom2" href={props.websitepreview} target="_blank"><i className="las la-external-link-alt mr-1"></i>Preview</a>
+              <a className="link-custom2" href={props.websitepreview} target="_blank">
+                <i className="las la-external-link-alt mr-1"></i>
+                Preview
+              </a>
             </div>
           </div>
         </div>

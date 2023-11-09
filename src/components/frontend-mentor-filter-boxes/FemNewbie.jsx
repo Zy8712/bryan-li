@@ -18,10 +18,12 @@ import Card3ColumnPreviewCardCompTrial2 from '../project-cards/Card3ColumnPrevie
 import CardProfileCardCompTrial2 from '../project-cards/CardProfileCardCompTrial2';
 import CardQrCodeCompTrial3 from '../project-cards/CardQrCodeCompTrial3';
 import CardPingSingleColumnComingSoonPageTrial1 from '../project-cards/CardPingSingleColumnComingSoonPageTrial1';
+import CardPodRequestAccessTrial1 from '../project-cards/CardPodRequestAccessTrial1';
 
 function FemNewbie() {
     return (
         <>
+            <CardPodRequestAccessTrial1 />
             <CardPingSingleColumnComingSoonPageTrial1 />
             <CardQrCodeCompTrial3 />
             <CardProfileCardCompTrial2 />

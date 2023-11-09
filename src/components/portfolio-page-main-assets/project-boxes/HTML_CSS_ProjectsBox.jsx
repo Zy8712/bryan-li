@@ -15,12 +15,14 @@ import CardTestimonalsGridSectionTrial1 from '../../project-cards/CardTestimonal
 import CardFyloDataStorageCompTrial1 from '../../project-cards/CardFyloDataStorageCompTrial1';
 import CardHuddleLandingPageWithAlternatingFeatureBlocksTrial1 from '../../project-cards/CardHuddleLandingPageWithAlternatingFeatureBlocksTrial1';
 import CardClipboardLandingPageTrial1 from '../../project-cards/CardClipboardLandingPageTrial1';
+import CardPodRequestAccessTrial1 from '../../project-cards/CardPodRequestAccessTrial1';
 
 function HTMLCSSProjectsBox() {
 
     return (
         <>
             <div className="w-full h-full flex flex-wrap justify-around">
+                <CardPodRequestAccessTrial1 />
                 <CardClipboardLandingPageTrial1 />
                 <CardHuddleLandingPageWithAlternatingFeatureBlocksTrial1 />
                 <CardFyloDataStorageCompTrial1 />

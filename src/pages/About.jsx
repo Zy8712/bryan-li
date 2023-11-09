@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import AboutHeader from '../components/about-page-main-assets/AboutHeader';
 import EduExpCertButtonSwitcher from '../components/about-page-main-assets/EduExpCertButtonSwitcher'
@@ -8,7 +8,6 @@ import AboutTechnology from '../components/about-page-main-assets/AboutTechnolog
 import EducationBox from '../components/about-page-main-assets/education-items/EducationBox';
 import ExperienceBox from '../components/about-page-main-assets/experience-items/ExperienceBox';
 import CertificationBox from '../components/about-page-main-assets/certification-items/CertificationBox';
-import { useState } from 'react';
 
 function About() {
   const [showEducationBox, setShowEducationBox] = useState(true);
@@ -38,7 +37,6 @@ function About() {
       setShowCertificateBox(true);
     }
   };
-
 
   return (
     <>
