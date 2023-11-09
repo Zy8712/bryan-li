@@ -1,6 +1,6 @@
 import CardToDoAppTrial1 from "../../project-cards/CardToDoAppTrial1";
 import CardLaunchCountdownTimerTrial1 from "../../project-cards/CardLaunchCountdownTimerTrial1";
-import CardRESTCountriesAPIwithColourThemeSwitcherTrial1 from "../../project-cards/CardRestCountriesAPIwithColourThemeSwitcherTrial1";
+import CardRESTCountriesAPIwithColourThemeSwitcherTrial1 from "../../project-cards/CardRESTCountriesAPIwithColourThemeSwitcherTrial1";
 import CardAudiophileEcommerceWebsiteTrial1 from "../../project-cards/CardAudiophileEcommerceWebsiteTrial1";
 
 function UpcomingProjectsBox() {
