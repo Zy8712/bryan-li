@@ -8,10 +8,10 @@ function CardAudiophileEcommerceWebsiteTrial1() {
     <>
       <UltimateProjectCard
         name="Audiophile E-Commerce Website"
-        date="In Queue"
+        date="Last Updated: November 20th, 2023"
         previewImage={PreviewImage}
-        githubrepo=""
-        websitepreview=""
+        githubrepo="https://github.com/Zy8712/audiophile-ecommerce-website"
+        websitepreview="https://audiophilesite.vercel.app/"
         frontendmentorTF={true}
         challengeInfo="https://www.frontendmentor.io/challenges/audiophile-ecommerce-website-C8cuSd_wx"
         htmlTF={true}
@@ -24,6 +24,7 @@ function CardAudiophileEcommerceWebsiteTrial1() {
         jsonTF={false}
         apiTF={false}
         wouterTF={true}
+        figmaTF={true}
       />
     </>
   );

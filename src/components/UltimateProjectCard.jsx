@@ -8,6 +8,7 @@ import Bootstrap_Icon from '../assets/language-icons/bootstrap-fill-svgrepo-com.
 import JSON_Icon from '../assets/language-icons/json-official-svgrepo-com.svg';
 import API_Icon from '../assets/language-icons/api-svgrepo-com.svg';
 import Wouter_Icon from '../assets/other-icons/wouter-github-logo.svg';
+import Figma_Icon from '../assets/other-icons/figma-svgrepo-com.svg';
 
 import Info_Icon from '../assets/info-svgrepo-com.svg';
 import FrontendMentor from '../assets/frontend-mentor-logo-transparent.png';
@@ -52,6 +53,8 @@ function UltimateProjectCard(props) {
                 className={`w-[30px] mx-2 ${props.apiTF ? 'inline' : 'hidden'}`} />
               <img src={Wouter_Icon} alt="wouter_icon" title="Wouter"
                 className={`w-[30px] mx-2 ${props.wouterTF ? 'inline' : 'hidden'}`} />
+              <img src={Figma_Icon} alt="figma_icon" title="Figma"
+                className={`w-[30px] mx-2 ${props.figmaTF ? 'inline' : 'hidden'}`} />
             </div>
 
             <div className={`w-[30px] ${props.frontendmentorTF ? 'flex' : 'hidden'} flex-col absolute top-4 -right-9 

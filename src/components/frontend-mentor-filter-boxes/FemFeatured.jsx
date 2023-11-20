@@ -5,17 +5,18 @@ import CardAgeCalculatorAppTrial1 from '../project-cards/CardAgeCalculatorAppTri
 import CardAdviceGeneratorAppTrial1 from '../project-cards/CardAdviceGeneratorAppTrial1';
 import CardTipCalculatorAppTrial1 from '../project-cards/CardTipCalculatorAppTrial1';
 import CardFaqAccordionCardTrial1 from '../project-cards/CardFaqAccordionCardTrial1';
+import CardAudiophileEcommerceWebsiteTrial1 from '../project-cards/CardAudiophileEcommerceWebsiteTrial1';
 
 function FemFeatured() {
     return (
         <>
+            <CardAudiophileEcommerceWebsiteTrial1 />
             <CardSpaceTourismWebsiteTrial1 />
             <CardRockPaperScissorsGameTrial1 />
             <CardIPAddressTrackerTrial1 />
             <CardTipCalculatorAppTrial1 />
             <CardAdviceGeneratorAppTrial1 />
             <CardAgeCalculatorAppTrial1 />
-            <CardFaqAccordionCardTrial1 />
         </>
     );
 };

@@ -23,6 +23,7 @@ function CardPodRequestAccessTrial1() {
         bootstrapTF={false}
         jsonTF={false}
         apiTF={false}
+        figmaTF={true}
       />
     </>
   );

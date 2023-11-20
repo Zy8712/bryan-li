@@ -3,12 +3,14 @@ import CardRockPaperScissorsGameTrial1 from "../../project-cards/CardRockPaperSc
 import CardSpaceTourismWebsiteTrial1 from "../../project-cards/CardSpaceTourismWebsiteTrial1";
 import FrontendMentorDirectorySite from "../../personal-project-cards/FrontendMentorDirectorySite";
 import PortfolioSite from "../../personal-project-cards/PortfolioSite";
+import CardAudiophileEcommerceWebsiteTrial1 from "../../project-cards/CardAudiophileEcommerceWebsiteTrial1";
 
 function FeaturedProjectsBox() {
 
     return (
         <>
             <div className="w-full h-full flex flex-wrap justify-around">
+                <CardAudiophileEcommerceWebsiteTrial1 />
                 <PortfolioSite />
                 <FrontendMentorDirectorySite />
                 <CardSpaceTourismWebsiteTrial1 />
