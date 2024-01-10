@@ -21,8 +21,7 @@ import "../App.css";
 const Home = () => {
   return (
     <>
-      <div className="w-full h-full flex justify-center items-center bg-transparent border-none overflow-hidden relative">
-        {/*<img src={Blob} alt="blob_animation" className="absolute -z-20 blur-2xl" />*/}
+      <div className="w-full min-h-screen flex justify-center items-center bg-transparent border-none overflow-hidden relative">
 
           <div className="w-[1100px] h-[400px] mt-16 relative">
 

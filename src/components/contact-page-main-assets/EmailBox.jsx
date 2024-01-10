@@ -13,7 +13,7 @@ function EmailBox() {
                         </div>
                         <div className="w-[300px]">
                             <span className="text-white">Your Email:</span>
-                            <input className="w-[300px] rounded-sm p-2" type="email" placeholder="email@company.com" />]
+                            <input className="w-[300px] rounded-sm p-2" type="email" placeholder="email@company.com" />
                         </div>
                     </div>
                     <div className="w-full">

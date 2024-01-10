@@ -27,6 +27,8 @@ export default {
 
         'fem-featured-1': 'hsl(273, 75%, 66%)',
         'fem-featured-2': 'hsl(240, 73%, 65%)',
+
+        'translucent-black': 'rgba(0, 0, 0, 0.45)',
       },
       fontFamily: {
         'theme-rubik': ['Rubik', 'sans-serif'], 
