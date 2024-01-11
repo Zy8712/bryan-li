@@ -47,154 +47,88 @@ function Portfolio() {
   const [showJSONProjects, setShowJSONProjects] = useState(false);
   const [showAPIProjects, setShowAPIProjects] = useState(false);
 
+  const filterValues = [setShowFeaturedProjects, setShowFemProjects, setShowPersonalProjects, setShowUpcomingProjects, setShowHTMLCSSProjects, setShowVanillaJSProjects, setShowReactProjects, setShowTailwindCSSProjects, setShowJSONProjects, setShowAPIProjects];
+
+  const [activeFilter, setActiveFilter] = useState(2);
+
   const toggleFeaturedProjects = () => {
     if (showFeaturedProjects == false) {
+      filterValues[activeFilter-1](false);
       setShowFeaturedProjects(true);
-      setShowFemProjects(false);
-      setShowPersonalProjects(false);
-      setShowUpcomingProjects(false);
-      setShowHTMLCSSProjects(false);
-      setShowVanillaJSProjects(false);
-      setShowReactProjects(false);
-      setShowTailwindCSSProjects(false);
-      setShowJSONProjects(false);
-      setShowAPIProjects(false);
+      setActiveFilter(1);
     }
   }
 
   const toggleFemProjects = () => {
     if (showFemProjects == false) {
-      setShowFeaturedProjects(false);
+      filterValues[activeFilter-1](false);
       setShowFemProjects(true);
-      setShowPersonalProjects(false);
-      setShowUpcomingProjects(false);
-      setShowHTMLCSSProjects(false);
-      setShowVanillaJSProjects(false);
-      setShowReactProjects(false);
-      setShowTailwindCSSProjects(false);
-      setShowJSONProjects(false);
-      setShowAPIProjects(false);
+      setActiveFilter(2);
     }
   }
 
   const togglePersonalProjects = () => {
     if (showPersonalProjects == false) {
-      setShowFeaturedProjects(false);
-      setShowFemProjects(false);
+      filterValues[activeFilter-1](false);
       setShowPersonalProjects(true);
-      setShowUpcomingProjects(false);
-      setShowHTMLCSSProjects(false);
-      setShowVanillaJSProjects(false);
-      setShowReactProjects(false);
-      setShowTailwindCSSProjects(false);
-      setShowJSONProjects(false);
-      setShowAPIProjects(false);
+      setActiveFilter(3);
     }
   }
 
 
   const toggleUpcomingProjects = () => {
     if (showUpcomingProjects == false) {
-      setShowFeaturedProjects(false);
-      setShowFemProjects(false);
-      setShowPersonalProjects(false);
+      filterValues[activeFilter-1](false);
       setShowUpcomingProjects(true);
-      setShowHTMLCSSProjects(false);
-      setShowVanillaJSProjects(false);
-      setShowReactProjects(false);
-      setShowTailwindCSSProjects(false);
-      setShowJSONProjects(false);
-      setShowAPIProjects(false);
+      setActiveFilter(4);
     }
   }
 
   const toggleHTMLCSSProjects = () => {
     if (showHTMLCSSProjects == false) {
-      setShowFeaturedProjects(false);
-      setShowFemProjects(false);
-      setShowPersonalProjects(false);
-      setShowUpcomingProjects(false);
+      filterValues[activeFilter-1](false);
       setShowHTMLCSSProjects(true);
-      setShowVanillaJSProjects(false);
-      setShowReactProjects(false);
-      setShowTailwindCSSProjects(false);
-      setShowJSONProjects(false);
-      setShowAPIProjects(false);
+      setActiveFilter(5);
     }
   }
 
   const toggleVanillaJSProjects = () => {
     if (showVanillaJSProjects == false) {
-      setShowFeaturedProjects(false);
-      setShowFemProjects(false);
-      setShowPersonalProjects(false);
-      setShowUpcomingProjects(false);
-      setShowHTMLCSSProjects(false);
+      filterValues[activeFilter-1](false);
       setShowVanillaJSProjects(true);
-      setShowReactProjects(false);
-      setShowTailwindCSSProjects(false);
-      setShowJSONProjects(false);
-      setShowAPIProjects(false);
+      setActiveFilter(6);
     }
   }
 
   const toggleReactProjects = () => {
     if (showReactProjects == false) {
-      setShowFeaturedProjects(false);
-      setShowFemProjects(false);
-      setShowPersonalProjects(false);
-      setShowUpcomingProjects(false);
-      setShowHTMLCSSProjects(false);
-      setShowVanillaJSProjects(false);
+      filterValues[activeFilter-1](false);
       setShowReactProjects(true);
-      setShowTailwindCSSProjects(false);
-      setShowJSONProjects(false);
-      setShowAPIProjects(false);
+      setActiveFilter(7);
     }
   }
 
   const toggleTailwindCSSProjects = () => {
     if (showTailwindCSSProjects == false) {
-      setShowFeaturedProjects(false);
-      setShowFemProjects(false);
-      setShowPersonalProjects(false);
-      setShowUpcomingProjects(false);
-      setShowHTMLCSSProjects(false);
-      setShowVanillaJSProjects(false);
-      setShowReactProjects(false);
+      filterValues[activeFilter-1](false);
       setShowTailwindCSSProjects(true);
-      setShowJSONProjects(false);
-      setShowAPIProjects(false);
+      setActiveFilter(8);
     }
   }
 
   const toggleJSONProjects = () => {
     if (showJSONProjects == false) {
-      setShowFeaturedProjects(false);
-      setShowFemProjects(false);
-      setShowPersonalProjects(false);
-      setShowUpcomingProjects(false);
-      setShowHTMLCSSProjects(false);
-      setShowVanillaJSProjects(false);
-      setShowReactProjects(false);
-      setShowTailwindCSSProjects(false);
+      filterValues[activeFilter-1](false);
       setShowJSONProjects(true);
-      setShowAPIProjects(false);
+      setActiveFilter(9);
     }
   }
 
   const toggleAPIProjects = () => {
     if (showAPIProjects == false) {
-      setShowFeaturedProjects(false);
-      setShowFemProjects(false);
-      setShowPersonalProjects(false);
-      setShowUpcomingProjects(false);
-      setShowHTMLCSSProjects(false);
-      setShowVanillaJSProjects(false);
-      setShowReactProjects(false);
-      setShowTailwindCSSProjects(false);
-      setShowJSONProjects(false);
+      filterValues[activeFilter-1](false);
       setShowAPIProjects(true);
+      setActiveFilter(10);
     }
   }
 
