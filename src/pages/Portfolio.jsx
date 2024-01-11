@@ -16,10 +16,10 @@ import JSONProjectsBox from "../components/portfolio-page-main-assets/project-fi
 import APIProjectsBox from "../components/portfolio-page-main-assets/project-filter-boxes/APIProjectsBox";
 
 import UltimateFeaturedProjectCard from '../components/portfolio-page-main-assets/featured-projects-section/UltimateFeaturedProjectsCard';
-{/**import PageLoadingScreen from './PageLoadingScreen';*/}
+{/**import PageLoadingScreen from './PageLoadingScreen';*/ }
 
 function Portfolio() {
-{/**
+  {/**
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -35,102 +35,17 @@ function Portfolio() {
   }, []);
 */}
 
-  const [showFeaturedProjects, setShowFeaturedProjects] = useState(false);
-  const [showFemProjects, setShowFemProjects] = useState(true);
-  const [showPersonalProjects, setShowPersonalProjects] = useState(false);
-  const [showUpcomingProjects, setShowUpcomingProjects] = useState(false);
-
-  const [showHTMLCSSProjects, setShowHTMLCSSProjects] = useState(false);
-  const [showVanillaJSProjects, setShowVanillaJSProjects] = useState(false);
-  const [showReactProjects, setShowReactProjects] = useState(false);
-  const [showTailwindCSSProjects, setShowTailwindCSSProjects] = useState(false);
-  const [showJSONProjects, setShowJSONProjects] = useState(false);
-  const [showAPIProjects, setShowAPIProjects] = useState(false);
-
-  const filterValues = [setShowFeaturedProjects, setShowFemProjects, setShowPersonalProjects, setShowUpcomingProjects, setShowHTMLCSSProjects, setShowVanillaJSProjects, setShowReactProjects, setShowTailwindCSSProjects, setShowJSONProjects, setShowAPIProjects];
+  const projectGroup = [FeaturedProjectsBox, FemProjectsBox, PersonalProjectsBox, UpcomingProjectsBox, HTML_CSS_ProjectsBox, VanillaJSProjectsBox, ReactProjectsBox, TailwindCSSProjectsBox, JSONProjectsBox, APIProjectsBox];
 
   const [activeFilter, setActiveFilter] = useState(2);
 
-  const toggleFeaturedProjects = () => {
-    if (showFeaturedProjects == false) {
-      filterValues[activeFilter-1](false);
-      setShowFeaturedProjects(true);
-      setActiveFilter(1);
+  const toggleFilter = (num) => {
+    if (num != activeFilter) {
+      setActiveFilter(num);
     }
   }
 
-  const toggleFemProjects = () => {
-    if (showFemProjects == false) {
-      filterValues[activeFilter-1](false);
-      setShowFemProjects(true);
-      setActiveFilter(2);
-    }
-  }
-
-  const togglePersonalProjects = () => {
-    if (showPersonalProjects == false) {
-      filterValues[activeFilter-1](false);
-      setShowPersonalProjects(true);
-      setActiveFilter(3);
-    }
-  }
-
-
-  const toggleUpcomingProjects = () => {
-    if (showUpcomingProjects == false) {
-      filterValues[activeFilter-1](false);
-      setShowUpcomingProjects(true);
-      setActiveFilter(4);
-    }
-  }
-
-  const toggleHTMLCSSProjects = () => {
-    if (showHTMLCSSProjects == false) {
-      filterValues[activeFilter-1](false);
-      setShowHTMLCSSProjects(true);
-      setActiveFilter(5);
-    }
-  }
-
-  const toggleVanillaJSProjects = () => {
-    if (showVanillaJSProjects == false) {
-      filterValues[activeFilter-1](false);
-      setShowVanillaJSProjects(true);
-      setActiveFilter(6);
-    }
-  }
-
-  const toggleReactProjects = () => {
-    if (showReactProjects == false) {
-      filterValues[activeFilter-1](false);
-      setShowReactProjects(true);
-      setActiveFilter(7);
-    }
-  }
-
-  const toggleTailwindCSSProjects = () => {
-    if (showTailwindCSSProjects == false) {
-      filterValues[activeFilter-1](false);
-      setShowTailwindCSSProjects(true);
-      setActiveFilter(8);
-    }
-  }
-
-  const toggleJSONProjects = () => {
-    if (showJSONProjects == false) {
-      filterValues[activeFilter-1](false);
-      setShowJSONProjects(true);
-      setActiveFilter(9);
-    }
-  }
-
-  const toggleAPIProjects = () => {
-    if (showAPIProjects == false) {
-      filterValues[activeFilter-1](false);
-      setShowAPIProjects(true);
-      setActiveFilter(10);
-    }
-  }
+  const SelectedProjectGroup = projectGroup[activeFilter-1];
 
   return (
     <>
@@ -141,78 +56,11 @@ function Portfolio() {
           <PortfolioHeader />
 
           <ProjectFilters
-            showFeaturedProjects={showFeaturedProjects}
-            showFemProjects={showFemProjects}
-            showPersonalProjects={showPersonalProjects}
-            showHTMLCSSProjects={showHTMLCSSProjects}
-            showVanillaJSProjects={showVanillaJSProjects}
-            showReactProjects={showReactProjects}
-            showTailwindCSSProjects={showTailwindCSSProjects}
-            showJSONProjects={showJSONProjects}
-            showAPIProjects={showAPIProjects}
-            showUpcomingProjects={showUpcomingProjects}
-
-            toggleFeaturedProjects={toggleFeaturedProjects}
-            toggleFemProjects={toggleFemProjects}
-            togglePersonalProjects={togglePersonalProjects}
-            toggleHTMLCSSProjects={toggleHTMLCSSProjects}
-            toggleVanillaJSProjects={toggleVanillaJSProjects}
-            toggleReactProjects={toggleReactProjects}
-            toggleTailwindCSSProjects={toggleTailwindCSSProjects}
-            toggleJSONProjects={toggleJSONProjects}
-            toggleAPIProjects={toggleAPIProjects}
-            toggleUpcomingProjects={toggleUpcomingProjects}
+            activeFilter={activeFilter}
+            toggleFilter={toggleFilter}
           />
 
-          {showFeaturedProjects ? (
-            <FeaturedProjectsBox />
-          ) : ''
-          }
-
-          {showFemProjects ? (
-            <FemProjectsBox />
-          ) : ''
-          }
-
-          {showPersonalProjects ? (
-            <PersonalProjectsBox />
-          ) : ''
-          }
-
-          {showUpcomingProjects ? (
-            <UpcomingProjectsBox />
-          ) : ''
-          }
-
-          {showHTMLCSSProjects ? (
-            <HTML_CSS_ProjectsBox />
-          ) : ''
-          }
-
-          {showVanillaJSProjects ? (
-            <VanillaJSProjectsBox />
-          ) : ''
-          }
-
-          {showReactProjects ? (
-            <ReactProjectsBox />
-          ) : ''
-          }
-
-          {showTailwindCSSProjects ? (
-            <TailwindCSSProjectsBox />
-          ) : ''
-          }
-
-          {showJSONProjects ? (
-            <JSONProjectsBox />
-          ) : ''
-          }
-
-          {showAPIProjects ? (
-            <APIProjectsBox />
-          ) : ''
-          }
+          <SelectedProjectGroup />
 
         </div>
       </div>
