@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Lottie from 'react-lottie-player';
-import { Link, Route } from 'wouter';
+import { Link } from 'wouter';
 
 import AstronautLottie from '../assets/Animation-1697251945018.json';
 
@@ -14,13 +14,29 @@ import Bootstrap_Icon from '../assets/language-icons/bootstrap-fill-svgrepo-com.
 
 import SocialIcons from '../components/SocialIcons';
 
-import Blob from '../assets/blobanimation.svg';
-
 import "../App.css";
+{/**import PageLoadingScreen from './PageLoadingScreen';*/}
 
 const Home = () => {
+{/**
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading behavior by setting isLoading to true initially
+    // In a real scenario, you might have an async operation that triggers this loading state
+    const loadingTimeout = setTimeout(() => {
+      setIsLoading(false); // Hide the loading screen after 1.5 seconds
+    }, 1200);
+
+    return () => {
+      clearTimeout(loadingTimeout); // Clear the timeout to prevent memory leaks
+    };
+  }, []);
+*/}
+
   return (
     <>
+      {/**  {isLoading && <PageLoadingScreen />} */}
       <div className="w-full min-h-screen flex justify-center items-center bg-transparent border-none overflow-hidden relative">
 
           <div className="w-[1100px] h-[400px] mt-16 relative">

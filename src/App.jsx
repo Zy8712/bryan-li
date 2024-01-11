@@ -1,5 +1,5 @@
-import React from "react";
-import { Route, Router } from "wouter";
+import React from 'react';
+import { Router, Route } from 'wouter';
 
 import './App.css';
 
@@ -11,14 +11,17 @@ import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 
 function App() {
+
   return (
-    <Router>
-      <Navbar />
-      <Route path="/" component={Home} />
-      <Route path="/about" component={About} />
-      <Route path="/portfolio" component={Portfolio} />
-      <Route path="/contact" component={Contact} />
-    </Router>
+    <>
+      <Router>
+        <Navbar />
+        <Route path="/" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/portfolio" component={Portfolio} />
+        <Route path="/contact" component={Contact} />
+      </Router>
+    </>
   );
 }
 

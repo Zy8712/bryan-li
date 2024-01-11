@@ -21,7 +21,8 @@ function UltimateProjectCard(props) {
     <>
       <div className="group box w-[400px] h-[505px] overflow-hidden bg-white rounded-2xl 
         border-none mb-8 cursor-pointer relative hover:shadow-2xl hover:shadow-white	">
-        <div className="w-full rounded-2xl overflow-hidden">
+
+        <div className="w-full h-[293.333333px] rounded-2xl overflow-hidden relative">
           <img src={`${props.previewImage}`}
             alt="qr_code_preview"
             className="w-full rounded-2xl duration-300 transform scale-100 group-hover:scale-108 transition-transform"

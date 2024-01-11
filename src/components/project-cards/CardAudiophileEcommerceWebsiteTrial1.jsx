@@ -8,7 +8,7 @@ function CardAudiophileEcommerceWebsiteTrial1() {
     <>
       <UltimateProjectCard
         name="Audiophile E-Commerce Website"
-        date="Last Updated: November 20th, 2023"
+        date="Last Updated: January 8th, 2024"
         previewImage={PreviewImage}
         githubrepo="https://github.com/Zy8712/audiophile-ecommerce-website"
         websitepreview="https://audiophilesite.vercel.app/"

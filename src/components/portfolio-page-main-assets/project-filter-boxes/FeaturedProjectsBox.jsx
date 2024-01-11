@@ -12,8 +12,8 @@ function FeaturedProjectsBox() {
             <div className="w-full h-full flex flex-wrap justify-around">
                 <CardAudiophileEcommerceWebsiteTrial1 />
                 <PortfolioSite />
-                <FrontendMentorDirectorySite />
                 <CardSpaceTourismWebsiteTrial1 />
+                <FrontendMentorDirectorySite />
                 <CardRockPaperScissorsGameTrial1 />
                 <CardIPAddressTrackerTrial1 />
             </div>
