@@ -23,6 +23,7 @@ function CardSpaceTourismWebsiteTrial1() {
         bootstrapTF={false}
         jsonTF={true}
         apiTF={false}
+        figmaTF={true}
       />
     </>
   );

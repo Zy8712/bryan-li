@@ -9,6 +9,10 @@ import JSON_Icon from '../assets/language-icons/json-official-svgrepo-com.svg';
 import API_Icon from '../assets/language-icons/api-svgrepo-com.svg';
 import Wouter_Icon from '../assets/other-icons/wouter-github-logo.svg';
 import Figma_Icon from '../assets/other-icons/figma-svgrepo-com.svg';
+import NextJS_Icon from '../assets/language-icons/nextjs-fill-svgrepo-com.svg';
+import Typescript_Icon from '../assets/language-icons/typescript-icon-svgrepo-com.svg';
+import Redux_Icon from '../assets/language-icons/redux-svgrepo-com.svg';
+import PostgreSql_Icon from '../assets/language-icons/postgresql-svgrepo-com.svg';
 
 import Info_Icon from '../assets/info-svgrepo-com.svg';
 import FrontendMentor from '../assets/frontend-mentor-logo-transparent.png';
@@ -56,6 +60,14 @@ function UltimateProjectCard(props) {
                 className={`w-[30px] mx-2 ${props.wouterTF ? 'inline' : 'hidden'}`} />
               <img src={Figma_Icon} alt="figma_icon" title="Figma"
                 className={`w-[30px] mx-2 ${props.figmaTF ? 'inline' : 'hidden'}`} />
+              <img src={NextJS_Icon} alt="nextjs_icon" title="NextJS"
+                className={`w-[30px] mx-2 ${props.nextjsTF ? 'inline' : 'hidden'}`} />
+              <img src={Typescript_Icon} alt="typescript_icon" title="Typescript"
+                className={`w-[30px] mx-2 ${props.typescriptTF ? 'inline' : 'hidden'}`} />
+              <img src={Redux_Icon} alt="redux_icon" title="Redux"
+                className={`w-[30px] mx-2 ${props.reduxTF ? 'inline' : 'hidden'}`} />
+              <img src={PostgreSql_Icon} alt="postgresql_icon" title="PostgreSql"
+                className={`w-[30px] mx-2 ${props.postgresqlTF ? 'inline' : 'hidden'}`} />
             </div>
 
             <div className={`w-[30px] ${props.frontendmentorTF ? 'flex' : 'hidden'} flex-col absolute top-4 -right-9 

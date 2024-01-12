@@ -7,12 +7,14 @@ import DevToolsSite from "../../personal-project-cards/DevToolsSite";
 import FrontendMentorDirectorySite from "../../personal-project-cards/FrontendMentorDirectorySite";
 import ExpandedAgeCalc from "../../personal-project-cards/ExpandedAgeCalc"
 import PortfolioSite from "../../personal-project-cards/PortfolioSite";
+import NextJSTutorialDashboard from "../../personal-project-cards/NextJSTutorialDashboard";
 
 function FeaturedProjectsBox() {
 
     return (
         <>
             <div className="w-full h-full flex flex-wrap justify-around">
+                <NextJSTutorialDashboard />
                 <PortfolioSite />
                 <ExpandedAgeCalc />
                 <FrontendMentorDirectorySite />
