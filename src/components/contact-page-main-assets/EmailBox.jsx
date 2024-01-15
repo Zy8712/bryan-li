@@ -4,7 +4,7 @@ function EmailBox() {
         <>
             <form action="https://api.web3forms.com/submit" method="POST">
                 <input type="hidden" name="access_key" value="f12fdccc-27f3-43fa-9bea-3f7fa95502e2" />
-                <input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
+                <input type="checkbox" name="botcheck" class="hidden" />
                 <div className="w-[650px] h-[510px] border-2 border-solid border-white rounded-2xl">
                     <div className="w-auto h-auto m-3">
                         <h1 className="text-white text-center uppercase text-3xl">Interested in working together?</h1>
