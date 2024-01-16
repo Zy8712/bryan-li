@@ -39,11 +39,11 @@ const Home = () => {
       {/**  {isLoading && <PageLoadingScreen />} */}
       <div className="w-full min-h-screen flex justify-center items-center bg-transparent border-none overflow-hidden relative">
 
-        <div className="max-w-[95%] custom-md:max-w-[1100px] h-[620px] custom-md:h-[400px] mt-16 relative border-white border-2 border-solid">
+        <div className="max-w-[95%] custom-md:max-w-[1100px] h-[610px] custom-md:h-[400px] mt-16 relative">
 
           <div className="w-full h-full flex flex-col-reverse custom-md:flex-row justify-between items-end">
 
-            <div className="w-full custom-md:w-4/6 h-3/5 custom-md:h-full flex flex-col items-center custom-md:items-start text-center custom-md:text-left border-purple-500 border-solid border-2">
+            <div className="w-full custom-md:w-4/6 h-3/5 custom-md:h-full flex flex-col items-center custom-md:items-start text-center custom-md:text-left">
               <div className="ml-0 custom-md:ml-8">
                 <h1 className="text-white text-5xl custom-md:text-7xl">Frontend Developer</h1>
                 <p className="text-white text-base custom-md:text-lg mt-3 custom-md:mt-5 mr-0 custom-md:mr-10">
@@ -73,22 +73,22 @@ const Home = () => {
 
             </div>
 
-            <div className="w-full custom-md:w-2/6 h-2/5 custom-md:h-full flex justify-center items-center border-green-500 border-2 border-solid">
+            <div className="w-full custom-md:w-2/6 h-2/5 custom-md:h-full flex justify-center items-center">
               <div className="relative custom-md:absolute -top-10 custom-md:-top-56">
                 <Lottie
                   loop
                   animationData={AstronautLottie}
                   play
-                  className='w-[350px] custom-md:w-[700px] custom-md:h-[700px] border-white border-solid border-2'
+                  className='w-[350px] custom-md:w-[700px] custom-md:h-[700px]'
                 />
               </div>
             </div>
 
           </div>
 
-          <div className="absolute -bottom-20 w-[1100px] border-white border-2 border-solid flex justify-center">
+          <div className="absolute -bottom-20 w-[1100px] hidden custom-md:flex justify-center">
 
-            <div className="ml-8 w-[600px] border-red-500 border-2 border-solid flex justify-between">
+            <div className="ml-8 w-[600px] flex justify-between">
               <h2 className="text-white text-2xl flex items-center">Tech Stack</h2>
               <h2 className="text-white text-3xl flex items-center"> | </h2>
               <div className="w-[420px] flex justify-between">
