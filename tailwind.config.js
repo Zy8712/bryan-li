@@ -38,6 +38,9 @@ export default {
       scale: {
         '108': '1.08',
       },
+      screens: {
+        'custom-md': '920px',
+      },
     },
   },
   plugins: [],

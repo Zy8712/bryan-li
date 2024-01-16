@@ -83,9 +83,9 @@ const Home = () => {
 
             </div>
 
-            <div className="absolute -bottom-20 w-[1100px] flex justify-center">
+            <div className="absolute -bottom-20 w-[1100px] border-white border-2 border-solid flex justify-center">
 
-              <div className="ml-8 w-[600px] flex justify-between">
+              <div className="ml-8 w-[600px] border-red-500 border-2 border-solid flex justify-between">
                 <h2 className="text-white text-2xl flex items-center">Tech Stack</h2>
                 <h2 className="text-white text-3xl flex items-center"> | </h2>
                 <div className="w-[420px] flex justify-between">
