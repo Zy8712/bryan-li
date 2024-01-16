@@ -32,9 +32,10 @@ function EmailBox() {
                         </div>
 
                         <div className="w-full flex justify-center mt-1">
-                            <button className="w-[300px] h-10 text-white text-lg uppercase font-semibold tracking-widest rounded-xl border-white border-2 border-solid hover:bg-gradient-to-tr from-gradient-blue to-gradient-purple"
+                            <button className="w-[300px] h-10 flex justify-center items-center text-white text-lg uppercase font-semibold tracking-widest rounded-xl border-white border-2 border-solid hover:bg-gradient-to-tr from-gradient-blue to-gradient-purple"
                                 type="submit">
-                                Submit Form
+                                <i className="las la-envelope text-3xl mr-1"></i>
+                                Send Message
                             </button>
                         </div>
                     </div>

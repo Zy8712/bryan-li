@@ -11,10 +11,10 @@ const Navbar = () => {
     <nav className="w-full h-20 bg-transparent border-none absolute z-50">
       <div className="w-full h-full flex justify-between items-center border-none">
 
-        <div className="ml-8 flex justify-between items-center w-[250px]">
+        <div className=" ml-3 custom-sm:ml-8 flex justify-between items-center w-[240px] custom-sm:w-[250px]">
           {/** removed  animate-pulse */}
-          <div className="w-[68px] h-[68px] flex justify-center items-center rounded-full bg-gradient-to-br from-gradient-blue to-gradient-purple transition duration-200 hover:rotate-180 hover:cursor-pointer hover:animate-none relative">
-            <div className="w-[60px] h-[60px] rounded-full overflow-hidden">
+          <div className="w-14 custom-sm:w-[68px] h-14 custom-sm:h-[68px] flex justify-center items-center rounded-full bg-gradient-to-br from-gradient-blue to-gradient-purple transition duration-200 hover:rotate-180 hover:cursor-pointer hover:animate-none relative">
+            <div className="w-12 custom-sm:w-[60px] h-12 custom-sm:h-[60px] rounded-full overflow-hidden">
               <img className="w-full h-full transition duration-200 transform hover:-rotate-180" src={Profile_Pic} alt="profile_img" />
             </div>
           </div>
@@ -27,7 +27,7 @@ const Navbar = () => {
 
         </div>
 
-        <div className="w-[50px] custom-md:w-[400px] h-[50px] mr-8 custom-md:px-1 flex justify-around items-center bg-translucent-white backdrop-blur-lg rounded-full transition-all duration-500 ease-in-out">
+        <div className="w-[50px] custom-md:w-[400px] h-[50px] mr-3 custom-sm:mr-8 custom-md:px-1 flex justify-around items-center bg-translucent-white backdrop-blur-lg rounded-full transition-all duration-500 ease-in-out">
           
           <div className="w-full h-full flex justify-center items-center custom-md:hidden rounded-full hover:backdrop-blur-3xl hover:bg-gradient-to-tr from-nav-gradient-1 to-nav-gradient-2 hover:cursor-pointer">
             <img src={Menu_Icon} alt='menu icon' className="w-8 h-8" />
