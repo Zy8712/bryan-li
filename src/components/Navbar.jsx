@@ -4,8 +4,20 @@ import Profile_Pic from "../assets/profile-picture.jpg";
 import Menu_Icon from "../assets/home-page-assets/menu-svgrepo-com.svg";
 
 const Navbar = () => {
-  const [currPage, setCurrPage] = useState(1);
   const [location] = useLocation();
+  
+  const [mobileMenuActive, setMobileMenu] = useState(false);
+  const toggleMobileMenu = () =>{
+    setMobileMenu(!mobileMenuActive);
+    window.addEventListener('resize', handleResize);
+  }
+
+  const handleResize = () =>{
+    if(window.innerWidth > 500){
+      setMobileMenu(false);
+      window.removeEventListener('resize', handleResize);
+    }
+  }
 
   return (
     <nav className="w-full h-20 bg-transparent border-none absolute z-50">
@@ -27,11 +39,12 @@ const Navbar = () => {
 
         </div>
 
-        <div className="w-[50px] custom-md:w-[400px] h-[50px] mr-3 custom-sm:mr-8 custom-md:px-1 flex justify-around items-center bg-translucent-white backdrop-blur-lg rounded-full transition-all duration-500 ease-in-out">
+        <div className={`w-[50px] custom-md:w-[400px] flex ${mobileMenuActive ? 'h-[275px] flex-col' : 'h-[50px]'} mr-3 custom-sm:mr-8 custom-md:px-1 justify-around items-center custom-md:bg-translucent-white backdrop-blur-lg rounded-full transition-all duration-500 ease-in-out`}>
           
-          <div className="w-full h-full flex justify-center items-center custom-md:hidden rounded-full hover:backdrop-blur-3xl hover:bg-gradient-to-tr from-nav-gradient-1 to-nav-gradient-2 hover:cursor-pointer">
-            <img src={Menu_Icon} alt='menu icon' className="w-8 h-8" />
-          </div>
+          <button className="w-[50px] h-[50px] flex justify-center items-center custom-md:hidden rounded-full bg-translucent-white hover:backdrop-blur-3xl hover:bg-gradient-to-tr from-nav-gradient-1 to-nav-gradient-2"
+                  onClick={toggleMobileMenu}>
+            <img src={Menu_Icon} alt='menu icon' className="w-8 h-8"  />
+          </button>
 
           <Link to="/" className={`text-white py-2 px-5 rounded-full hidden custom-md:inline ${location === '/' ? 'backdrop-blur-3xl bg-gradient-to-tr from-nav-gradient-1 to-nav-gradient-2' : 'hover:bg-light-gray hover:opacity-95'}`}>
             Home
