@@ -28,33 +28,17 @@ function About() {
   }, []);
 */}
 
-  const [showEducationBox, setShowEducationBox] = useState(true);
-  const [showExperienceBox, setShowExperienceBox] = useState(false);
-  const [showCertificateBox, setShowCertificateBox] = useState(false);
+  const aboutGroup = [EducationBox, ExperienceBox, CertificationBox];
+  
+  const [activeFilter, setActiveFilter] = useState(1);
 
-  const toggleEducationBox = () => {
-    if (showEducationBox == false) {
-      setShowEducationBox(true);
-      setShowExperienceBox(false);
-      setShowCertificateBox(false);
+  const toggleFilter = (num) => {
+    if (num != activeFilter) {
+      setActiveFilter(num);
     }
-  };
+  }
 
-  const toggleExperienceBox = () => {
-    if (showExperienceBox == false) {
-      setShowEducationBox(false);
-      setShowExperienceBox(true);
-      setShowCertificateBox(false);
-    }
-  };
-
-  const toggleCertificateBox = () => {
-    if (showCertificateBox == false) {
-      setShowEducationBox(false);
-      setShowExperienceBox(false);
-      setShowCertificateBox(true);
-    }
-  };
+  const SelectedProjectGroup = aboutGroup[activeFilter-1];
 
   return (
     <>
@@ -66,28 +50,11 @@ function About() {
           <AboutTechnology />
 
           <EduExpCertButtonSwitcher
-            showEducationBox={showEducationBox}
-            showExperienceBox={showExperienceBox}
-            showCertificateBox={showCertificateBox}
-            toggleEducationBox={toggleEducationBox}
-            toggleExperienceBox={toggleExperienceBox}
-            toggleCertificateBox={toggleCertificateBox}
+            activeFilter={activeFilter}
+            toggleFilter={toggleFilter}
           />
 
-          {showEducationBox ? (
-            <EducationBox />
-          ) : ''
-          }
-
-          {showExperienceBox ? (
-            <ExperienceBox />
-          ) : ''
-          }
-
-          {showCertificateBox ? (
-            <CertificationBox />
-          ) : ''
-          }
+          <SelectedProjectGroup />
 
         </div>
       </div>

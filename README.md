@@ -31,3 +31,63 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+
+## Image Assets Used
+<p align="center">
+    <img src="./src/assets/svgrepo-logo.svg" width="180px" />
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+    <img src="./src/assets/lordicon-mobile.svg" width="70px" />
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    <img src="./src/assets/lottie-files-logo.png" width="280px">
+</p>    
+<p align="center">
+    Image assets used in this project were primarily sourced from: 
+    <a href="https://www.svgrepo.com/">SVG Repo</a>,
+    <a href="https://lordicon.com/">Lordicon</a>, and
+    <a href="https://lottiefiles.com/">LottieFiles</a>.
+</p>
+<p align="center">
+    Sources of three logos above:
+    <a href="https://www.svgrepo.com/logo.svg">SVG Repo Logo</a>,
+    <a href="https://lordicon.com/assets/svg/main/lordicon-mobile.svg">Lordicon Logo</a>,
+    <a href="https://drive.google.com/drive/folders/1i1cbnzIR02sMWpUh2xGKyESfazt4_4T8">LottieFiles Logo</a>, and
+    <a href="https://lottiefiles.com/brand-assets">LottieFiles Brand Assets Page</a>.
+</p>
+
+
+
+<img src="./public/dragon-svgrepo-com.svg" width="100px" />
+
+
+<img src="./src/assets/navbar-assets/menu-svgrepo-com.svg" width="80px" />
+
+
+<img src="./src/assets/navbar-assets/house-01-svgrepo-com.svg" width="80px" />
+
+
+<img src="./src/assets/navbar-assets/person-male-svgrepo-com.svg" width="80px" />
+
+
+<img src="./src/assets/navbar-assets/briefcase-alt-svgrepo-com.svg" width="80px" />
+
+
+<img src="./src/assets/navbar-assets/email-contact-ui-web-svgrepo-com.svg" width="80px" />
+
+<h4>Astronaut Lottie Animation</h4>
+<p>File Name: Animation-1697251945018.json</p>
+<p>
+    <a href="https://lottiefiles.com/animations/cute-astronaut-operating-laptop-rxBJyz07Vw">
+        Similar LottieFiles Source Link 1
+    </a>
+</p>
+<p>
+    <a href="https://lottiefiles.com/animations/astronaut-on-laptop-fOzMUFQcka">
+    Similar LottieFiles Source Link 2
+    </a>
+</p>
+
+<h4>Blue-Purple Loading Disc Lottie Animation</h4>
+<p>File Name: Animation-1704913159226.json</p>
+<p><a href="https://lottiefiles.com/animations/loading-disc-ua9XQSY0gR">LottieFiles Source Link</a></p>
