@@ -23,17 +23,17 @@ function UltimateProjectCard(props) {
 
   return (
     <>
-      <div className="group box w-[400px] h-[505px] overflow-hidden bg-white rounded-2xl 
+      <div className="group box w-[360px] custom-sm:w-[400px] h-[510px] custom-sm:h-[505px] overflow-hidden bg-white rounded-2xl 
         border-none mb-8 cursor-pointer relative hover:shadow-2xl hover:shadow-white	">
 
-        <div className="w-full h-[293.333333px] rounded-2xl overflow-hidden relative">
+        <div className="w-full h-[252.3px] custom-sm:h-[293.333333px] rounded-2xl overflow-hidden relative">
           <img src={`${props.previewImage}`}
             alt="qr_code_preview"
             className="w-full rounded-2xl duration-300 transform scale-100 group-hover:scale-108 transition-transform"
           />
         </div>
 
-        <div className={`h-[211.67px] text-white flex flex-col relative bg-gradient-to-b from-light-gray to-very-dark-blue`}>
+        <div className={`h-[257.7px] custom-sm:h-[211.67px] text-white flex flex-col relative bg-gradient-to-b from-light-gray to-very-dark-blue`}>
           <div className="mx-11 flex flex-col justify-between items-center text-center relative">
             <span className="block mt-4 mb-3 text-2xl font-medium">{props.name}</span>
             <p className="mb-3">{props.date}</p>

@@ -30,7 +30,7 @@ function Contact() {
     <>
       {/**  {isLoading && <PageLoadingScreen />} */}
       <div className="w-full h-auto pt-[100px] flex justify-center items-center bg-transparent border-none">
-        <div className="w-11/12 h-full flex justify-between items-center">
+        <div className="w-11/12 h-full flex justify-center custom-md:justify-between items-center">
 
           <Lottie
             loop
@@ -38,6 +38,7 @@ function Contact() {
             play
             speed={0.3}
             style={{ width: 280, height: 280 }}
+            className="hidden custom-md:block"
           />
 
           <div className="flex flex-col items-center">
@@ -52,6 +53,7 @@ function Contact() {
             play
             speed={0.3}
             style={{ width: 280, height: 280 }}
+            className="hidden custom-md:block"
           />
 
         </div>

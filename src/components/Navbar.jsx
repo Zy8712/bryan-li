@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import { Link, Route, useLocation } from 'wouter';
 import Profile_Pic from "../assets/profile-picture.jpg";
-import Menu_Icon from "../assets/home-page-assets/menu-svgrepo-com.svg";
+import Menu_Icon from "../assets/navbar-assets/menu-svgrepo-com.svg";
+import Home_Icon from "../assets/navbar-assets/house-01-svgrepo-com.svg";
+import About_Icon from "../assets/navbar-assets/person-male-svgrepo-com.svg";
+import Portfolio_Icon from "../assets/navbar-assets/briefcase-alt-svgrepo-com.svg";
+import Contact_Icon from "../assets/navbar-assets/email-contact-ui-web-svgrepo-com.svg";
 
 const Navbar = () => {
   const [location] = useLocation();
@@ -39,27 +43,31 @@ const Navbar = () => {
 
         </div>
 
-        <div className={`w-[50px] custom-md:w-[400px] flex ${mobileMenuActive ? 'h-[275px] flex-col' : 'h-[50px]'} mr-3 custom-sm:mr-8 custom-md:px-1 justify-around items-center custom-md:bg-translucent-white backdrop-blur-lg rounded-full transition-all duration-500 ease-in-out`}>
+        <div className={`w-[50px] custom-md:w-[400px] flex ${mobileMenuActive ? 'h-[320px] flex-col self-start mt-5' : 'h-[50px]'} mr-3 custom-sm:mr-8 custom-md:px-1 justify-between custom-md:justify-around items-center custom-md:bg-translucent-white backdrop-blur-lg rounded-full transition-all duration-300 ease-in-out`}>
           
           <button className="w-[50px] h-[50px] flex justify-center items-center custom-md:hidden rounded-full bg-translucent-white hover:backdrop-blur-3xl hover:bg-gradient-to-tr from-nav-gradient-1 to-nav-gradient-2"
                   onClick={toggleMobileMenu}>
             <img src={Menu_Icon} alt='menu icon' className="w-8 h-8"  />
           </button>
 
-          <Link to="/" className={`text-white py-2 px-5 rounded-full hidden custom-md:inline ${location === '/' ? 'backdrop-blur-3xl bg-gradient-to-tr from-nav-gradient-1 to-nav-gradient-2' : 'hover:bg-light-gray hover:opacity-95'}`}>
-            Home
+          <Link to="/" className={`text-white w-[50px] custom-md:w-auto h-[50px] custom-md:h-auto custom-md:py-2 custom-md:px-5 rounded-full ${mobileMenuActive? 'flex justify-center items-center self-end hover:w-[110px] bg-translucent-white' : 'hidden'} custom-md:inline ${location === '/' ? 'backdrop-blur-3xl bg-gradient-to-tr from-nav-gradient-1 to-nav-gradient-2' : 'hover:bg-light-gray hover:opacity-95'} group transition-all duration-500 ease-out`}>
+            <span className={`${mobileMenuActive ? 'hidden group-hover:inline group-hover:mr-2':'inline'} transition-all duration-1000 ease-out`}>Home</span>
+            <img src={Home_Icon} className={`w-8 h-8 ${mobileMenuActive ? 'inline' : 'hidden'} `} />
           </Link>
 
-          <Link to="/about" className={`text-white py-2 px-5 rounded-full hidden custom-md:inline ${location === '/about' ? 'backdrop-blur-3xl bg-gradient-to-tr from-nav-gradient-1 to-nav-gradient-2' : 'hover:bg-light-gray hover:opacity-95'}`}>
-            About
+          <Link to="/about" className={`text-white w-[50px] custom-md:w-auto h-[50px] custom-md:h-auto custom-md:py-2 custom-md:px-5 rounded-full ${mobileMenuActive? 'flex justify-center items-center self-end hover:w-[110px] bg-translucent-white' : 'hidden'} custom-md:inline ${location === '/about' ? 'backdrop-blur-3xl bg-gradient-to-tr from-nav-gradient-1 to-nav-gradient-2' : 'hover:bg-light-gray hover:opacity-95'} group transition-all duration-500 ease-out`}>
+            <span className={`${mobileMenuActive ? 'hidden group-hover:inline group-hover:mr-2':'inline'} transition-all duration-1000 ease-out`}>About</span>
+            <img src={About_Icon} className={`w-8 h-8 ${mobileMenuActive ? 'inline' : 'hidden'} `} />
           </Link>
 
-          <Link to="/portfolio" className={`text-white py-2 px-5 rounded-full hidden custom-md:inline ${location === '/portfolio' ? 'backdrop-blur-3xl bg-gradient-to-tr from-nav-gradient-1 to-nav-gradient-2' : 'hover:bg-light-gray hover:opacity-95'}`}>
-            Portfolio
+          <Link to="/portfolio" className={`text-white w-[50px] custom-md:w-auto h-[50px] custom-md:h-auto custom-md:py-2 custom-md:px-5 rounded-full ${mobileMenuActive? 'flex justify-center items-center self-end hover:w-[125px] bg-translucent-white' : 'hidden'} custom-md:inline ${location === '/portfolio' ? 'backdrop-blur-3xl bg-gradient-to-tr from-nav-gradient-1 to-nav-gradient-2' : 'hover:bg-light-gray hover:opacity-95'} group transition-all duration-500 ease-out`}>
+            <span className={`${mobileMenuActive ? 'hidden group-hover:inline group-hover:mr-2':'inline'} transition-all duration-1000 ease-out`}>Portfolio</span>
+            <img src={Portfolio_Icon} className={`w-8 h-8 ${mobileMenuActive ? 'inline' : 'hidden'} `} />
           </Link>
           
-          <Link to="/contact" className={`text-white py-2 px-5 rounded-full hidden custom-md:inline ${location === '/contact' ? 'backdrop-blur-3xl bg-gradient-to-tr from-nav-gradient-1 to-nav-gradient-2' : 'hover:bg-light-gray hover:opacity-95'}`}>
-            Contact
+          <Link to="/contact" className={`text-white w-[50px] custom-md:w-auto h-[50px] custom-md:h-auto custom-md:py-2 custom-md:px-5 rounded-full ${mobileMenuActive? 'flex justify-center items-center self-end hover:w-[115px] bg-translucent-white' : 'hidden'} custom-md:inline ${location === '/contact' ? 'backdrop-blur-3xl bg-gradient-to-tr from-nav-gradient-1 to-nav-gradient-2' : 'hover:bg-light-gray hover:opacity-95'} group transition-all duration-500 ease-out`}>
+            <span className={`${mobileMenuActive ? 'hidden group-hover:inline group-hover:mr-2':'inline'} transition-all duration-1000 ease-out`}>Contact</span>
+            <img src={Contact_Icon} className={`w-8 h-8 ${mobileMenuActive ? 'inline' : 'hidden'} `} />
           </Link>
 
         </div>
