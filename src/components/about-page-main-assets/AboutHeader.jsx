@@ -9,7 +9,7 @@ function PortfolioHeader() {
         <>
             <div className="w-full flex flex-col justify-center items-center mb-8">
                 <h2 className="text-gradient-blue font-semibold uppercase">About</h2>
-                <h1 className="text-white text-7xl mx-6 text-center uppercase">My Background</h1>
+                <h1 className="text-white text-5xl custom-sm:text-7xl mx-6 text-center uppercase">My Background</h1>
             </div>
         </>
     );
