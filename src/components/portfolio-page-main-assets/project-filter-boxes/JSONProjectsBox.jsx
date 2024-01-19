@@ -1,5 +1,5 @@
-import CardExpensesChartCompTrial1 from "../project-cards/CardExpensesChartCompTrial1";
-import CardSpaceTourismWebsiteTrial1 from "../project-cards/CardSpaceTourismWebsiteTrial1";
+import CardExpensesChartCompTrial1 from "../project-cards/fem-junior-project-cards/CardExpensesChartCompTrial1";
+import CardSpaceTourismWebsiteTrial1 from "../project-cards/fem-intermediate-project-cards/CardSpaceTourismWebsiteTrial1";
 
 function JSONProjectsBox() {
 

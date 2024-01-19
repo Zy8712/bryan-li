@@ -1,13 +1,13 @@
-import PortolioSiteV1 from "../personal-project-cards/PortfolioSiteV1";
-import ReactMovieCatalogue from "../personal-project-cards/ReactMovieCatalogue";
-import ReactTodoList from "../personal-project-cards/ReactTodoList";
-import PortolioSiteV2 from "../personal-project-cards/PortfolioSiteV2";
-import PortolioSiteV3 from "../personal-project-cards/PortfolioSiteV3";
-import DevToolsSite from "../personal-project-cards/DevToolsSite";
-import FrontendMentorDirectorySite from "../personal-project-cards/FrontendMentorDirectorySite";
-import ExpandedAgeCalc from "../personal-project-cards/ExpandedAgeCalc"
-import PortfolioSite from "../personal-project-cards/PortfolioSite";
-import NextJSTutorialDashboard from "../personal-project-cards/NextJSTutorialDashboard";
+import PortolioSiteV1 from "../project-cards/personal-project-cards/PortfolioSiteV1";
+import ReactMovieCatalogue from "../project-cards/personal-project-cards/ReactMovieCatalogue";
+import ReactTodoList from "../project-cards/personal-project-cards/ReactTodoList";
+import PortolioSiteV2 from "../project-cards/personal-project-cards/PortfolioSiteV2";
+import PortolioSiteV3 from "../project-cards/personal-project-cards/PortfolioSiteV3";
+import DevToolsSite from "../project-cards/personal-project-cards/DevToolsSite";
+import FrontendMentorDirectorySite from "../project-cards/personal-project-cards/FrontendMentorDirectorySite";
+import ExpandedAgeCalc from "../project-cards/personal-project-cards/ExpandedAgeCalc"
+import PortfolioSite from "../project-cards/personal-project-cards/PortfolioSite";
+import NextJSTutorialDashboard from "../project-cards/personal-project-cards/NextJSTutorialDashboard";
 
 function FeaturedProjectsBox() {
 

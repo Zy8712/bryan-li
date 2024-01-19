@@ -1,4 +1,4 @@
-import CardRockPaperScissorsGameTrial1 from '../project-cards/CardRockPaperScissorsGameTrial1';
+import CardRockPaperScissorsGameTrial1 from '../project-cards/fem-advanced-project-cards/CardRockPaperScissorsGameTrial1';
 
 function FemAdvanced() {
     return (

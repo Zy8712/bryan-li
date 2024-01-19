@@ -1,16 +1,16 @@
-import CardNewsletterSignupFormWithSuccessMessageTrial1 from '../project-cards/CardNewsletterSignupFormWithSuccessMessageTrial1';
-import CardTestimonalsGridSectionTrial1 from '../project-cards/CardTestimonalsGridSectionTrial1';
-import CardTimeTrackingDashboardTrial1 from '../project-cards/CardTimeTrackingDashboardTrial1';
-import CardFyloDataStorageCompTrial1 from '../project-cards/CardFyloDataStorageCompTrial1';
-import CardNewsHomepageTrial1 from '../project-cards/CardNewsHomepageTrial1';
-import CardAgeCalculatorAppTrial1 from '../project-cards/CardAgeCalculatorAppTrial1';
-import CardAdviceGeneratorAppTrial1 from '../project-cards/CardAdviceGeneratorAppTrial1';
-import CardTipCalculatorAppTrial1 from '../project-cards/CardTipCalculatorAppTrial1';
-import CardFyloDarkThemeLandingPageTrial1 from '../project-cards/CardFyloDarkThemeLandingPageTrial1';
-import CardExpensesChartCompTrial1 from '../project-cards/CardExpensesChartCompTrial1';
-import CardAdviceGeneratorAppTrial2 from '../project-cards/CardAdviceGeneratorAppTrial2';
-import CardHuddleLandingPageWithAlternatingFeatureBlocksTrial1 from '../project-cards/CardHuddleLandingPageWithAlternatingFeatureBlocksTrial1';
-import CardClipboardLandingPageTrial1 from '../project-cards/CardClipboardLandingPageTrial1';
+import CardNewsletterSignupFormWithSuccessMessageTrial1 from '../project-cards/fem-junior-project-cards/CardNewsletterSignupFormWithSuccessMessageTrial1';
+import CardTestimonalsGridSectionTrial1 from '../project-cards/fem-junior-project-cards/CardTestimonalsGridSectionTrial1';
+import CardTimeTrackingDashboardTrial1 from '../project-cards/fem-junior-project-cards/CardTimeTrackingDashboardTrial1';
+import CardFyloDataStorageCompTrial1 from '../project-cards/fem-junior-project-cards/CardFyloDataStorageCompTrial1';
+import CardNewsHomepageTrial1 from '../project-cards/fem-junior-project-cards/CardNewsHomepageTrial1';
+import CardAgeCalculatorAppTrial1 from '../project-cards/fem-junior-project-cards/CardAgeCalculatorAppTrial1';
+import CardAdviceGeneratorAppTrial1 from '../project-cards/fem-junior-project-cards/CardAdviceGeneratorAppTrial1';
+import CardTipCalculatorAppTrial1 from '../project-cards/fem-junior-project-cards/CardTipCalculatorAppTrial1';
+import CardFyloDarkThemeLandingPageTrial1 from '../project-cards/fem-junior-project-cards/CardFyloDarkThemeLandingPageTrial1';
+import CardExpensesChartCompTrial1 from '../project-cards/fem-junior-project-cards/CardExpensesChartCompTrial1';
+import CardAdviceGeneratorAppTrial2 from '../project-cards/fem-junior-project-cards/CardAdviceGeneratorAppTrial2';
+import CardHuddleLandingPageWithAlternatingFeatureBlocksTrial1 from '../project-cards/fem-junior-project-cards/CardHuddleLandingPageWithAlternatingFeatureBlocksTrial1';
+import CardClipboardLandingPageTrial1 from '../project-cards/fem-junior-project-cards/CardClipboardLandingPageTrial1';
 
 function FemJunior() {
     return (
