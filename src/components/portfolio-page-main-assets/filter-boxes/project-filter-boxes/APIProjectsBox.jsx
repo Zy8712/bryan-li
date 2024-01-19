@@ -1,6 +1,6 @@
-import CardIPAddressTrackerTrial1 from "../project-cards/fem-intermediate-project-cards/CardIPAddressTrackerTrial1";
-import CardAdviceGeneratorAppTrial1 from '../project-cards/fem-junior-project-cards/CardAdviceGeneratorAppTrial1';
-import CardAdviceGeneratorAppTrial2 from '../project-cards/fem-junior-project-cards/CardAdviceGeneratorAppTrial2';
+import CardIPAddressTrackerTrial1 from "../../project-cards/fem-intermediate-project-cards/CardIPAddressTrackerTrial1";
+import CardAdviceGeneratorAppTrial1 from '../../project-cards/fem-junior-project-cards/CardAdviceGeneratorAppTrial1';
+import CardAdviceGeneratorAppTrial2 from '../../project-cards/fem-junior-project-cards/CardAdviceGeneratorAppTrial2';
 
 function APIProjectsBox() {
 

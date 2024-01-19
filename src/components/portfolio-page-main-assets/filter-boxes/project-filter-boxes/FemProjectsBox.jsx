@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import FilterFemProjectLvl from "../FEMProjectFilters";
+import FilterFemProjectLvl from "../../FEMProjectFilters";
 
 import FemFeatured from "../frontend-mentor-filter-boxes/FemFeatured";
 import FemNewbie from "../frontend-mentor-filter-boxes/FemNewbie";

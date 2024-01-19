@@ -3,17 +3,17 @@ import React, { useEffect, useState } from 'react';
 import PortfolioHeader from '../components/portfolio-page-main-assets/PortfolioHeader';
 import ProjectFilters from '../components/portfolio-page-main-assets/ProjectFilters';
 
-import FeaturedProjectsBox from "../components/portfolio-page-main-assets/project-filter-boxes/FeaturedProjectsBox";
-import FemProjectsBox from "../components/portfolio-page-main-assets/project-filter-boxes/FemProjectsBox";
-import PersonalProjectsBox from "../components/portfolio-page-main-assets/project-filter-boxes/PersonalProjectsBox";
-import UpcomingProjectsBox from "../components/portfolio-page-main-assets/project-filter-boxes/UpcomingProjectsBox";
+import FeaturedProjectsBox from "../components/portfolio-page-main-assets/filter-boxes/project-filter-boxes/FeaturedProjectsBox";
+import FemProjectsBox from "../components/portfolio-page-main-assets/filter-boxes/project-filter-boxes/FemProjectsBox";
+import PersonalProjectsBox from "../components/portfolio-page-main-assets/filter-boxes/project-filter-boxes/PersonalProjectsBox";
+import UpcomingProjectsBox from "../components/portfolio-page-main-assets/filter-boxes/project-filter-boxes/UpcomingProjectsBox";
 
-import HTML_CSS_ProjectsBox from "../components/portfolio-page-main-assets/project-filter-boxes/HTML_CSS_ProjectsBox";
-import VanillaJSProjectsBox from "../components/portfolio-page-main-assets/project-filter-boxes/VanillaJSProjectsBox";
-import ReactProjectsBox from "../components/portfolio-page-main-assets/project-filter-boxes/ReactProjectsBox";
-import TailwindCSSProjectsBox from "../components/portfolio-page-main-assets/project-filter-boxes/TailwindCSSProjects";
-import JSONProjectsBox from "../components/portfolio-page-main-assets/project-filter-boxes/JSONProjectsBox";
-import APIProjectsBox from "../components/portfolio-page-main-assets/project-filter-boxes/APIProjectsBox";
+import HTML_CSS_ProjectsBox from "../components/portfolio-page-main-assets/filter-boxes/project-filter-boxes/HTML_CSS_ProjectsBox";
+import VanillaJSProjectsBox from "../components/portfolio-page-main-assets/filter-boxes/project-filter-boxes/VanillaJSProjectsBox";
+import ReactProjectsBox from "../components/portfolio-page-main-assets/filter-boxes/project-filter-boxes/ReactProjectsBox";
+import TailwindCSSProjectsBox from "../components/portfolio-page-main-assets/filter-boxes/project-filter-boxes/TailwindCSSProjects";
+import JSONProjectsBox from "../components/portfolio-page-main-assets/filter-boxes/project-filter-boxes/JSONProjectsBox";
+import APIProjectsBox from "../components/portfolio-page-main-assets/filter-boxes/project-filter-boxes/APIProjectsBox";
 
 import UltimateFeaturedProjectCard from '../components/portfolio-page-main-assets/featured-projects-section/UltimateFeaturedProjectsCard';
 {/**import PageLoadingScreen from './PageLoadingScreen';*/ }
