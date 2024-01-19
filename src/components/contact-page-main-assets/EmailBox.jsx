@@ -10,7 +10,7 @@ function EmailBox() {
                         <h1 className="text-white text-center uppercase text-3xl">Interested in working together?</h1>
                         <h2 className="text-white text-center uppercase text-3xl">Let's talk</h2>
 
-                        <div className="flex justify-between mt-5 mb-2">
+                        <div className="flex justify-between mt-4 mb-2">
                             <div className="w-[300px]">
                                 <span className="text-white">Your Name:</span>
                                 <input className="w-[300px] rounded-sm p-2" type="text" name="name" placeholder="Last Name, First Name" required />
@@ -32,7 +32,7 @@ function EmailBox() {
                         </div>
 
                         <div className="w-full flex justify-center mt-1">
-                            <button className="w-[300px] h-10 flex justify-center items-center text-white text-lg uppercase font-semibold tracking-widest rounded-xl border-white border-2 border-solid hover:bg-gradient-to-tr from-gradient-blue to-gradient-purple"
+                            <button className="w-[300px] h-11 flex justify-center items-center text-white text-lg uppercase font-semibold tracking-widest rounded-xl border-white border-2 border-solid hover:bg-gradient-to-tr from-gradient-blue to-gradient-purple"
                                 type="submit">
                                 <i className="las la-envelope text-3xl mr-1"></i>
                                 Send Message

@@ -1,13 +1,13 @@
 import { useState } from "react";
 
-import FilterFemProjectLvl from "../../frontend-mentor-filter-boxes/FilterFemProjectLvl";
+import FilterFemProjectLvl from "../FEMProjectFilters";
 
-import FemFeatured from "../../frontend-mentor-filter-boxes/FemFeatured";
-import FemNewbie from "../../frontend-mentor-filter-boxes/FemNewbie";
-import FemJunior from "../../frontend-mentor-filter-boxes/FemJunior";
-import FemIntermediate from "../../frontend-mentor-filter-boxes/FemIntermediate";
-import FemAdvanced from "../../frontend-mentor-filter-boxes/FemAdvanced";
-import FemGuru from "../../frontend-mentor-filter-boxes/FemGuru";
+import FemFeatured from "../frontend-mentor-filter-boxes/FemFeatured";
+import FemNewbie from "../frontend-mentor-filter-boxes/FemNewbie";
+import FemJunior from "../frontend-mentor-filter-boxes/FemJunior";
+import FemIntermediate from "../frontend-mentor-filter-boxes/FemIntermediate";
+import FemAdvanced from "../frontend-mentor-filter-boxes/FemAdvanced";
+import FemGuru from "../frontend-mentor-filter-boxes/FemGuru";
 
 function FemProjectsBox() {
 

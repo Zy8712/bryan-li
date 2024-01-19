@@ -55,6 +55,8 @@ function Portfolio() {
 
           <PortfolioHeader />
 
+          <UltimateFeaturedProjectCard />
+
           <ProjectFilters
             activeFilter={activeFilter}
             toggleFilter={toggleFilter}

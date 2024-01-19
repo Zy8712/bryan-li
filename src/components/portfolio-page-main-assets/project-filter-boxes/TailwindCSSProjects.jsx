@@ -1,8 +1,8 @@
-import Card3ColumnPreviewCardCompTrial2 from "../../project-cards/Card3ColumnPreviewCardCompTrial2";
-import CardProfileCardCompTrial2 from "../../project-cards/CardProfileCardCompTrial2";
-import CardQrCodeCompTrial3 from "../../project-cards/CardQrCodeCompTrial3";
-import CardAdviceGeneratorAppTrial2 from "../../project-cards/CardAdviceGeneratorAppTrial2";
-import PortfolioSite from "../../personal-project-cards/PortfolioSite";
+import Card3ColumnPreviewCardCompTrial2 from "../project-cards/Card3ColumnPreviewCardCompTrial2";
+import CardProfileCardCompTrial2 from "../project-cards/CardProfileCardCompTrial2";
+import CardQrCodeCompTrial3 from "../project-cards/CardQrCodeCompTrial3";
+import CardAdviceGeneratorAppTrial2 from "../project-cards/CardAdviceGeneratorAppTrial2";
+import PortfolioSite from "../personal-project-cards/PortfolioSite";
 
 function TailwindCSSProjectsBox() {
 
