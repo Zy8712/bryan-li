@@ -1,4 +1,4 @@
-import PreviewImage from '../../../../assets/project-previews/ipaddresstracker-desktop-preview.jpg';
+import PreviewImage from '../../../../assets/project-previews/fem-intermediate-previews/ipaddresstracker-desktop-preview.jpg';
 import UltimateProjectCard from '../../UltimateProjectCard';
 
 import '../../../../App.css';

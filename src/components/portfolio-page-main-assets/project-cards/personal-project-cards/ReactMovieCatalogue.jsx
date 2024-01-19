@@ -1,4 +1,4 @@
-import PreviewImage from '../../../../assets/personal-project-previews/react-movie-catalogue-edited.jpg';
+import PreviewImage from '../../../../assets/project-previews/personal-project-previews/react-movie-catalogue-edited.jpg';
 import UltimateProjectCard from '../../UltimateProjectCard';
 
 import '../../../../App.css';

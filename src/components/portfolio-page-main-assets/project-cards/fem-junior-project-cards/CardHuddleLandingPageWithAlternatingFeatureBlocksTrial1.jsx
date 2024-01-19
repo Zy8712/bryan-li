@@ -1,4 +1,4 @@
-import PreviewImage from '../../../../assets/project-previews/huddlelandingpagewithalternatingfeatureblocks-desktop-preview.jpg';
+import PreviewImage from '../../../../assets/project-previews/fem-junior-previews/huddlelandingpagewithalternatingfeatureblocks-desktop-preview.jpg';
 import UltimateProjectCard from '../../UltimateProjectCard';
 
 import '../../../../App.css';

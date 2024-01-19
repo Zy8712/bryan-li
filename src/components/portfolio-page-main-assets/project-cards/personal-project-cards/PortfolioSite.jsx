@@ -1,4 +1,4 @@
-import PreviewImage from '../../../../assets/personal-project-previews/portfolio-site-edited.jpg';
+import PreviewImage from '../../../../assets/project-previews/personal-project-previews/portfolio-site-edited.jpg';
 import UltimateProjectCard from '../../UltimateProjectCard';
 
 import '../../../../App.css';
@@ -8,7 +8,7 @@ function PortfolioSite() {
     <>
       <UltimateProjectCard
         name="Portfolio Site"
-        date="Last Updated: January 12th, 2024 [Active]"
+        date="Last Updated: January 19th, 2024 [Active]"
         previewImage={PreviewImage}
         githubrepo="https://github.com/Zy8712/bryan-li"
         websitepreview="https://bryanli.vercel.app/"

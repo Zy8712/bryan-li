@@ -1,4 +1,4 @@
-import PreviewImage from '../../../../assets/project-previews/articlepreviewcomp-desktop-preview.jpg';
+import PreviewImage from '../../../../assets/project-previews/fem-newbie-previews/articlepreviewcomp-desktop-preview.jpg';
 import UltimateProjectCard from '../../UltimateProjectCard';
 
 import '../../../../App.css';

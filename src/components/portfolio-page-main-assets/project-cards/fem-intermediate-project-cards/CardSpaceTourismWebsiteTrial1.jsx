@@ -1,4 +1,4 @@
-import PreviewImage from '../../../../assets/project-previews/spacetourismwebsite-desktop-preview.jpg';
+import PreviewImage from '../../../../assets/project-previews/fem-intermediate-previews/spacetourismwebsite-desktop-preview.jpg';
 import UltimateProjectCard from '../../UltimateProjectCard';
 
 import '../../../../App.css';

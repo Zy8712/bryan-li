@@ -1,4 +1,4 @@
-import PreviewImage from '../../../../assets/personal-project-previews/nextjsdashboard-desktop-preview.jpg';
+import PreviewImage from '../../../../assets/project-previews/personal-project-previews/nextjsdashboard-desktop-preview.jpg';
 import UltimateProjectCard from '../../UltimateProjectCard';
 
 import '../../../../App.css';

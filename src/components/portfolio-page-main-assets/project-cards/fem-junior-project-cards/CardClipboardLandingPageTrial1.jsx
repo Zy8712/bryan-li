@@ -1,4 +1,4 @@
-import PreviewImage from '../../../../assets/project-previews/clipboardlandingpage-desktop-preview.jpg';
+import PreviewImage from '../../../../assets/project-previews/fem-junior-previews/clipboardlandingpage-desktop-preview.jpg';
 import UltimateProjectCard from '../../UltimateProjectCard';
 
 import '../../../../App.css';
