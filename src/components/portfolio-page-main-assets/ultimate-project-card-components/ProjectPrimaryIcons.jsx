@@ -8,11 +8,11 @@ import Bootstrap_Icon from '../../../assets/language-icons/bootstrap-fill-svgrep
 import JSON_Icon from '../../../assets/language-icons/json-official-svgrepo-com.svg';
 import API_Icon from '../../../assets/language-icons/api-svgrepo-com.svg';
 import Wouter_Icon from '../../../assets/other-icons/wouter-github-logo.svg';
-import Figma_Icon from '../../../assets/other-icons/figma-svgrepo-com.svg';
 import NextJS_Icon from '../../../assets/language-icons/nextjs-fill-svgrepo-com.svg';
 import Typescript_Icon from '../../../assets/language-icons/typescript-icon-svgrepo-com.svg';
 import Redux_Icon from '../../../assets/language-icons/redux-svgrepo-com.svg';
 import PostgreSql_Icon from '../../../assets/language-icons/postgresql-svgrepo-com.svg';
+import Figma_Icon from '../../../assets/other-icons/figma-svgrepo-com.svg';
 
 function ProjectPrimaryIcons(props) {
 
@@ -27,11 +27,11 @@ function ProjectPrimaryIcons(props) {
         { iconImage: JSON_Icon, alt: "json_icon", title: "JSON", trueFalse: "jsonTF" },
         { iconImage: API_Icon, alt: "api_icon", title: "API", trueFalse: "apiTF" },
         { iconImage: Wouter_Icon, alt: "wouter_icon", title: "Wouter", trueFalse: "wouterTF" },
-        { iconImage: Figma_Icon, alt: "figma_icon", title: "Figma", trueFalse: "figmaTF" },
         { iconImage: NextJS_Icon, alt: "nextjs_icon", title: "NextJS", trueFalse: "nextjsTF" },
         { iconImage: Typescript_Icon, alt: "typescript_icon", title: "Typescript", trueFalse: "typescriptTF" },
         { iconImage: Redux_Icon, alt: "redux_icon", title: "Redux", trueFalse: "reduxTF" },
         { iconImage: PostgreSql_Icon, alt: "postgresql_icon", title: "PostgreSql", trueFalse: "postgresqlTF" },
+        { iconImage: Figma_Icon, alt: "figma_icon", title: "Figma", trueFalse: "figmaTF" },
     ];
 
     const renderIcons = () => {

@@ -37,7 +37,7 @@ function Portfolio() {
 
   const projectGroup = [FeaturedProjectsBox, FemProjectsBox, PersonalProjectsBox, UpcomingProjectsBox, HTML_CSS_ProjectsBox, VanillaJSProjectsBox, ReactProjectsBox, TailwindCSSProjectsBox, JSONProjectsBox, APIProjectsBox];
 
-  const [activeFilter, setActiveFilter] = useState(2);
+  const [activeFilter, setActiveFilter] = useState(1);
 
   const toggleFilter = (num) => {
     if (num != activeFilter) {

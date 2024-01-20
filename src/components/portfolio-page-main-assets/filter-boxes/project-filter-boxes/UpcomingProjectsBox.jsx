@@ -2,16 +2,20 @@ import CardToDoAppTrial1 from "../../project-cards/CardToDoAppTrial1";
 import CardLaunchCountdownTimerTrial1 from "../../project-cards/CardLaunchCountdownTimerTrial1";
 import CardRESTCountriesAPIwithColourThemeSwitcherTrial1 from "../../project-cards/CardRESTCountriesAPIwithColourThemeSwitcherTrial1";
 import CardAudiophileEcommerceWebsiteTrial1 from "../../project-cards/fem-guru-project-cards/CardAudiophileEcommerceWebsiteTrial1";
+import CardInvoiceAppTrial1 from "../../project-cards/fem-guru-project-cards/CardInvoiceAppTrial1";
+import CardKabanTaskManagementWebAppTrial1 from "../../project-cards/fem-guru-project-cards/CardKabanTaskManagementWebAppTrial1";
 
 function UpcomingProjectsBox() {
 
     return (
         <>
             <div className="w-full h-full flex flex-wrap justify-around">
+                <CardAudiophileEcommerceWebsiteTrial1 />
+                <CardInvoiceAppTrial1 />
+                <CardKabanTaskManagementWebAppTrial1 />
                 <CardToDoAppTrial1 />
                 <CardLaunchCountdownTimerTrial1 />
                 <CardRESTCountriesAPIwithColourThemeSwitcherTrial1 />
-                <CardAudiophileEcommerceWebsiteTrial1 />
             </div>
         </>
     );
