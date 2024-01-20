@@ -66,6 +66,31 @@ html::-webkit-scrollbar-thumb {
     color: #DDBDFC;
 }
 
+.link-custom3 {
+    position: relative;
+}
+
+.link-custom3::after {
+    content: "";
+    width: 0%;
+    /* animate the underline */
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 105%;
+    transition: all 0.4s;
+    /* animate the underline */
+}
+
+/* animate the underline */
+.link-custom3:hover::after {
+    width: 100%;
+}
+
+.link-custom3:hover {
+    color: white;
+}
 
 @keyframes arrowAnimation {
     0% {

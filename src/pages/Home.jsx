@@ -6,11 +6,13 @@ import AstronautLottie from '../assets/Animation-1697251945018.json';
 
 import HTML_Icon from '../assets/language-icons/html5-svgrepo-com.svg';
 import CSS_Icon from '../assets/language-icons/css3-svgrepo-com.svg';
-import Javascript_Icon from '../assets/language-icons/javascript-svgrepo-com.svg';
+import JavaScript_Icon from '../assets/language-icons/javascript-svgrepo-com.svg';
 import SASS_Icon from '../assets/language-icons/scss2-svgrepo-com.svg';
 import React_Icon from '../assets/language-icons/react-1-logo-svgrepo-com.svg';
 import Tailwind_Icon from '../assets/language-icons/tailwind-svgrepo-com.svg';
 import Bootstrap_Icon from '../assets/language-icons/bootstrap-fill-svgrepo-com.svg';
+import NextJS_Icon from "../assets/language-icons/nextjs-fill-svgrepo-com.svg";
+import TypeScript_Icon from "../assets/language-icons/typescript-icon-svgrepo-com.svg";
 
 import SocialIcons from '../components/SocialIcons';
 
@@ -45,9 +47,9 @@ const Home = () => {
 
             <div className="w-full custom-md:w-4/6 h-3/5 custom-md:h-full flex flex-col items-center custom-md:items-start text-center custom-md:text-left">
               <div className="ml-0 custom-md:ml-8 flex flex-col items-center custom-md:items-start">
-                <h1 className="text-white text-5xl custom-md:text-7xl">Frontend Developer</h1>
+                <h1 className="text-white text-5xl custom-md:text-[144px]">Bryan Li</h1>
                 <p className="w-[360px] custom-sm:w-[400px] custom-md:w-full text-white text-base custom-md:text-lg mt-3 custom-md:mt-5 mr-0 custom-md:mr-10">
-                  Hi there, my name's Bryan. I'm an aspiring Frontend Developer and a recent Specialized Honours Graduate from York University.
+                  Hi there, my name's Bryan. I'm an aspiring Fullstack Developer and a recent Specialized Honours Graduate from York University.
                 </p>
               </div>
 
@@ -88,17 +90,19 @@ const Home = () => {
 
           <div className="absolute -bottom-20 w-[1100px] hidden custom-md:flex justify-center">
 
-            <div className="ml-8 w-[600px] flex justify-between">
-              <h2 className="text-white text-2xl flex items-center">Tech Stack</h2>
-              <h2 className="text-white text-3xl flex items-center"> | </h2>
-              <div className="w-[420px] flex justify-between">
-                <img src={HTML_Icon} alt="html5_icon" title="HTML5" className="w-[40px]" />
-                <img src={CSS_Icon} alt="css3_icon" title="CSS3" className="w-[40px]" />
-                <img src={Javascript_Icon} alt="javascript_icon" title="Javascript" className="w-[40px]" />
-                <img src={SASS_Icon} alt="sass_icon" title="SASS/SCSS" className="w-[40px]" />
-                <img src={React_Icon} alt="react_icon" title="React" className="w-[40px]" />
-                <img src={Tailwind_Icon} alt="tailwindcss_icon" title="Tailwind CSS" className="w-[40px]" />
-                <img src={Bootstrap_Icon} alt="bootstrap_icon" title="Bootstrap" className="w-[40px]" />
+            <div className="ml-8 inline-flex font-medium">
+              <h2 className="text-white text-2xl flex items-center mr-5">Tech Stack</h2>
+              <h2 className="text-white text-3xl flex items-center mr-2"> | </h2>
+              <div className="inline-flex">
+                <img src={HTML_Icon} alt="html5_icon" title="HTML5" className="w-[40px] mx-3" />
+                <img src={CSS_Icon} alt="css3_icon" title="CSS3" className="w-[40px] mx-3" />
+                <img src={JavaScript_Icon} alt="javascript_icon" title="JavaScript" className="w-[40px] mx-3" />
+                <img src={SASS_Icon} alt="sass_icon" title="SASS/SCSS" className="w-[40px] mx-3" />
+                <img src={React_Icon} alt="react_icon" title="React" className="w-[40px] mx-3" />
+                <img src={Tailwind_Icon} alt="tailwindcss_icon" title="Tailwind CSS" className="w-[40px] mx-3" />
+                <img src={Bootstrap_Icon} alt="bootstrap_icon" title="Bootstrap" className="w-[40px] mx-3" />
+                <img src={NextJS_Icon} alt="nextjs_icon" title="NextJS" className="w-[40px] mx-3" />
+                <img src={TypeScript_Icon} alt="typescript_icon" title="TypeScript" className="w-[40px] mx-3" />
               </div>
 
             </div>

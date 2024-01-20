@@ -16,6 +16,7 @@ import JSONProjectsBox from "../components/portfolio-page-main-assets/filter-box
 import APIProjectsBox from "../components/portfolio-page-main-assets/filter-boxes/project-filter-boxes/APIProjectsBox";
 
 import UltimateFeaturedProjectCard from '../components/portfolio-page-main-assets/featured-projects-section/UltimateFeaturedProjectsCard';
+import FeaturedProjectCard_AudiophileEcommerceWebsiteTrial1 from '../components/portfolio-page-main-assets/featured-projects-section/FeaturedProjectCard_AudiophileEcommerceWebsiteTrial1';
 {/**import PageLoadingScreen from './PageLoadingScreen';*/ }
 
 function Portfolio() {
@@ -55,7 +56,7 @@ function Portfolio() {
 
           <PortfolioHeader />
 
-          <UltimateFeaturedProjectCard />
+          <FeaturedProjectCard_AudiophileEcommerceWebsiteTrial1 />
 
           <ProjectFilters
             activeFilter={activeFilter}
