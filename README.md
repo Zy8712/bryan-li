@@ -10,8 +10,8 @@
         <img align="center" src="https://img.shields.io/badge/Project_Status-In_Progress-D87D4A?style=flat&logo=githubsponsors&logoColor=white" />
     </p>
     <p>
-        <img align="center" src="https://img.shields.io/badge/Vite-v4.5.1-646CFF?style=flat&logo=vite&logoColor=white" />
-        <img align="center" src="https://img.shields.io/badge/PostCSS-v8.4.29-DD3A0A?style=flat&logo=postcss&logoColor=white" />
+        <img align="center" src="https://img.shields.io/badge/Vite-v4.5.2-646CFF?style=flat&logo=vite&logoColor=white" />
+        <img align="center" src="https://img.shields.io/badge/PostCSS-v8.4.31-DD3A0A?style=flat&logo=postcss&logoColor=white" />
         <img align="center" src="https://img.shields.io/badge/React-v18.2.0-blue?style=flat&logo=react&logoColor=white" />
         <img align="center" src="https://img.shields.io/badge/Tailwind_CSS-v3.3.3-06B6D4?style=flat&logo=tailwindcss&logoColor=white" />
         <img align="center" src="https://img.shields.io/badge/Wouter-v2.11.0-black?style=flat" />

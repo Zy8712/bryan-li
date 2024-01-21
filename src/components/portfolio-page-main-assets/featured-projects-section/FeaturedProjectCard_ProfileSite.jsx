@@ -1,5 +1,5 @@
 import Preview_Image from "../../../assets/project-previews/personal-project-previews/portfolio-site/portfolio-site-edited.jpg";
-import Site_Icon from "../../../../public/dragon-svgrepo-com.svg";
+import Site_Icon from "../../../assets/project-previews/personal-project-previews/portfolio-site/dragon-svgrepo-com.svg";
 import UltimateFeaturedProjectCard from "./UltimateFeaturedProjectsCard";
 
 function FeaturedProjectCard_ProfileSite(){

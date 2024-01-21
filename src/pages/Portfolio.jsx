@@ -15,11 +15,6 @@ import TailwindCSSProjectsBox from "../components/portfolio-page-main-assets/fil
 import JSONProjectsBox from "../components/portfolio-page-main-assets/filter-boxes/project-filter-boxes/JSONProjectsBox";
 import APIProjectsBox from "../components/portfolio-page-main-assets/filter-boxes/project-filter-boxes/APIProjectsBox";
 
-import UltimateFeaturedProjectCard from '../components/portfolio-page-main-assets/featured-projects-section/UltimateFeaturedProjectsCard';
-import FeaturedProjectCard_AudiophileEcommerceWebsiteTrial1 from '../components/portfolio-page-main-assets/featured-projects-section/FeaturedProjectCard_AudiophileEcommerceWebsiteTrial1';
-import FeaturedProjectCard_SpaceTourismWebsiteTrial1 from '../components/portfolio-page-main-assets/featured-projects-section/FeaturedProjectCard_SpaceTourismWebsiteTrial1';
-import FeaturedProjectCard_ProfileSite from '../components/portfolio-page-main-assets/featured-projects-section/FeaturedProjectCard_ProfileSite';
-
 {/**import PageLoadingScreen from './PageLoadingScreen';*/ }
 
 function Portfolio() {
@@ -58,12 +53,6 @@ function Portfolio() {
         <div className="w-11/12 h-full flex flex-col flex-wrap items-center">
 
           <PortfolioHeader />
-
-          <div className='w-full h-[1650px] mt-11 mb-7 flex flex-col justify-between items-center'>
-            <FeaturedProjectCard_AudiophileEcommerceWebsiteTrial1 />
-            <FeaturedProjectCard_ProfileSite />
-            <FeaturedProjectCard_SpaceTourismWebsiteTrial1 />
-          </div>
 
           <ProjectFilters
             activeFilter={activeFilter}

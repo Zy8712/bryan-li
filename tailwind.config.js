@@ -40,6 +40,7 @@ export default {
         '108': '1.08',
       },
       screens: {
+        'custom-lg': '1128px',
         'custom-md': '1100px',
         'custom-sm': '500px',
       },

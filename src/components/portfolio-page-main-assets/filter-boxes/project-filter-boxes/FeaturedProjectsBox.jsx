@@ -1,21 +1,15 @@
-import CardIPAddressTrackerTrial1 from "../../project-cards/fem-intermediate-project-cards/CardIPAddressTrackerTrial1";
-import CardRockPaperScissorsGameTrial1 from "../../project-cards/fem-advanced-project-cards/CardRockPaperScissorsGameTrial1";
-import CardSpaceTourismWebsiteTrial1 from "../../project-cards/fem-intermediate-project-cards/CardSpaceTourismWebsiteTrial1";
-import FrontendMentorDirectorySite from "../../project-cards/personal-project-cards/FrontendMentorDirectorySite";
-import PortfolioSite from "../../project-cards/personal-project-cards/PortfolioSite";
-import CardAudiophileEcommerceWebsiteTrial1 from "../../project-cards/fem-guru-project-cards/CardAudiophileEcommerceWebsiteTrial1";
+import FeaturedProjectCard_AudiophileEcommerceWebsiteTrial1 from '../../featured-projects-section/FeaturedProjectCard_AudiophileEcommerceWebsiteTrial1';
+import FeaturedProjectCard_SpaceTourismWebsiteTrial1 from '../../featured-projects-section/FeaturedProjectCard_SpaceTourismWebsiteTrial1';
+import FeaturedProjectCard_ProfileSite from '../../featured-projects-section/FeaturedProjectCard_ProfileSite';
 
 function FeaturedProjectsBox() {
 
     return (
         <>
-            <div className="w-full h-full flex flex-wrap justify-around">
-                <CardAudiophileEcommerceWebsiteTrial1 />
-                <PortfolioSite />
-                <CardSpaceTourismWebsiteTrial1 />
-                <FrontendMentorDirectorySite />
-                <CardRockPaperScissorsGameTrial1 />
-                <CardIPAddressTrackerTrial1 />
+            <div className='w-full min-h-[1850px] custom-sm:min-h-0 h-auto custom-sm:h-[3150px] custom-lg:h-[1650px] mt-6 mb-7 flex flex-col justify-between items-center'>
+                <FeaturedProjectCard_AudiophileEcommerceWebsiteTrial1 />
+                <FeaturedProjectCard_ProfileSite />
+                <FeaturedProjectCard_SpaceTourismWebsiteTrial1 />
             </div>
         </>
     );
