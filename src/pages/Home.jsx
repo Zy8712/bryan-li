@@ -41,15 +41,23 @@ const Home = () => {
       {/**  {isLoading && <PageLoadingScreen />} */}
       <div className="w-full min-h-screen flex justify-center items-center bg-transparent border-none overflow-hidden relative">
 
-        <div className="max-w-[95%] custom-md:max-w-[1100px] h-[610px] custom-md:h-[400px] mt-16 relative">
+        <div className="max-w-[95%] custom-md:max-w-[1100px] h-[610px] custom-md:h-[450px] mt-16 relative">
 
           <div className="w-full h-full flex flex-col-reverse custom-md:flex-row justify-between items-end">
 
             <div className="w-full custom-md:w-4/6 h-3/5 custom-md:h-full flex flex-col items-center custom-md:items-start text-center custom-md:text-left">
               <div className="ml-0 custom-md:ml-8 flex flex-col items-center custom-md:items-start">
-                <h1 className="text-white text-5xl custom-md:text-[144px]">Bryan Li</h1>
+                <div className="bg-gradient-to-tr from-gradient-blue to-gradient-purple rounded-lg overflow-hidden">
+                  <h1 className="w-full h-full bg-transparent mix-blend-lighten bg-white font-semibold text-5xl uppercase custom-md:text-[144px]">
+                    Bryan Li
+                  </h1>
+                </div>
+
+
                 <p className="w-[360px] custom-sm:w-[400px] custom-md:w-full text-white text-base custom-md:text-lg mt-3 custom-md:mt-5 mr-0 custom-md:mr-10">
-                  Hi there, my name's Bryan. I'm an aspiring Fullstack Developer and a recent Specialized Honours Graduate from York University.
+                  Hey, I'm Bryan! Recently graduated with a Specialized Honours degree from York University, and I'm 
+                  diving into the exciting world of Fullstack Development. Join me on this coding adventure and
+                  check out what I've been up to! 🚀
                 </p>
               </div>
 
@@ -57,7 +65,7 @@ const Home = () => {
                 <SocialIcons />
               </div>
 
-              <div className="w-[320px] custom-sm:w-[450px] ml-0 custom-md:ml-8 mt-6 custom-md:mt-12 flex justify-between">
+              <div className="w-[320px] custom-sm:w-[450px] ml-0 custom-md:ml-8 mt-6 custom-md:mt-9 flex justify-between">
                 <Link to="/portfolio">
                   <button className="border-4 border-solid border-white rounded-xl py-2 custom-sm:py-4 px-4 custom-sm:px-7 text-white font-medium flex justify-between items-center transition duration-700 hover:bg-gradient-to-tr from-gradient-purple to-gradient-blue">
                     <span className="hidden custom-md:inline">View&nbsp;</span>

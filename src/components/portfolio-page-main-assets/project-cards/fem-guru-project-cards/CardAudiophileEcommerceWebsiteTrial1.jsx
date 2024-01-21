@@ -1,4 +1,4 @@
-import PreviewImage from '../../../../assets/project-previews/fem-guru-previews/audiophileecommercewebsite-desktop-preview.jpg';
+import PreviewImage from '../../../../assets/project-previews/fem-guru-previews/audiophile-ecommerce-website/audiophileecommercewebsite-desktop-preview.jpg';
 import UltimateProjectCard from '../../UltimateProjectCard';
 
 import '../../../../App.css';

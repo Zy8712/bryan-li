@@ -1,4 +1,4 @@
-import Preview_Image from "../../../assets/project-previews/fem-guru-previews/audiophileecommercewebsite-desktop-preview.jpg";
+import Preview_Image from "../../../assets/project-previews/fem-guru-previews/audiophile-ecommerce-website/audiophileecommercewebsite-desktop-preview.jpg";
 import Preview_Image_2 from "../../../assets/project-previews/fem-guru-previews/audiophile-ecommerce-website/audiophileecommercewebsite-inner-pages.jpg";
 import Preview_Image_3 from "../../../assets/project-previews/fem-guru-previews/audiophile-ecommerce-website/audiophileecommercewebsite-checkout-flow.jpg";
 import Preview_Image_4 from "../../../assets/project-previews/fem-guru-previews/audiophile-ecommerce-website/audiophileecommercewebsite-tablet-design.jpg";
@@ -16,7 +16,8 @@ function FeaturedProjectCard_AudiophileEcommerceWebsiteTrial1(){
                 projectName="Audiophile E-Commerce Website"
                 projectPreviewImages={projectPreviewImages}
                 siteIcon={Site_Icon}
-                projectStatus="In Progress"
+                projectStatus="Active/Ongoing"
+                projectCompleted={false}
                 projectSource="Frontend Mentor"
                 projectSourceLink="https://www.frontendmentor.io/challenges/audiophile-ecommerce-website-C8cuSd_wx"
                 projectDescription="Audio hardware ecommerce site. Effortlessly manage your 
