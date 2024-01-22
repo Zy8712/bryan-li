@@ -6,7 +6,7 @@ import Bayview_Image from "../../../assets/about-page-images/bayview_secondary_e
 function EducationBox() {
   return (
     <>
-      <div className="w-3/4 h-auto flex justify-around flex-wrap rounded-xl mb-8 border-white border-2 border-solid px-5">
+      <div className="w-[1000px] h-auto flex justify-around flex-wrap rounded-xl mb-8 border-white border-2 border-solid px-5">
 
         <div className="w-[430px] flex flex-col my-7">
           <div className="w-full flex items-center">

@@ -65,7 +65,7 @@ function CertificationBox() {
 
     return (
         <>
-            <div className="w-3/4 h-auto flex flex-col rounded-xl mb-8 border-white border-2 border-solid px-5">
+            <div className="w-[1000px] h-auto flex flex-col rounded-xl mb-8 border-white border-2 border-solid px-5">
                 <CertificationBoxButtonSwitcher
                     showFeatured={showFeatured}
                     showAll={showAll}

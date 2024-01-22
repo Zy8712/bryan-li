@@ -30,7 +30,7 @@ function Contact() {
     <>
       {/**  {isLoading && <PageLoadingScreen />} */}
       <div className="w-full h-auto pt-[100px] flex justify-center items-center bg-transparent border-none">
-        <div className="w-11/12 h-full flex justify-center custom-md:justify-between items-center">
+        <div className="w-11/12 h-full flex flex-col custom-md:flex-row justify-center custom-md:justify-between items-center">
 
           <Lottie
             loop

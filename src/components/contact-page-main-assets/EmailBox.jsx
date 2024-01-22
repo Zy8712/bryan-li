@@ -5,19 +5,19 @@ function EmailBox() {
             <form action="https://api.web3forms.com/submit" method="POST">
                 <input type="hidden" name="access_key" value="f12fdccc-27f3-43fa-9bea-3f7fa95502e2" />
                 <input type="checkbox" name="botcheck" class="hidden" />
-                <div className="w-[650px] h-[510px] border-2 border-solid border-white rounded-2xl">
+                <div className="w-[98%] custom-sm:w-[500px] md:w-[650px] h-[610px] md:h-[510px] border-2 border-solid border-white rounded-2xl">
                     <div className="w-auto h-auto m-3">
                         <h1 className="text-white text-center uppercase text-3xl">Interested in working together?</h1>
                         <h2 className="text-white text-center uppercase text-3xl">Let's talk</h2>
 
-                        <div className="flex justify-between mt-4 mb-2">
-                            <div className="w-[300px]">
+                        <div className="w-full flex flex-col md:flex-row justify-between mt-4 mb-2">
+                            <div className="w-full md:w-[300px] mb-1 md:mb-0">
                                 <span className="text-white">Your Name:</span>
-                                <input className="w-[300px] rounded-sm p-2" type="text" name="name" placeholder="Last Name, First Name" required />
+                                <input className="w-full md:w-[300px] rounded-sm p-2" type="text" name="name" placeholder="Last Name, First Name" required />
                             </div>
-                            <div className="w-[300px]">
+                            <div className="w-full md:w-[300px]">
                                 <span className="text-white">Your Email:</span>
-                                <input className="w-[300px] rounded-sm p-2" type="email" name="email" placeholder="email@company.com" required />
+                                <input className="w-full md:w-[300px] rounded-sm p-2" type="email" name="email" placeholder="email@company.com" required />
                             </div>
                         </div>
 
