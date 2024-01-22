@@ -1,60 +1,56 @@
 function ProjectFilters({ activeFilter, toggleFilter }) {
+
+    const filterOptions1 = [
+        { iconClass: "las la-star", filterText: "Featured" },
+        { iconClass: "las la-laptop-code", filterText: "Frontend Mentor Projects" },
+        { iconClass: "las la-user", filterText: "Personal Projects" },
+        { iconClass: "las la-meteor", filterText: "Upcoming Projects" },
+    ];
+
+    const filterOptions2 = [
+        { iconClass: "las la-file-code", filterText: "HTML, CSS, SASS/SCSS ONLY" },
+        { iconClass: "lab la-js-square", filterText: "Vanilla JS" },
+        { iconClass: "lab la-react", filterText: "React" },
+        { iconClass: "las la-wind", filterText: "Tailwind CSS" },
+        { iconClass: "las la-file-alt", filterText: "JSON" },
+        { iconClass: "las la-cog", filterText: "API" },
+    ];
+
+    const renderFilters1 = () => {
+
+        return filterOptions1.map((filter, index) => (
+            <>
+                <button onClick={() => toggleFilter(index + 1)}
+                    className={`px-3 py-1 mx-1 text-white border-white border-2 border-solid rounded-md ${activeFilter == (index + 1) ? 'bg-gradient-to-t from-filter-gradient-1 to-filter-gradient-2' : ''}`}>
+                    <i className={`${filter.iconClass} mr-1`}></i>
+                    {filter.filterText}
+                </button>
+            </>
+        ));
+    };
+
+    const renderFilters2 = () => {
+
+        return filterOptions2.map((filter, index) => (
+            <>
+                <button onClick={() => toggleFilter(index + 5)}
+                    className={`px-3 py-1 mx-1 text-white border-white border-2 border-solid rounded-md ${activeFilter == (index + 5) ? 'bg-gradient-to-t from-filter-gradient-1 to-filter-gradient-2' : ''}`}>
+                    <i className={`${filter.iconClass} mr-1`}></i>
+                    {filter.filterText}
+                </button>
+            </>
+        ));
+    };
+
+
     return (
         <>
             <div className="w-full flex flex-col items-center mb-10">
                 <div className="my-1 flex justify-center flex-wrap">
-                    <button onClick={() => toggleFilter(1)}
-                        className={`px-3 py-1 mx-1 text-white border-white border-2 border-solid rounded-md ${activeFilter == 1 ? 'bg-gradient-to-t from-filter-gradient-1 to-filter-gradient-2' : ''}`}>
-                        <i className="las la-star mr-1"></i>
-                        Featured
-                    </button>
-                    <button onClick={() => toggleFilter(2)}
-                        className={`px-3 py-1 mx-1 text-white border-white border-2 border-solid rounded-md ${activeFilter == 2 ? 'bg-gradient-to-t from-filter-gradient-1 to-filter-gradient-2' : ''}`}>
-                        <i className="las la-laptop-code mr-1"></i>
-                        Frontend Mentor Projects
-                    </button>
-                    <button onClick={() => toggleFilter(3)}
-                        className={`px-3 py-1 mx-1 text-white border-white border-2 border-solid rounded-md ${activeFilter == 3 ? 'bg-gradient-to-t from-filter-gradient-1 to-filter-gradient-2' : ''}`}>
-                        <i className="las la-user mr-1"></i>
-                        Personal Projects
-                    </button>
-                    <button onClick={() => toggleFilter(4)}
-                        className={`px-3 py-1 mx-1 text-white border-white border-2 border-solid rounded-md ${activeFilter == 4 ? 'bg-gradient-to-t from-filter-gradient-1 to-filter-gradient-2' : ''}`}>
-                        <i className="las la-meteor mr-1"></i>
-                        Upcoming Projects
-                    </button>
+                    {renderFilters1()}
                 </div>
                 <div className="my-1 flex justify-center flex-wrap">
-                    <button onClick={() => toggleFilter(5)}
-                        className={`px-3 py-1 mx-1 text-white border-white border-2 border-solid rounded-md ${activeFilter == 5 ? 'bg-gradient-to-t from-filter-gradient-1 to-filter-gradient-2' : ''}`}>
-                        <i className="las la-file-code mr-1"></i>
-                        HTML, CSS, SASS/SCSS ONLY
-                    </button>
-                    <button onClick={() => toggleFilter(6)}
-                        className={`px-3 py-1 mx-1 text-white border-white border-2 border-solid rounded-md ${activeFilter == 6 ? 'bg-gradient-to-t from-filter-gradient-1 to-filter-gradient-2' : ''}`}>
-                        <i className="lab la-js-square mr-1"></i>
-                        Vanilla JS
-                    </button>
-                    <button onClick={() => toggleFilter(7)}
-                        className={`px-3 py-1 mx-1 text-white border-white border-2 border-solid rounded-md ${activeFilter == 7 ? 'bg-gradient-to-t from-filter-gradient-1 to-filter-gradient-2' : ''}`}>
-                        <i className="lab la-react mr-1"></i>
-                        React
-                    </button>
-                    <button onClick={() => toggleFilter(8)}
-                        className={`px-3 py-1 mx-1 text-white border-white border-2 border-solid rounded-md ${activeFilter == 8 ? 'bg-gradient-to-t from-filter-gradient-1 to-filter-gradient-2' : ''}`}>
-                        <i className="las la-wind mr-1"></i>
-                        Tailwind CSS
-                    </button>
-                    <button onClick={() => toggleFilter(9)}
-                        className={`px-3 py-1 mx-1 text-white border-white border-2 border-solid rounded-md ${activeFilter == 9 ? 'bg-gradient-to-t from-filter-gradient-1 to-filter-gradient-2' : ''}`}>
-                        <i className="las la-file-alt mr-1"></i>
-                        JSON
-                    </button>
-                    <button onClick={() => toggleFilter(10)}
-                        className={`px-3 py-1 mx-1 text-white border-white border-2 border-solid rounded-md ${activeFilter == 10 ? 'bg-gradient-to-t from-filter-gradient-1 to-filter-gradient-2' : ''}`}>
-                        <i className="las la-cog mr-1"></i>
-                        API
-                    </button>
+                    {renderFilters2()}
                 </div>
             </div>
         </>
