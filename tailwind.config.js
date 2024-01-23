@@ -44,6 +44,11 @@ export default {
         'custom-md': '1100px',
         'custom-sm': '500px',
       },
+      backgroundImage: {
+        'education-header': "url('./src/assets/about-page-images/baim-hanif-pYWuOMhtc6k-unsplash.jpg')",
+        'yorku-header': "url('./src/assets/about-page-images/Alumni-Ceremonies-June-3-2022-33-scaled.jpg')",
+        'tech-header': "url('./src/assets/about-page-images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg')",
+      },
     },
   },
   plugins: [],

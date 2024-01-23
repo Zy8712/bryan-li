@@ -109,3 +109,7 @@ html::-webkit-scrollbar-thumb {
 .arrow-animation {
     animation: arrowAnimation 2s linear infinite;
 }
+
+.radial-gradient{
+    background-image: radial-gradient(circle at top center, hsl(210, 5%, 24%) 2%, black 98%);
+}
