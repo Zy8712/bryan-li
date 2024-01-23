@@ -158,10 +158,10 @@ function About() {
                 </div>
               </div>
             </div>
-*/}
 
 
           </div>
+*/}
 
 
 
