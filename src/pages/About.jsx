@@ -16,6 +16,15 @@ import HTML_Icon from '../assets/language-icons/html5-svgrepo-com.svg';
 import CSS_Icon from '../assets/language-icons/css3-svgrepo-com.svg';
 import JavaScript_Icon from '../assets/language-icons/javascript-svgrepo-com.svg';
 
+import Sass_Icon from '../assets/language-icons/scss2-svgrepo-com.svg';
+import Less_Icon from '../assets/language-icons/less-svgrepo-com.svg';
+import Stylus_Icon from '../assets/language-icons/stylus-svgrepo-com.svg';
+
+import React_Icon from '../assets/language-icons/react-1-logo-svgrepo-com.svg';
+import Tailwind_Icon from '../assets/language-icons/tailwind-svgrepo-com.svg';
+import Vite_Icon from '../assets/other-icons/vite-svgrepo-com.svg';
+
+
 import "../App.css";
 
 {/**import PageLoadingScreen from './PageLoadingScreen';*/ }
@@ -55,7 +64,7 @@ function About() {
       <div className="w-full h-auto pt-[100px] flex justify-center items-center bg-transparent border-none">
         <div className="w-11/12 h-full flex flex-col items-center">
           <AboutHeader />
-{/**
+            {/**
 
           <div className="w-full grid grid-cols-6 border-2 border-white border-solid gap-4">
 
@@ -65,7 +74,7 @@ function About() {
                 Education
               </h3>
             </div>
-
+            
             <div className="flex justify-center items-center col-span-2">
               <div className="h-72 w-72 rounded-full overflow-hidden">
                 <img src={YorkU_Logo} className="w-full" />
@@ -80,26 +89,80 @@ function About() {
             <div className="col-span-2 rounded-3xl overflow-hidden">
               <img src={YorkU_Main_Entrance} className="w-full" />
             </div>
+
             <div className="h-96 rounded-3xl col-span-2 radial-gradient relative">
               <div className="w-full flex justify-center items-center mt-16">
                 <img src={HTML_Icon} className="w-14 mx-3" />
-                <img src={CSS_Icon} className="w-14 mx-3"  />
-                <img src={JavaScript_Icon} className="w-14 mx-3"  />
+                <img src={CSS_Icon} className="w-14 mx-3" />
+                <img src={JavaScript_Icon} className="w-14 mx-3" />
               </div>
               <h3 className="w-full text-center text-white text-2xl font-semibold mt-8">"Vanilla" Web Development</h3>
               <div className="w-full h-24 flex absolute bottom-0">
                 <div className="w-1/3 h-full flex flex-col items-center">
-                    <h4 className="text-lg text-white font-semibold">HTML</h4>
-                    <p className="text-md text-white font-semibold"><span className="text-2xl">5+</span> years</p>
+                  <h4 className="text-lg text-white font-semibold">HTML</h4>
+                  <p className="text-md text-white font-semibold"><span className="text-2xl">6+</span> years</p>
                 </div>
-                <div className="w-1/3 h-full border-x-2 border-white border-solid">2</div>
-                <div className='w-1/3 h-full '>3</div>
+                <div className="w-1/3 h-full flex flex-col items-center border-x-2 border-white border-solid">
+                  <h4 className="text-lg text-white font-semibold">CSS</h4>
+                  <p className="text-md text-white font-semibold"><span className="text-2xl">5+</span> years</p>
+                </div>
+                <div className='w-1/3 h-full flex flex-col items-center'>
+                  <h4 className="text-lg text-white font-semibold">JavaScript</h4>
+                  <p className="text-md text-white font-semibold"><span className="text-2xl">4+</span> years</p>
+                </div>
               </div>
             </div>
 
+            <div className="h-96 rounded-3xl col-span-2 radial-gradient relative">
+              <div className="w-full flex justify-center items-center mt-16">
+                <img src={Sass_Icon} className="w-14 mx-3" />
+                <img src={Less_Icon} className="w-14 mx-3" />
+                <img src={Stylus_Icon} className="w-14 mx-3" />
+              </div>
+              <h3 className="w-full text-center text-white text-2xl font-semibold mt-8">CSS Preprocessors</h3>
+              <div className="w-full h-24 flex absolute bottom-0">
+                <div className="w-1/3 h-full flex flex-col items-center">
+                  <h4 className="text-lg text-white font-semibold">Sass/Scss</h4>
+                  <p className="text-md text-white font-semibold"><span className="text-2xl">2</span> years</p>
+                </div>
+                <div className="w-1/3 h-full flex flex-col items-center border-x-2 border-white border-solid">
+                  <h4 className="text-lg text-white font-semibold">Less</h4>
+                  <p className="text-md text-white font-semibold"><span className="text-2xl">&lt; 1</span> years</p>
+                </div>
+                <div className='w-1/3 h-full flex flex-col items-center'>
+                  <h4 className="text-lg text-white font-semibold">Stylus</h4>
+                  <p className="text-md text-white font-semibold"><span className="text-2xl">&lt; 1</span> years</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="h-96 rounded-3xl col-span-2 radial-gradient relative">
+              <div className="w-full flex justify-center items-center mt-16">
+                <img src={React_Icon} className="w-14 mx-3" />
+                <img src={Tailwind_Icon} className="w-14 mx-3" />
+                <img src={Vite_Icon} className="w-14 mx-3" />
+              </div>
+              <h3 className="w-full text-center text-white text-2xl font-semibold mt-8">"Modern" Frontend Development</h3>
+              <div className="w-full h-24 flex absolute bottom-0">
+                <div className="w-1/3 h-full flex flex-col items-center">
+                  <h4 className="text-lg text-white font-semibold">React</h4>
+                  <p className="text-md text-white font-semibold"><span className="text-2xl">2+</span> years</p>
+                </div>
+                <div className="w-1/3 h-full flex flex-col items-center border-x-2 border-white border-solid">
+                  <h4 className="text-lg text-white font-semibold">Tailwind</h4>
+                  <p className="text-md text-white font-semibold"><span className="text-2xl">1+</span> years</p>
+                </div>
+                <div className='w-1/3 h-full flex flex-col items-center'>
+                  <h4 className="text-lg text-white font-semibold">Vite</h4>
+                  <p className="text-md text-white font-semibold"><span className="text-2xl">2+</span> years</p>
+                </div>
+              </div>
+            </div>
+*/}
+
 
           </div>
-*/}
+
 
 
           <AboutIntroduction />
