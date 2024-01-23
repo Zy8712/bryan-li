@@ -24,8 +24,13 @@ import React_Icon from '../assets/language-icons/react-1-logo-svgrepo-com.svg';
 import Tailwind_Icon from '../assets/language-icons/tailwind-svgrepo-com.svg';
 import Vite_Icon from '../assets/other-icons/vite-svgrepo-com.svg';
 
+import NextJS_Icon from '../assets/language-icons/nextjs-fill-svgrepo-com.svg';
+import TypeScript_Icon from '../assets/language-icons/typescript-icon-svgrepo-com.svg';
+import PostgreSQL_Icon from '../assets/language-icons/postgresql-svgrepo-com.svg';
+
 
 import "../App.css";
+import TechGridBlocks from '../components/about-page-main-assets/TechGridBlocks';
 
 {/**import PageLoadingScreen from './PageLoadingScreen';*/ }
 
@@ -64,10 +69,11 @@ function About() {
       <div className="w-full h-auto pt-[100px] flex justify-center items-center bg-transparent border-none">
         <div className="w-11/12 h-full flex flex-col items-center">
           <AboutHeader />
+
             {/**
 
           <div className="w-full grid grid-cols-6 border-2 border-white border-solid gap-4">
-
+          
             <div className="flex justify-center items-center text-center col-span-6 h-72 bg-education-header bg-no-repeat bg-cover bg-center rounded-3xl">
               <h3 className="w-[80%] h-[80%] border-2 flex justify-center items-center bg-white rounded-3xl mix-blend-lighten border-white border-solid text-black text-9xl font-bold uppercase">
                 <i class="las la-graduation-cap mr-4 text-9xl"></i>
@@ -90,78 +96,12 @@ function About() {
               <img src={YorkU_Main_Entrance} className="w-full" />
             </div>
 
-            <div className="h-96 rounded-3xl col-span-2 radial-gradient relative">
-              <div className="w-full flex justify-center items-center mt-16">
-                <img src={HTML_Icon} className="w-14 mx-3" />
-                <img src={CSS_Icon} className="w-14 mx-3" />
-                <img src={JavaScript_Icon} className="w-14 mx-3" />
-              </div>
-              <h3 className="w-full text-center text-white text-2xl font-semibold mt-8">"Vanilla" Web Development</h3>
-              <div className="w-full h-24 flex absolute bottom-0">
-                <div className="w-1/3 h-full flex flex-col items-center">
-                  <h4 className="text-lg text-white font-semibold">HTML</h4>
-                  <p className="text-md text-white font-semibold"><span className="text-2xl">6+</span> years</p>
-                </div>
-                <div className="w-1/3 h-full flex flex-col items-center border-x-2 border-white border-solid">
-                  <h4 className="text-lg text-white font-semibold">CSS</h4>
-                  <p className="text-md text-white font-semibold"><span className="text-2xl">5+</span> years</p>
-                </div>
-                <div className='w-1/3 h-full flex flex-col items-center'>
-                  <h4 className="text-lg text-white font-semibold">JavaScript</h4>
-                  <p className="text-md text-white font-semibold"><span className="text-2xl">4+</span> years</p>
-                </div>
-              </div>
-            </div>
 
-            <div className="h-96 rounded-3xl col-span-2 radial-gradient relative">
-              <div className="w-full flex justify-center items-center mt-16">
-                <img src={Sass_Icon} className="w-14 mx-3" />
-                <img src={Less_Icon} className="w-14 mx-3" />
-                <img src={Stylus_Icon} className="w-14 mx-3" />
-              </div>
-              <h3 className="w-full text-center text-white text-2xl font-semibold mt-8">CSS Preprocessors</h3>
-              <div className="w-full h-24 flex absolute bottom-0">
-                <div className="w-1/3 h-full flex flex-col items-center">
-                  <h4 className="text-lg text-white font-semibold">Sass/Scss</h4>
-                  <p className="text-md text-white font-semibold"><span className="text-2xl">2</span> years</p>
-                </div>
-                <div className="w-1/3 h-full flex flex-col items-center border-x-2 border-white border-solid">
-                  <h4 className="text-lg text-white font-semibold">Less</h4>
-                  <p className="text-md text-white font-semibold"><span className="text-2xl">&lt; 1</span> years</p>
-                </div>
-                <div className='w-1/3 h-full flex flex-col items-center'>
-                  <h4 className="text-lg text-white font-semibold">Stylus</h4>
-                  <p className="text-md text-white font-semibold"><span className="text-2xl">&lt; 1</span> years</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="h-96 rounded-3xl col-span-2 radial-gradient relative">
-              <div className="w-full flex justify-center items-center mt-16">
-                <img src={React_Icon} className="w-14 mx-3" />
-                <img src={Tailwind_Icon} className="w-14 mx-3" />
-                <img src={Vite_Icon} className="w-14 mx-3" />
-              </div>
-              <h3 className="w-full text-center text-white text-2xl font-semibold mt-8">"Modern" Frontend Development</h3>
-              <div className="w-full h-24 flex absolute bottom-0">
-                <div className="w-1/3 h-full flex flex-col items-center">
-                  <h4 className="text-lg text-white font-semibold">React</h4>
-                  <p className="text-md text-white font-semibold"><span className="text-2xl">2+</span> years</p>
-                </div>
-                <div className="w-1/3 h-full flex flex-col items-center border-x-2 border-white border-solid">
-                  <h4 className="text-lg text-white font-semibold">Tailwind</h4>
-                  <p className="text-md text-white font-semibold"><span className="text-2xl">1+</span> years</p>
-                </div>
-                <div className='w-1/3 h-full flex flex-col items-center'>
-                  <h4 className="text-lg text-white font-semibold">Vite</h4>
-                  <p className="text-md text-white font-semibold"><span className="text-2xl">2+</span> years</p>
-                </div>
-              </div>
-            </div>
-
+            <TechGridBlocks />
 
           </div>
 */}
+
 
 
 
