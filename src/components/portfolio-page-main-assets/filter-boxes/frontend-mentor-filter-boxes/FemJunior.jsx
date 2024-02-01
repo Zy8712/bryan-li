@@ -10,12 +10,16 @@ import CardFyloDarkThemeLandingPageTrial1 from '../../project-cards/fem-junior-p
 import CardExpensesChartCompTrial1 from '../../project-cards/fem-junior-project-cards/CardExpensesChartCompTrial1';
 import CardAdviceGeneratorAppTrial2 from '../../project-cards/fem-junior-project-cards/CardAdviceGeneratorAppTrial2';
 import CardHuddleLandingPageWithAlternatingFeatureBlocksTrial1 from '../../project-cards/fem-junior-project-cards/CardHuddleLandingPageWithAlternatingFeatureBlocksTrial1';
+import CardNewsletterSignupFormWithSuccessMessageTrial2 from '../../project-cards/fem-junior-project-cards/CardNewsletterSignupFormWithSuccessMessageTrial2';
 import CardClipboardLandingPageTrial1 from '../../project-cards/fem-junior-project-cards/CardClipboardLandingPageTrial1';
+import CardAdviceGeneratorAppTrial3 from '../../project-cards/fem-junior-project-cards/CardAdviceGeneratorAppTrial3';
 
 function FemJunior() {
     return (
         <>
+            <CardAdviceGeneratorAppTrial3 />
             <CardClipboardLandingPageTrial1 />
+            <CardNewsletterSignupFormWithSuccessMessageTrial2 />
             <CardHuddleLandingPageWithAlternatingFeatureBlocksTrial1 />
             <CardAdviceGeneratorAppTrial2 />
             <CardExpensesChartCompTrial1 />

@@ -1,5 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Lottie from 'react-lottie-player';
+import { useSelector } from "react-redux";
+
 import { Link } from 'wouter';
 
 import AstronautLottie from '../assets/Animation-1697251945018.json';
@@ -11,8 +13,9 @@ import SASS_Icon from '../assets/language-icons/scss2-svgrepo-com.svg';
 import React_Icon from '../assets/language-icons/react-1-logo-svgrepo-com.svg';
 import Tailwind_Icon from '../assets/language-icons/tailwind-svgrepo-com.svg';
 import Bootstrap_Icon from '../assets/language-icons/bootstrap-fill-svgrepo-com.svg';
-import NextJS_Icon from "../assets/language-icons/nextjs-fill-svgrepo-com.svg";
-import TypeScript_Icon from "../assets/language-icons/typescript-icon-svgrepo-com.svg";
+import NextJS_Icon from '../assets/language-icons/nextjs-fill-svgrepo-com.svg';
+import TypeScript_Icon from '../assets/language-icons/typescript-icon-svgrepo-com.svg';
+import Redux_Icon from '../assets/language-icons/redux-svgrepo-com.svg';
 
 import SocialIcons from '../components/SocialIcons';
 
@@ -36,6 +39,8 @@ const Home = () => {
   }, []);
 */}
 
+  const { animatedHomeImage } = useSelector(state => state.displayValue);
+
   return (
     <>
       {/**  {isLoading && <PageLoadingScreen />} */}
@@ -55,7 +60,7 @@ const Home = () => {
 
 
                 <p className="w-[360px] custom-sm:w-[400px] custom-md:w-full text-white text-base custom-md:text-lg mt-3 custom-md:mt-5 mr-0 custom-md:mr-10">
-                  Hey, I'm Bryan! Recently graduated with a Specialized Honours degree from York University, and I'm 
+                  Hey, I'm Bryan! Recently graduated with a Specialized Honours degree from York University, and I'm
                   diving into the exciting world of Fullstack Development. Join me on this coding adventure and
                   check out what I've been up to! 🚀
                 </p>
@@ -88,7 +93,7 @@ const Home = () => {
                 <Lottie
                   loop
                   animationData={AstronautLottie}
-                  play
+                  play={animatedHomeImage}
                   className='w-[350px] custom-md:w-[700px] custom-md:h-[700px]'
                 />
               </div>
@@ -102,15 +107,16 @@ const Home = () => {
               <h2 className="text-white text-2xl flex items-center mr-5">Tech Stack</h2>
               <h2 className="text-white text-3xl flex items-center mr-2"> | </h2>
               <div className="inline-flex">
-                <img src={HTML_Icon} alt="html5_icon" title="HTML5" className="w-[40px] mx-3" />
-                <img src={CSS_Icon} alt="css3_icon" title="CSS3" className="w-[40px] mx-3" />
-                <img src={JavaScript_Icon} alt="javascript_icon" title="JavaScript" className="w-[40px] mx-3" />
-                <img src={SASS_Icon} alt="sass_icon" title="SASS/SCSS" className="w-[40px] mx-3" />
-                <img src={React_Icon} alt="react_icon" title="React" className="w-[40px] mx-3" />
-                <img src={Tailwind_Icon} alt="tailwindcss_icon" title="Tailwind CSS" className="w-[40px] mx-3" />
-                <img src={Bootstrap_Icon} alt="bootstrap_icon" title="Bootstrap" className="w-[40px] mx-3" />
-                <img src={NextJS_Icon} alt="nextjs_icon" title="NextJS" className="w-[40px] mx-3" />
-                <img src={TypeScript_Icon} alt="typescript_icon" title="TypeScript" className="w-[40px] mx-3" />
+                <img src={HTML_Icon} alt="html5_icon" title="HTML5" className="w-[40px] mx-2" />
+                <img src={CSS_Icon} alt="css3_icon" title="CSS3" className="w-[40px] mx-2" />
+                <img src={JavaScript_Icon} alt="javascript_icon" title="JavaScript" className="w-[40px] mx-2" />
+                <img src={SASS_Icon} alt="sass_icon" title="SASS/SCSS" className="w-[40px] mx-2" />
+                <img src={React_Icon} alt="react_icon" title="React" className="w-[40px] mx-2" />
+                <img src={Tailwind_Icon} alt="tailwindcss_icon" title="Tailwind CSS" className="w-[40px] mx-2" />
+                <img src={Bootstrap_Icon} alt="bootstrap_icon" title="Bootstrap" className="w-[40px] mx-2" />
+                <img src={NextJS_Icon} alt="nextjs_icon" title="NextJS" className="w-[40px] mx-2" />
+                <img src={TypeScript_Icon} alt="typescript_icon" title="TypeScript" className="w-[40px] mx-2" />
+                <img src={Redux_Icon} alt="redux_icon" title="Redux" className="w-[40px] mx-2" />
               </div>
 
             </div>

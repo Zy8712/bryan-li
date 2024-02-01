@@ -44,7 +44,7 @@ function FeaturedProjectCard_ProfileSite(){
                 figmaTF={false}
                 nextjsTF={false}
                 typescriptTF={false}
-                reduxTF={false}
+                reduxTF={true}
                 postgresqlTF={false}
             />
         </>

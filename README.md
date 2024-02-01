@@ -1,7 +1,7 @@
 <div align="center">
     <img src="./public/dragon-svgrepo-com.svg" width="250px" />
     <h1>Bryan's Portfolio Site [WIP]</h1>
-    <img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind,vite,vercel&theme=dark" />
+    <img src="https://skillicons.dev/icons?i=html,css,js,vite,react,tailwind,redux,vercel&theme=dark" />
     <br />
     <br />
     <p>
@@ -14,6 +14,7 @@
         <img align="center" src="https://img.shields.io/badge/PostCSS-v8.4.31-DD3A0A?style=flat&logo=postcss&logoColor=white" />
         <img align="center" src="https://img.shields.io/badge/React-v18.2.0-blue?style=flat&logo=react&logoColor=white" />
         <img align="center" src="https://img.shields.io/badge/Tailwind_CSS-v3.3.3-06B6D4?style=flat&logo=tailwindcss&logoColor=white" />
+        <img align="center" src="https://img.shields.io/badge/Redux-v9.1.0-764ABC?style=flat&logo=redux&logoColor=white" />
         <img align="center" src="https://img.shields.io/badge/Wouter-v2.11.0-black?style=flat" />
         <img align="center" src="https://img.shields.io/badge/ESLint-v8.48.0-4B32C3?style=flat&logo=eslint&logoColor=white" />
         <img align="center" src="https://img.shields.io/badge/Autoprefixer-v10.4.15-DD3735?style=flat&logo=autoprefixer&logoColor=white" />

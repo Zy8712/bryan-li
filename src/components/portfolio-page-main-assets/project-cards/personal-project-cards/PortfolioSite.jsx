@@ -24,6 +24,7 @@ function PortfolioSite() {
         jsonTF={false}
         apiTF={false}
         wouterTF={true}
+        reduxTF={true}
       />
     </>
   );

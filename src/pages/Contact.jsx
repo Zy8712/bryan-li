@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Lottie from 'react-lottie-player';
+import { useSelector } from "react-redux";
 
 import MailLottie from '../assets/wired-gradient-177-envelope-send.json';
 import TalkingLottie from '../assets/wired-gradient-981-consultation.json';
@@ -26,6 +27,9 @@ function Contact() {
     };
   }, []);
   */}
+
+  const { animatedIcons } = useSelector(state => state.displayValue);
+
   return (
     <>
       {/**  {isLoading && <PageLoadingScreen />} */}
@@ -35,7 +39,7 @@ function Contact() {
           <Lottie
             loop
             animationData={MailLottie}
-            play
+            play={animatedIcons}
             speed={0.3}
             style={{ width: 280, height: 280 }}
             className="hidden custom-md:block"
@@ -50,7 +54,7 @@ function Contact() {
           <Lottie
             loop
             animationData={TalkingLottie}
-            play
+            play={animatedIcons}
             speed={0.3}
             style={{ width: 280, height: 280 }}
             className="hidden custom-md:block"

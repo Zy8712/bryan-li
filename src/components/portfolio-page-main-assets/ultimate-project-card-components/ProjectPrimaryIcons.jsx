@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import HTML_Icon from '../../../assets/language-icons/html5-svgrepo-com.svg';
 import CSS_Icon from '../../../assets/language-icons/css3-svgrepo-com.svg';
 import JavaScript_Icon from '../../../assets/language-icons/javascript-svgrepo-com.svg';
@@ -15,6 +17,11 @@ import PostgreSql_Icon from '../../../assets/language-icons/postgresql-svgrepo-c
 import Figma_Icon from '../../../assets/other-icons/figma-svgrepo-com.svg';
 
 function ProjectPrimaryIcons(props) {
+
+    const activeIconCount = Object.keys(props).filter(key => {
+        const value = props[key];
+        return typeof value === 'boolean' && value === true;
+    }).length;
 
     const techIcons = [
         { iconImage: HTML_Icon, alt: "html5_icon", title: "HTML5", trueFalse: "htmlTF" },
@@ -43,8 +50,11 @@ function ProjectPrimaryIcons(props) {
                     src={icon.iconImage}
                     alt={icon.alt}
                     title={icon.title}
-                    className={`w-[30px] mx-2 ${props[icon.trueFalse] ? 'inline' : 'hidden'}`}
+                    className={`w-[30px] ${(activeIconCount - 1) > 7 ? 'mx-[6px]' : 'mx-2'} ${props[icon.trueFalse] ? 'inline' : 'hidden'}`}
                 />
+                {/** Subtract 1 from activeIconCount to take into account one of the boolean variables is 
+                 *  frontendMentorTF, which isn't an icon and is just accidentially counted in the process above.
+                 */}
             </>
         ));
     };

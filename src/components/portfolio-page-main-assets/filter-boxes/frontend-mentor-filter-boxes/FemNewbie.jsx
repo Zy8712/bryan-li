@@ -17,14 +17,20 @@ import CardInteractiveRatingCompTrial2 from '../../project-cards/fem-newbie-proj
 import Card3ColumnPreviewCardCompTrial2 from '../../project-cards/fem-newbie-project-cards/Card3ColumnPreviewCardCompTrial2';
 import CardProfileCardCompTrial2 from '../../project-cards/fem-newbie-project-cards/CardProfileCardCompTrial2';
 import CardQrCodeCompTrial3 from '../../project-cards/fem-newbie-project-cards/CardQrCodeCompTrial3';
+import Card3ColumnPreviewCardCompTrial3 from '../../project-cards/fem-newbie-project-cards/Card3ColumnPreviewCardCompTrial3';
+import CardSinglePriceGridComponentTrial2 from '../../project-cards/fem-newbie-project-cards/CardSinglePriceGridComponentTrial2';
 import CardPingSingleColumnComingSoonPageTrial1 from '../../project-cards/fem-newbie-project-cards/CardPingSingleColumnComingSoonPageTrial1';
+import CardQrCodeCompTrial4 from '../../project-cards/fem-newbie-project-cards/CardQrCodeCompTrial4';
 import CardPodRequestAccessTrial1 from '../../project-cards/fem-newbie-project-cards/CardPodRequestAccessTrial1';
 
 function FemNewbie() {
     return (
         <>
             <CardPodRequestAccessTrial1 />
+            <CardQrCodeCompTrial4 />
             <CardPingSingleColumnComingSoonPageTrial1 />
+            <CardSinglePriceGridComponentTrial2 />
+            <Card3ColumnPreviewCardCompTrial3 />
             <CardQrCodeCompTrial3 />
             <CardProfileCardCompTrial2 />
             <Card3ColumnPreviewCardCompTrial2 />
