@@ -8,12 +8,14 @@ import FrontendMentorDirectorySite from "../../project-cards/personal-project-ca
 import ExpandedAgeCalc from "../../project-cards/personal-project-cards/ExpandedAgeCalc"
 import PortfolioSite from "../../project-cards/personal-project-cards/PortfolioSite";
 import NextJSTutorialDashboard from "../../project-cards/personal-project-cards/NextJSTutorialDashboard";
+import LazyCat from "../../project-cards/personal-project-cards/LazyCat";
 
 function FeaturedProjectsBox() {
 
     return (
         <>
             <div className="w-full h-full flex flex-wrap justify-around">
+                <LazyCat />
                 <NextJSTutorialDashboard />
                 <PortfolioSite />
                 <ExpandedAgeCalc />

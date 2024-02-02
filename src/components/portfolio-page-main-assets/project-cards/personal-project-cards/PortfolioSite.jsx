@@ -8,7 +8,7 @@ function PortfolioSite() {
     <>
       <UltimateProjectCard
         name="Portfolio Site"
-        date="Last Updated: January 19th, 2024 [Active]"
+        date="Last Updated: Febuary 1st, 2024 [Active]"
         previewImage={PreviewImage}
         githubrepo="https://github.com/Zy8712/bryan-li"
         websitepreview="https://bryanli.vercel.app/"

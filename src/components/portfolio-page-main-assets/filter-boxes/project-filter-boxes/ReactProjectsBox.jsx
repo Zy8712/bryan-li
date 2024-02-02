@@ -8,12 +8,14 @@ import CardQrCodeCompTrial4 from "../../project-cards/fem-newbie-project-cards/C
 import CardAudiophileEcommerceWebsiteTrial1 from "../../project-cards/fem-guru-project-cards/CardAudiophileEcommerceWebsiteTrial1";
 
 import PortfolioSite from "../../project-cards/personal-project-cards/PortfolioSite";
+import LazyCat from "../../project-cards/personal-project-cards/LazyCat";
 
 function ReactProjectsBox() {
 
     return (
         <>
             <div className="w-full h-full flex flex-wrap justify-around">
+                <LazyCat />
                 <PortfolioSite />
                 <CardAudiophileEcommerceWebsiteTrial1 />
                 <CardQrCodeCompTrial4 />
