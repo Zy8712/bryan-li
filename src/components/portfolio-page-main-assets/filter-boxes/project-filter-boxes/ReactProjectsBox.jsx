@@ -9,12 +9,14 @@ import CardAudiophileEcommerceWebsiteTrial1 from "../../project-cards/fem-guru-p
 
 import PortfolioSite from "../../project-cards/personal-project-cards/PortfolioSite";
 import LazyCat from "../../project-cards/personal-project-cards/LazyCat";
+import CardRESTCountriesAPIwithColourThemeSwitcherTrial1 from "../../project-cards/fem-advanced-project-cards/CardRESTCountriesAPIwithColourThemeSwitcherTrial1";
 
 function ReactProjectsBox() {
 
     return (
         <>
             <div className="w-full h-full flex flex-wrap justify-around">
+                <CardRESTCountriesAPIwithColourThemeSwitcherTrial1 />
                 <LazyCat />
                 <PortfolioSite />
                 <CardAudiophileEcommerceWebsiteTrial1 />

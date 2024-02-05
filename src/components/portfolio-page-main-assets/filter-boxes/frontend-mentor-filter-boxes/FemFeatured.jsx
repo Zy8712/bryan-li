@@ -4,10 +4,12 @@ import CardIPAddressTrackerTrial1 from '../../project-cards/fem-intermediate-pro
 import CardAdviceGeneratorAppTrial1 from '../../project-cards/fem-junior-project-cards/CardAdviceGeneratorAppTrial1';
 import CardTipCalculatorAppTrial1 from '../../project-cards/fem-junior-project-cards/CardTipCalculatorAppTrial1';
 import CardAudiophileEcommerceWebsiteTrial1 from '../../project-cards/fem-guru-project-cards/CardAudiophileEcommerceWebsiteTrial1';
+import CardRESTCountriesAPIwithColourThemeSwitcherTrial1 from '../../project-cards/fem-advanced-project-cards/CardRESTCountriesAPIwithColourThemeSwitcherTrial1';
 
 function FemFeatured() {
     return (
         <>
+            <CardRESTCountriesAPIwithColourThemeSwitcherTrial1 />
             <CardAudiophileEcommerceWebsiteTrial1 />
             <CardSpaceTourismWebsiteTrial1 />
             <CardRockPaperScissorsGameTrial1 />

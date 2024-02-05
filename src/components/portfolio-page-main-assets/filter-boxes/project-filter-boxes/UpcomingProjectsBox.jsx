@@ -1,6 +1,5 @@
 import CardToDoAppTrial1 from "../../project-cards/CardToDoAppTrial1";
 import CardLaunchCountdownTimerTrial1 from "../../project-cards/CardLaunchCountdownTimerTrial1";
-import CardRESTCountriesAPIwithColourThemeSwitcherTrial1 from "../../project-cards/CardRESTCountriesAPIwithColourThemeSwitcherTrial1";
 import CardAudiophileEcommerceWebsiteTrial1 from "../../project-cards/fem-guru-project-cards/CardAudiophileEcommerceWebsiteTrial1";
 import CardInvoiceAppTrial1 from "../../project-cards/fem-guru-project-cards/CardInvoiceAppTrial1";
 import CardKabanTaskManagementWebAppTrial1 from "../../project-cards/fem-guru-project-cards/CardKabanTaskManagementWebAppTrial1";
@@ -15,7 +14,6 @@ function UpcomingProjectsBox() {
                 <CardKabanTaskManagementWebAppTrial1 />
                 <CardToDoAppTrial1 />
                 <CardLaunchCountdownTimerTrial1 />
-                <CardRESTCountriesAPIwithColourThemeSwitcherTrial1 />
             </div>
         </>
     );
