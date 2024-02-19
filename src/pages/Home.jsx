@@ -20,24 +20,8 @@ import Redux_Icon from '../assets/language-icons/redux-svgrepo-com.svg';
 import SocialIcons from '../components/SocialIcons';
 
 import "../App.css";
-{/**import PageLoadingScreen from './PageLoadingScreen';*/ }
 
 const Home = () => {
-  {/**
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    // Simulate loading behavior by setting isLoading to true initially
-    // In a real scenario, you might have an async operation that triggers this loading state
-    const loadingTimeout = setTimeout(() => {
-      setIsLoading(false); // Hide the loading screen after 1.5 seconds
-    }, 1200);
-
-    return () => {
-      clearTimeout(loadingTimeout); // Clear the timeout to prevent memory leaks
-    };
-  }, []);
-*/}
 
   const { animatedHomeImage } = useSelector(state => state.displayValue);
 
@@ -72,14 +56,14 @@ const Home = () => {
 
               <div className="w-[320px] custom-sm:w-[450px] ml-0 custom-md:ml-8 mt-6 custom-md:mt-9 flex justify-between">
                 <Link to="/portfolio">
-                  <button className="border-4 border-solid border-white rounded-xl py-2 custom-sm:py-4 px-4 custom-sm:px-7 text-white font-medium flex justify-between items-center transition duration-700 hover:bg-gradient-to-tr from-gradient-purple to-gradient-blue">
+                  <button aria-label="Navigate to Projects Section" className="border-4 border-solid border-white rounded-xl py-2 custom-sm:py-4 px-4 custom-sm:px-7 text-white font-medium flex justify-between items-center transition duration-700 hover:bg-gradient-to-tr from-gradient-purple to-gradient-blue">
                     <span className="hidden custom-md:inline">View&nbsp;</span>
                     My Projects
                     <i className="las la-angle-double-right ml-1 text-xl arrow-animation"></i>
                   </button>
                 </Link>
                 <Link to="/about">
-                  <button className="border-4 border-solid border-white rounded-xl py-2 custom-sm:py-4 px-4 custom-sm:px-7 text-white font-medium flex justify-between items-center transition duration-700 hover:bg-gradient-to-tr from-gradient-purple to-gradient-blue">
+                  <button aria-label="Navigate to About Section" className="border-4 border-solid border-white rounded-xl py-2 custom-sm:py-4 px-4 custom-sm:px-7 text-white font-medium flex justify-between items-center transition duration-700 hover:bg-gradient-to-tr from-gradient-purple to-gradient-blue">
                     About Me
                     <i className="las la-angle-double-right ml-1 text-xl arrow-animation"></i>
                   </button>
@@ -118,8 +102,8 @@ const Home = () => {
                 <img src={TypeScript_Icon} alt="typescript_icon" title="TypeScript" className="w-[40px] mx-2" />
                 <img src={Redux_Icon} alt="redux_icon" title="Redux" className="w-[40px] mx-2" />
               </div>
-
             </div>
+
           </div>
 
 

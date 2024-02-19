@@ -12,9 +12,9 @@ function DarkLightModeSettings() {
         <>
             <div className="absolute bottom-5 right-8 flex justify-between items-center w-52">
                 <p className="font-semibold">Menu Appearance:</p>
-                <button onClick={() => dispatch(setMenuDarkMode())}>
-                    <img src={Sun_Icon} className={`w-10 h-10 ${menuDarkMode ? 'hidden' : 'inline'}`} />
-                    <img src={Moon_Icon} className={`w-10 h-10 ${menuDarkMode ? 'inline' : 'hidden'}`} />
+                <button aria-label="Light/Dark Mode Toggle" onClick={() => dispatch(setMenuDarkMode())}>
+                    <img src={Sun_Icon} alt="light mode icon" className={`w-10 h-10 ${menuDarkMode ? 'hidden' : 'inline'}`} />
+                    <img src={Moon_Icon} alt="dark mode icon" className={`w-10 h-10 ${menuDarkMode ? 'inline' : 'hidden'}`} />
                 </button>
             </div>
         </>

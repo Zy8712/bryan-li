@@ -13,7 +13,7 @@ function FilterFemProjectLvl({ activeFEMFilter, toggleFEMFilter }) {
     const renderLVLFilters = () => {
         return femLVLFilter.map((filter, index) => (
             <>
-                <button onClick={() => toggleFEMFilter(index+2)}
+                <button aria-label={`${filter.levelText} FEM Project Filter Option`} onClick={() => toggleFEMFilter(index+2)}
                     className={`mb-2 mx-1 border-2 border-solid ${filter.buttonBorderColour} rounded-lg inline-flex justify-center overflow-hidden ${activeFEMFilter == (index+2) ? 'shadow-lg shadow-white' : 'opacity-70 hover:opacity-100'}`}>
                     <span className={`px-2 py-2 ${filter.buttonBackgroundColour} text-white text-base font-bold`}>
                         {filter.levelNumber}
@@ -31,8 +31,8 @@ function FilterFemProjectLvl({ activeFEMFilter, toggleFEMFilter }) {
             <div className="w-full h-full flex justify-center mb-8">
                 <div className="w-[780px] font-theme-barlow flex flex-wrap justify-center">
 
-                    <button onClick={() => toggleFEMFilter(1)}
-                        className={`mx-2 mb-2 mx-1 border-2 border-solid border-t-fem-featured-2 border-b-fem-featured-1 border-r-fem-featured-1 border-l-fem-featured-1 rounded-lg inline-flex justify-center overflow-hidden ${activeFEMFilter == 1 ? 'shadow-lg shadow-white' : 'opacity-70 hover:opacity-100'}`}>
+                    <button aria-label={`Featured FEM Projects Filter Option`} onClick={() => toggleFEMFilter(1)}
+                        className={`mx-2 mb-2 border-2 border-solid border-t-fem-featured-2 border-b-fem-featured-1 border-r-fem-featured-1 border-l-fem-featured-1 rounded-lg inline-flex justify-center overflow-hidden ${activeFEMFilter == 1 ? 'shadow-lg shadow-white' : 'opacity-70 hover:opacity-100'}`}>
                         <span className="px-3 py-2 bg-gradient-to-t from-fem-featured-1 to-fem-featured-2">
                             <img src={StarSparkle} className="w-6 h-6" />
                         </span>

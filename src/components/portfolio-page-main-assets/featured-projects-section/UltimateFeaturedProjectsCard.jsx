@@ -12,7 +12,7 @@ function UltimateFeaturedProjectCard(props) {
 
         return props.projectPreviewImages.map((preview, index) => (
             <>
-                <button onClick={() => setCurrImage(index)} className={`rounded-md border-2 border-solid ${currImage == index ? 'border-very-dark-blue' : 'border-white'}`}>
+                <button aria-label={`Project Preview Option ${index}`} onClick={() => setCurrImage(index)} className={`rounded-md border-2 border-solid ${currImage == index ? 'border-very-dark-blue' : 'border-white'}`}>
                     <img src={preview} className="w-[85px] rounded-md" />
                 </button>
             </>

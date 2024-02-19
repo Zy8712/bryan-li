@@ -25,11 +25,11 @@ function SettingsPanel() {
                 </p>
 
                 <div className="absolute top-5 right-5">
-                    <button onClick={() => dispatch(toggleDisplayPanel())} >
+                    <button aria-label="Close Settings Button" onClick={() => dispatch(toggleDisplayPanel())} >
                         {menuDarkMode ? (
-                            <img src={CloseIconWhite} className="w-16 h-16" />
+                            <img src={CloseIconWhite} alt="close icon" className="w-16 h-16" />
                         ) : (
-                            <img src={CloseIconBlack} className="w-16 h-16" />
+                            <img src={CloseIconBlack} alt="close icon" className="w-16 h-16" />
                         )}
                     </button>
                 </div>

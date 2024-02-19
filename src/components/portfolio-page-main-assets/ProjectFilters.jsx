@@ -20,7 +20,7 @@ function ProjectFilters({ activeFilter, toggleFilter }) {
 
         return filterOptions1.map((filter, index) => (
             <>
-                <button onClick={() => toggleFilter(index + 1)}
+                <button aria-label={`${filter.filterText} Filter Option`} onClick={() => toggleFilter(index + 1)}
                     className={`px-3 py-1 mx-1 text-white border-white border-2 border-solid rounded-md ${activeFilter == (index + 1) ? 'bg-gradient-to-t from-filter-gradient-1 to-filter-gradient-2' : ''}`}>
                     <i className={`${filter.iconClass} mr-1`}></i>
                     {filter.filterText}
@@ -33,7 +33,7 @@ function ProjectFilters({ activeFilter, toggleFilter }) {
 
         return filterOptions2.map((filter, index) => (
             <>
-                <button onClick={() => toggleFilter(index + 5)}
+                <button aria-label={`${filter.filterText} Filter Option`} onClick={() => toggleFilter(index + 5)}
                     className={`px-3 py-1 mx-1 text-white border-white border-2 border-solid rounded-md ${activeFilter == (index + 5) ? 'bg-gradient-to-t from-filter-gradient-1 to-filter-gradient-2' : ''}`}>
                     <i className={`${filter.iconClass} mr-1`}></i>
                     {filter.filterText}
