@@ -45,7 +45,7 @@ export default {
         'custom-sm': '500px',
       },
       backgroundImage: {
-        'blob-background': "url('./src/assets/blobanimation.svg')",
+        'blob-background': "url('./blobanimation.svg')",
       },
     },
   },
