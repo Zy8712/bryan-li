@@ -44,9 +44,6 @@ export default {
         'custom-md': '1100px',
         'custom-sm': '500px',
       },
-      backgroundImage: {
-        'blob-background': "url('./blobanimation.svg')",
-      },
     },
   },
   plugins: [],
