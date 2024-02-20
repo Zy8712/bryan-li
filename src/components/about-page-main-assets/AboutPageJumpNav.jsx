@@ -73,7 +73,7 @@ function AboutPageJumpNav() {
 
     return (
         <>
-            <div className="fixed left-0 z-50 top-64 w-[72px] h-[400px] overflow-hidden border-l-0 border-r-light-gray border-y-light-gray rounded-r-3xl border-2 border-solid text-white bg-black">
+            <div className="fixed hidden md:block left-0 z-50 top-64 w-[72px] h-[400px] overflow-hidden border-l-0 border-r-light-gray border-y-light-gray rounded-r-3xl border-2 border-solid text-white bg-black">
                 {animatedIcons ? (
                     renderJumpNavItems()
                 ) : (

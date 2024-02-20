@@ -20,7 +20,7 @@ function App() {
 
   return (
     <>
-      <div className={`w-screen min-h-screen overflow-x-hidden overflow-y-auto bg-black ${blobAppearance ? 'bg-[url("./assets/blobanimation.svg")]' : null} bg-no-repeat bg-center bg-cover`}>
+      <div className={`w-screen min-h-screen overflow-x-hidden overflow-y-auto bg-black ${blobAppearance ? 'md:bg-[url("./assets/blobanimation.svg")]' : null} bg-no-repeat bg-center bg-cover`}>
         <div className="!max-w-full min-h-screen  bg-translucent-black">
           <Router>
             <Navbar />

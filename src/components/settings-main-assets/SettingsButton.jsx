@@ -10,7 +10,7 @@ function SettingsButton() {
     return (
         <>
             <button aria-label="Open Settings Button" onClick={() => dispatch(toggleDisplayPanel())}
-                className="fixed w-14 h-14 flex justify-center items-center bg-white bottom-3 left-3 rounded-full">
+                className="fixed w-14 h-14 hidden md:flex justify-center items-center bg-white bottom-3 left-3 rounded-full">
                 <img src={Gear_Icon} alt="settings icon" className='w-12 h-12' />
             </button>
         </>

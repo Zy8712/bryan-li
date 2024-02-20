@@ -6,7 +6,7 @@ function MathnasiumCard() {
         <>
             <div className="w-[1312px] flex flex-col xl:flex-row justify-between items-center">
 
-                <div className="w-full xl:w-1/3 flex flex-row xl:flex-col justify-between xl:justify-center items-center px-4">
+                <div className="lg:w-full xl:w-1/3 hidden lg:flex flex-row xl:flex-col justify-between xl:justify-center items-center px-4">
                     <div className="text-center flex flex-col items-center text-white my-4">
                         <img src={Mathnasium_Logo} className="h-44 xl:h-48 rounded-lg" />
                         <h4 className="text-2xl font-semibold">Mathnasium Location #1</h4>
@@ -26,7 +26,8 @@ function MathnasiumCard() {
 
                 <div className="w-full xl:w-2/3 px-7 flex flex-col items-start xl:items-center text-white">
                     <h3 className="text-6xl font-semibold mt-7">Math Instructor</h3>
-                    <p className="text-xl font-semibold">October 2022 -</p>
+                    <p className="block lg:hidden text-xl font-semibold">Mathnasium Thornhill</p>
+                    <p className="text-xl font-semibold">October 2022 - Present</p>
 
                     <h4 className="w-full text-left text-2xl font-semibold mt-4 mb-2">Overview</h4>
                     <ul className="list-disc ml-4">
